@@ -1,7 +1,7 @@
 ---
 # Dave Conco 💫
 ---
-## Hello, welcome to me ward 👋
+## Hello, welcome to my ward 👋
 ___A boy with an empty pocket and a bag of dreams___
 
 Yup... I focus on building something:
