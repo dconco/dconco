@@ -9,9 +9,15 @@ Yup... I focus on building something:
 - Useful and 
 - Of fun 💕
 
-👫 Work with Teams
+👫 Work with Teams.
 
-💻 Software Developer
+💻 Software Developer.
+
+🎯 I’m currently working on PHP & React Based Projects.
+
+🌱 I’m currently learning more.
+
+👯 I’m looking to collaborate on some web and mobile projects.
 
 
 ### Time coded:
