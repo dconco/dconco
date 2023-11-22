@@ -40,4 +40,4 @@ Yup... I focus on building something:
 
 👉 [Portfolio Site](https://dconco.github.io)
 
-_👉 Can now continue viewing some rubbish I did 🤣_
+_👉 Continue viewing some rubbish I did 🤣_
