@@ -26,6 +26,11 @@ Yup... I focus on building something:
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
+***On PhpSlides***
+
+[![wakatime](https://wakatime.com/badge/github/dconco/php_slides.svg)](https://wakatime.com/badge/github/dconco/php_slides)
+
+
 ***Follow me up on:***
 
 👉 [Facebook](https://facebook.com/dc.conco)
