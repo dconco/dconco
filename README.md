@@ -36,11 +36,6 @@ Yup... I focus on building something:
 [![wakatime](https://wakatime.com/badge/github/dconco/react-router-modal.svg)](https://wakatime.com/badge/github/dconco/react-router-modal)
 
 
-***Coding Statistics***
-
-<figure><embed src="https://wakatime.com/share/@daveconco/d410468c-1d14-44b4-90cf-bc9144651177.svg"></embed></figure>
-
-
 ***Follow me up on:***
 
 👉 [Facebook](https://facebook.com/dc.conco)
