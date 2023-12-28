@@ -25,7 +25,7 @@ Yup... I focus on building something:
 
 ⭐ Want to connect with me? 
 
-Connect/Chat me up on my LinkedIn [![Dave LinkedIn](https://linkedin.com/in/daveconco/)](Dave Conco Profile)
+Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveconco/)
 
 ♎ Can chat me up on WhatsApp 👉 [WhatsApp](https://wa.me/+2349064772574)
 
