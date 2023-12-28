@@ -21,6 +21,14 @@ Yup... I focus on building something:
 
 👯 I’m looking to collaborate on some web and mobile projects.
 
+💡 I like building frameworks/libraries that would be of helps to other developers and I myself 💯
+
+⭐ Want to connect with me? 
+
+Connect/Chat me up on my LinkedIn [![Dave LinkedIn](https://linkedin)]()
+
+♎ Can chat me up on WhatsApp 
+
 
 
 ### Time Coded:
