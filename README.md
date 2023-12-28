@@ -27,7 +27,7 @@ Yup... I focus on building something:
 
 Connect/Chat me up on my LinkedIn [![Dave LinkedIn](https://linkedin.com/in/daveconco/)](Dave Conco Profile)
 
-♎ Can chat me up on WhatsApp 
+♎ Can chat me up on WhatsApp 👉 [WhatsApp](https://wa.me/+2349064772574)
 
 
 
