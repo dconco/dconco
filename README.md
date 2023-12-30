@@ -63,7 +63,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 👉 [Portfolio Site](https://dconco.github.io)
 
 ## Tech Skills 🌟
-[HTML 5](https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png)
+
+<div>
+  <img src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png" alt="HTML 5" style="height: 100px" />
+</div>
 
 
 ## Support Me 💫
@@ -72,10 +75,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <a href="https://www.buymeacoffee.com/dconco" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
   </a>
-</div>
 
-<br>
-<br>
-<div style="text-align:center">
+  <br>
+  <br>
   <img src="./giphy.gif" style="width: 100%"/>
 </div>
