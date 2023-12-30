@@ -74,5 +74,5 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 <div style="text-align:center">
-  <img src="https://raw.githubusercontent.com/dconco/dconco/main/giphy.gif" style="width: 100%"/>
+  <img src="./giphy.gif" style="width: 100%"/>
 </div>
