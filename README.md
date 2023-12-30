@@ -62,6 +62,9 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 👉 [Portfolio Site](https://dconco.github.io)
 
+## Tech Skills 🌟
+[HTML 5](https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png)
+
 
 ## Support Me 💫
 
