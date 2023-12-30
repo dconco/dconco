@@ -62,9 +62,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 👉 [Portfolio Site](https://dconco.github.io)
 
----
-# Support Me 💫
----
+
+## Support Me 💫
 
 <div>
   <a href="https://www.buymeacoffee.com/dconco" target="_blank">
