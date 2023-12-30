@@ -2,7 +2,7 @@
 # Hello... 👋
 ---
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=dark+green&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=22853d&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.)](https://git.io/typing-svg)
 <br/>
 
 
@@ -37,7 +37,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
-***On PhpSlides***
+<b style="color:blue;font-style:italic">On PhpSlides</b>
 
 [![wakatime](https://wakatime.com/badge/github/dconco/php_slides.svg)](https://wakatime.com/badge/github/dconco/php_slides)
 
