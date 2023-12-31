@@ -31,13 +31,13 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 
 
-### Time Coded:
+## Time Coded:
 
 [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
-***Follow me up on:***
+### Follow me up on:
 
 👉 [Facebook](https://facebook.com/dc.conco)
 
@@ -50,7 +50,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 👉 [Portfolio Site](https://dconco.github.io)
 
 
-# Tech Skills 🌟
+## Tech Skills 🌟
 
 <div>
   <img src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png" alt="HTML 5" style="height: 100px" />
