@@ -57,8 +57,6 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-[image.svg](https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph)
-
 
 <br>
 <br>
@@ -66,7 +64,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 # <p align="center">Tech Skills 🌟</p>
 
 <div align="center">
-  <img src="./react-native.jpg" alt="React Native" width="100%" />
+  <object type="image/jpg" data="./react-native.jpg" alt="React Native" width="100" height="100"></object>
 </div>
 
 <div align="center">
