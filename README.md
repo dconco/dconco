@@ -31,7 +31,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 
 
-## Time Coded:
+## <p align="center">Time Coded:</p>
 
 [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
 
@@ -43,21 +43,25 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 👉 [LinkedIn](https://linkedin.com/in/daveconco)
 
+👉 [TikTok](https://tiktok.com/@dconco)
+
+👉 [Twitter](https://twitter.com/@dave_conco)
+
 👉 [Instagram](https://instagram.com/conco_dave)
 
 👉 [Channel](https://youtube.com/@daveconco)
 
-👉 [Portfolio Site](https://dconco.github.io)
+👉 [My Portfolio](https://dconco.github.io)
 
 
-## Tech Skills 🌟
+## <p align="center">Tech Skills 🌟</p>
 
 <div>
   <img src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png" alt="HTML 5" style="height: 100px" />
 </div>
 
 
-## Support Me 💫
+## <p align="center">Support Me 💫</p>
 
 <div>
   <a href="https://www.buymeacoffee.com/dconco" target="_blank">
