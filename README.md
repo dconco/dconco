@@ -71,6 +71,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./jquery.png" alt="jQuery" height="105px" />
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105px" />
+  <br>
+  <img src="./php.png" alt="PHP" height="100px" />
 </div>
 
 <br>
