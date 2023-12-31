@@ -68,7 +68,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="200px" />
   <br>
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100px"  />
-  <img src="./jquery.png" alt="jQuery" height="105px" />
+  <img src="./jquery.png" alt="jQuery" height="105px" />&nsbs;&nsbs;&nsbs;&nsbs;&nsbs;
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105px" />
 </div>
 
