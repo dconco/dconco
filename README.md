@@ -61,11 +61,12 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <div align="center">
   <img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="Dave Conco Github Stats" width="100%" />
   <br><br>
-  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
-  <br><br>
 </div>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+
+<br><br>
+<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" /></p>
 
 <br>
 <br>
