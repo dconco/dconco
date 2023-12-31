@@ -54,6 +54,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 👉 [My Portfolio](https://dconco.github.io)
 
 
+<br>
+<br>
 ## <p align="center">Tech Skills 🌟</p>
 
 <div>
