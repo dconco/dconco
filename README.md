@@ -29,7 +29,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 ♎ Can chat me up on WhatsApp 👉 [WhatsApp](https://wa.me/+2349064772574)
 
-
+<br>
+<br>
 
 ## <p align="center">Time Coded:</p>
 
