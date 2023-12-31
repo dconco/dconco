@@ -70,7 +70,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
-  <br>
+  <br><br>
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=php_slides" />
 </p>
 
