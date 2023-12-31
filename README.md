@@ -57,12 +57,14 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
+# <h1 align="center">My GitHub Stats</h1>
+
 <img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" width="100%" />
 
 <br>
 <br>
 
-# <p align="center">Tech Skills 🌟</p>
+# <h1 align="center">Tech Skills 🌟</h1>
 
 <div align="center">
   <img src="./react-native.jpg" alt="React Native" width="100%" />
@@ -84,7 +86,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-# <p align="center">Support Me 💫</p>
+# <h1 align="center">Support Me 💫</h1>
 
 <div align="center">
   <br>
