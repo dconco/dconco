@@ -64,8 +64,9 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 </div>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt)
 
-<br><br>
+<br>
 <p align="center"><img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" /></p>
 
 <br>
