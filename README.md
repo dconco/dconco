@@ -56,8 +56,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 <br>
 <br>
+
 ## <p align="center">Tech Skills 🌟</p>
 
+<br>
 <div>
   <img src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png" alt="HTML 5" style="height: 100px" />
 </div>
@@ -70,6 +72,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
   </a>
 
+  <br>
   <br>
   <br>
   <img src="./giphy.gif" style="width: 100%"/>
