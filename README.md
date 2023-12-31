@@ -57,7 +57,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" width="100" />
+<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" width="100%" />
 
 <br>
 <br>
@@ -71,14 +71,14 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <div align="center">
   <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="200px" />
   <br>
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100px"  />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./jquery.png" alt="jQuery" height="105px" />
-  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105px" />
+  <img src="./jquery.png" alt="jQuery" height="105" />
+  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105" />
   <br>
   <br>
-  <img src="./php.png" alt="PHP" height="120px" />
-  <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="120px" />
+  <img src="./php.png" alt="PHP" height="120" />
+  <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="120" />
 </div>
 
 <br>
