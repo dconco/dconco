@@ -62,7 +62,8 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 <br>
 <div>
-  <img src="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png" alt="HTML 5" style="height: 200px" />
+  <img src="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png" alt="HTML & CSS" height="200px" />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap"  />
 </div>
 
 
