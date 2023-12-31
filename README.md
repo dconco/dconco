@@ -59,7 +59,9 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 # <h1 align="center">My GitHub Stats</h1>
 
-<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" width="100%" />
+<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="Dave Conco Github Stats" width="100%" />
+<br>
+<img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
 
 <br>
 <br>
