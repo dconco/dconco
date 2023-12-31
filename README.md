@@ -61,7 +61,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 ## <p align="center">Tech Skills 🌟</p>
 
 <div align="center">
-  <img src="https://cloud.z.com/vn/wp-content/uploads/2023/05/ReactJS-online-training-nareshit.jpg" alt="ReactJS" width="100%" />
+  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--gDUAVecu--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fiizxhtks3exjhjhr2xd.png" alt="ReactJS" width="100%" />
 </div>
 
 <div align="center">
