@@ -72,8 +72,9 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <img src="./jquery.png" alt="jQuery" height="105px" />
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105px" />
   <br>
-  <img src="./php.png" alt="PHP" height="110px" />
-  <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="110px" />
+  <br>
+  <img src="./php.png" alt="PHP" height="120px" />
+  <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="120px" />
 </div>
 
 <br>
