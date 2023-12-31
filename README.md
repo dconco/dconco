@@ -58,10 +58,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-## <p align="center">Tech Skills 🌟</p>
+# <p align="center">Tech Skills 🌟</p>
 
 <div align="center">
-  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--gDUAVecu--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fiizxhtks3exjhjhr2xd.png" alt="ReactJS" width="100%" />
+  <img src="./react-native.jpg" alt="React Native" width="100%" />
 </div>
 
 <div align="center">
@@ -74,7 +74,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-## <p align="center">Support Me 💫</p>
+# <p align="center">Support Me 💫</p>
 
 <div align="center">
   <br>
