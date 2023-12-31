@@ -37,15 +37,6 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
-***On PhpSlides***
-
-[![wakatime](https://wakatime.com/badge/github/dconco/php_slides.svg)](https://wakatime.com/badge/github/dconco/php_slides)
-
-***On react-router-modal***
-
-[![wakatime](https://wakatime.com/badge/github/dconco/react-router-modal.svg)](https://wakatime.com/badge/github/dconco/react-router-modal)
-
-
 ***Follow me up on:***
 
 👉 [Facebook](https://facebook.com/dc.conco)
@@ -54,15 +45,12 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 👉 [Instagram](https://instagram.com/conco_dave)
 
-***Subscribe to my YouTube***
-
 👉 [Channel](https://youtube.com/@daveconco)
-
-***Checkout my Portfolio***
 
 👉 [Portfolio Site](https://dconco.github.io)
 
-## Tech Skills 🌟
+
+# Tech Skills 🌟
 
 <div>
   <img src="https://pathowe.co.uk/wp-content/uploads/2017/02/HTML5.png" alt="HTML 5" style="height: 100px" />
