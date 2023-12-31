@@ -61,10 +61,14 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 ## <p align="center">Tech Skills 🌟</p>
 
 <div align="center">
+  <img src="https://cloud.z.com/vn/wp-content/uploads/2023/05/ReactJS-online-training-nareshit.jpg" alt="ReactJS" width="100%" />
+</div>
+
+<div align="center">
   <img src="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png" alt="HTML & CSS" height="200px" />
   <br>
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100px"  />
-  <img src="./jquery.png" height="105px" />
+  <img src="./jquery.png" alt="jQuery" height="105px" />
 </div>
 
 <br>
