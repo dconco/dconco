@@ -29,8 +29,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 ♎ Can chat me up on WhatsApp 👉 [WhatsApp](https://wa.me/+2349064772574)
 
-<br>
-<br>
+<br><br>
 
 ## <p align="center">Time Coded:</p>
 
@@ -61,8 +60,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 <div align="center">
   <img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="Dave Conco Github Stats" width="100%" />
-  <br>
+  <br><br>
   <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
+  <br><br>
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 </div>
 
 <br>
@@ -81,8 +82,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./jquery.png" alt="jQuery" height="105" />
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105" />
-  <br>
-  <br>
+  <br><br>
   <img src="./php.png" alt="PHP" height="120" />
   <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="120" />
 </div>
@@ -99,8 +99,6 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
   </a>
 
-  <br>
-  <br>
-  <br>
+  <br><br><br>
   <img src="./giphy.gif" style="width: 100%"/>
 </div>
