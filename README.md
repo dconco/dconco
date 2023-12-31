@@ -57,7 +57,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" />
+<img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" width="100" />
 
 <br>
 <br>
