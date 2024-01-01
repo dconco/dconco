@@ -77,7 +77,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <br>
 <br>
 
-# <h1 align="center">Tech Skills 🌟</h1>
+# <h1 align="center">My Tech Skills 🌟</h1>
 
 <div align="center">
   <img src="./react-native.jpg" alt="React Native" width="100%" />
