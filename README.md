@@ -93,7 +93,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <img src="./ionic.png" alt="Ionic" height="105" />
   <br><br>
   <img src="./php.png" alt="PHP" height="120" />
-  <img src="https://github.com/dconco/php_slides/blob/master/public/assets/png/logo-no-background.png?raw=true" alt="PhpSlides" height="120" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="120" />
 </div>
 
 <br>
