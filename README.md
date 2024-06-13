@@ -96,7 +96,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   &nbsp;&nbsp;&nbsp;
   <img src="./slides-logo.png" alt="PhpSlides" height="120" />
 </div>
-<img src="./ts.png" alt="Typescript" height="200" />
+
+<div align="center">
+  <img src="./ts.png" alt="Typescript" height="200" />
+</div>
 
 <br>
 <br>
