@@ -98,8 +98,6 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 </div>
 
 <br>
-<br>
-
 <div align="center">
   <img src="./ts.png" alt="Typescript" height="150" />
 </div>
