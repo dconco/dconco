@@ -104,6 +104,11 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 </div>
 
 <br>
+<div align="center">
+  <img src="./vue.png" alt="Vue" width="100%" />
+</div>
+
+<br>
 <br>
 
 # <h1 align="center">Support Me 💫</h1>
