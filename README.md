@@ -40,16 +40,16 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 ### <p align="center">Follow me up on:</p>
 
 <div align="center">
-  <a href="https://facebook.com/daveconco"><img src="./s-facebook" alt="Facebook" height="50" /></a>
-  <a href="https://x.com/@dave_conco"><img src="./s-x" alt="Twitter" height="50" /></a>
-  <a href="https://instagram.com/conco_dave"><img src="./s-instagram" alt="Instagram" height="50" /></a>
-  <a href="https://tiktok.com/@dconco"><img src="./s-tiktok" alt="Tiktok" height="50" /></a>
+  <a href="https://facebook.com/daveconco"><img src="./s-facebook.png" alt="Facebook" height="50" /></a>
+  <a href="https://x.com/@dave_conco"><img src="./s-x.png" alt="Twitter" height="50" /></a>
+  <a href="https://instagram.com/conco_dave"><img src="./s-instagram.png" alt="Instagram" height="50" /></a>
+  <a href="https://tiktok.com/@dconco"><img src="./s-tiktok.png" alt="Tiktok" height="50" /></a>
 	<br>
 	<br>
-  <a href="https://youtube.com/@daveconco"><img src="./s-youtube" alt="YouTube" height="50" /></a>
-  <a href="https://linkedin.com/in/daveconco"><img src="./s-linkedin" alt="LinkedIn" height="50" /></a>
-  <a href="mailto:concodave@gmail.com"><img src="./s-mail" alt="E-mail" height="50" /></a>
-  <a href="https://wa.me/08025983267"><img src="./s-whatsapp" alt="WhatsApp" height="50" /></a>
+  <a href="https://youtube.com/@daveconco"><img src="./s-youtube.png" alt="YouTube" height="50" /></a>
+  <a href="https://linkedin.com/in/daveconco"><img src="./s-linkedin.png" alt="LinkedIn" height="50" /></a>
+  <a href="mailto:concodave@gmail.com"><img src="./s-mail.png" alt="E-mail" height="50" /></a>
+  <a href="https://wa.me/08025983267"><img src="./s-whatsapp.png" alt="WhatsApp" height="50" /></a>
 </div>
 
 <br>
