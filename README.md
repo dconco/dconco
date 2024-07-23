@@ -83,7 +83,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 </div>
 
 <div align="center">
-  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="100" width="150" />
+  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="100" width="200" />
   <br>
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
