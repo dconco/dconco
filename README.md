@@ -37,21 +37,20 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
-### Follow me up on:
+### <p align="center">Follow me up on:</p>
 
-👉 [Facebook](https://facebook.com/daveconco)
-
-👉 [LinkedIn](https://linkedin.com/in/daveconco)
-
-👉 [TikTok](https://tiktok.com/@dconco)
-
-👉 [Twitter](https://twitter.com/@dave_conco)
-
-👉 [Instagram](https://instagram.com/conco_dave)
-
-👉 [Channel](https://youtube.com/@daveconco)
-
-👉 [My Portfolio](https://dconco.github.io)
+<div align="center">
+  <a href="https://facebook.com/daveconco"><img src="./s-facebook" alt="Facebook" height="50" /></a>
+  <a href="https://x.com/@dave_conco"><img src="./s-x" alt="Twitter" height="50" /></a>
+  <a href="https://instagram.com/conco_dave"><img src="./s-instagram" alt="Instagram" height="50" /></a>
+  <a href="https://tiktok.com/@dconco"><img src="./s-tiktok" alt="Tiktok" height="50" /></a>
+	<br>
+	<br>
+  <a href="https://youtube.com/@daveconco"><img src="./s-youtube" alt="YouTube" height="50" /></a>
+  <a href="https://linkedin.com/in/daveconco"><img src="./s-linkedin" alt="LinkedIn" height="50" /></a>
+  <a href="mailto:concodave@gmail.com"><img src="./s-mail" alt="E-mail" height="50" /></a>
+  <a href="https://wa.me/08025983267"><img src="./s-whatsapp" alt="WhatsApp" height="50" /></a>
+</div>
 
 <br>
 <br>
@@ -84,7 +83,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 </div>
 
 <div align="center">
-  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="200" />
+  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="100" width="150" />
   <br>
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
