@@ -85,21 +85,21 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 <div align="center">
   <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="100" width="200" />
   <br>
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="100"  />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="70"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./jquery.png" alt="jQuery" height="105" />
-  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="105" />
-  <img src="./ionic.png" alt="Ionic" height="105" />
+  <img src="./jquery.png" alt="jQuery" height="80" />
+  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="80" />
+  <img src="./ionic.png" alt="Ionic" height="80" />
   <br><br>
-  <img src="./php.png" alt="PHP" height="120" />
+  <img src="./php.png" alt="PHP" height="100" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./slides-logo.png" alt="PhpSlides" height="120" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="90" />
 </div>
 
 <br>
 <div align="center">
-  <img src="./ts.png" alt="Typescript" height="150" />
-  <img src="./tailwind.png" alt="Tailwindcss" height="150" />
+  <img src="./ts.png" alt="Typescript" height="70" />
+  <img src="./tailwind.png" alt="Tailwindcss" height="80" />
 </div>
 
 <br>
