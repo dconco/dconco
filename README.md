@@ -91,9 +91,10 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="80" />
   <img src="./ionic.png" alt="Ionic" height="80" />
   <br><br>
-  <img src="./php.png" alt="PHP" height="100" />
+  <img src="./php.png" alt="PHP" height="80" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./slides-logo.png" alt="PhpSlides" height="90" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="85" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="100" />
 </div>
 
 <br>
