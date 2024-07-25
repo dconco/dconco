@@ -94,7 +94,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <img src="./php.png" alt="PHP" height="80" />
   &nbsp;&nbsp;&nbsp;
   <img src="./slides-logo.png" alt="PhpSlides" height="85" />
-  <img src="./slides-logo.png" alt="Laravel" height="100" />
+  <img src="./laravel.png" alt="Laravel" height="100" />
 </div>
 
 <br>
