@@ -49,7 +49,7 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
   <a href="https://youtube.com/@daveconco"><img src="./s-youtube.png" alt="YouTube" height="50" /></a>
   <a href="https://linkedin.com/in/daveconco"><img src="./s-linkedin.png" alt="LinkedIn" height="50" /></a>
   <a href="mailto:concodave@gmail.com"><img src="./s-mail.png" alt="E-mail" height="50" /></a>
-  <a href="https://wa.me/08025983267"><img src="./s-whatsapp.png" alt="WhatsApp" height="50" /></a>
+  <a href="https://wa.me/+2348025983267"><img src="./s-whatsapp.png" alt="WhatsApp" height="50" /></a>
 </div>
 
 <br>
