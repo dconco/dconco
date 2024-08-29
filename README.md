@@ -1,5 +1,5 @@
 ---
-# <h1 align="center">Hello 👋, Am Dave Conco</h1>
+# <h1 align="center">I'm your Junior Developer - dconco 🔥</h1>
 ---
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=ff008c&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.;Available+for+freelance+work.)](https://git.io/typing-svg)
