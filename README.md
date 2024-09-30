@@ -56,7 +56,7 @@ Yup... I focus on building something:
 # <h1 align="center">My GitHub Stats</h1>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=8&theme=dark" alt="Dave Conco Github Stats" width="100%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" alt="Dave Conco Github Stats" width="100%" />
   <br><br>
 </div>
 
