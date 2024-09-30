@@ -58,12 +58,11 @@ Connect/Chat me up on my LinkedIn [Dave LinkedIn](https://linkedin.com/in/daveco
 # <h1 align="center">My GitHub Stats</h1>
 
 <div align="center">
-  <img src="https://myreadme.vercel.app/api/embed/dconco?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="Dave Conco Github Stats" width="100%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=10&theme=dark" alt="Dave Conco Github Stats" width="100%" />
   <br><br>
 </div>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
-&nbsp;&nbsp;
+<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)-->
 ![Dave Conco's stats](https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt)
 
 <br>
