@@ -58,9 +58,7 @@ Yup... I focus on building something:
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" alt="Dave Conco Github Stats" height="300px" />
   <br><br>
-
-	<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=donut)](https://github.com/anuraghazra/github-readme-stats)-->
-![Dave Conco's stats](https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt)
+  ![Dave Conco's stats](https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt)
 </div>
 
 <br>
