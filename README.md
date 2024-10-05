@@ -58,7 +58,7 @@ Yup... I focus on building something:
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" alt="Dave Conco Github Stats" height="300px" />
   <br><br>
-  ![Dave Conco's stats](https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt)
+  <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" alt="Dave Conco Github Stats" height="300px" />
 </div>
 
 <br>
