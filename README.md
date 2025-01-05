@@ -59,28 +59,25 @@ Yup... I focus on building something:
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" height="300px" />
-  <br>
+
   <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" height="300px" />
 </div>
 
-<br>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=php_slides" />
-	<br>
+	<br><br>
 	<img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=dark&hide_border=false" />
 </p>
 <br>
 
-## <p align="center">GitHub Trophies 🏆</p>
+### <p align="center">🏆 GitHub Trophies</p>
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
 </p>
-
-<br>
 <br>
 
-# <h1 align="center"># 💻 Tech Stack:</h1>
+## <p align="center">💻 Tech Stack:</p>
 
 <div align="center">
   <img src="./react-native.jpg" alt="React Native" width="100%" />
@@ -115,11 +112,11 @@ Yup... I focus on building something:
 <br>
 <br>
 
-# <h1 align="center">✍️ Random Dev Quote</h1>
+## <p align="center">✍️ Random Dev Quote</p>
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 
-# <h1 align="center">Support Me 💫</h1>
+## <p align="center">Support Me 💫</p>
 
 <div align="center">
   <br>
