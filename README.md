@@ -29,7 +29,7 @@ Yup... I focus on building something:
 
 <br><br>
 
-## <p align="center">Time Coded:</p>
+## <p align="center">💻 Time Coded:</p>
 
 [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
 
@@ -37,7 +37,7 @@ Yup... I focus on building something:
 
 ![](https://komarev.com/ghpvc/?username=dconco&color=dc143c)
 
-### <p align="center">🌐 Socials:</p>
+## <p align="center">🌐 Socials:</p>
 
 <div align="center">
   <a href="https://facebook.com/daveconco"><img src="./s-facebook.png" alt="Facebook" height="50" /></a>
@@ -55,21 +55,26 @@ Yup... I focus on building something:
 <br>
 <br>
 
-# <h1 align="center">📊 GitHub Stats:</h1>
+## <p align="center">📊 GitHub Stats:</p>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" alt="Dave Conco Github Stats" height="300px" />
-  <br><br>
-  <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" alt="Dave Conco Github Stats" height="300px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" height="300px" />
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" height="300px" />
 </div>
 
 <br>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
-  <br><br>
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=php_slides" />
-	<br><br>
+	<br>
 	<img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=dark&hide_border=false" />
+</p>
+<br>
+
+## <p align="center">GitHub Trophies 🏆</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
 </p>
 
 <br>
