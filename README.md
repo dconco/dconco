@@ -35,7 +35,9 @@ Yup... I focus on building something:
 
 [![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
-### <p align="center">Follow me up on:</p>
+![](https://komarev.com/ghpvc/?username=dconco&color=dc143c)
+
+### <p align="center">🌐 Socials:</p>
 
 <div align="center">
   <a href="https://facebook.com/daveconco"><img src="./s-facebook.png" alt="Facebook" height="50" /></a>
@@ -53,7 +55,7 @@ Yup... I focus on building something:
 <br>
 <br>
 
-# <h1 align="center">My GitHub Stats</h1>
+# <h1 align="center">📊 GitHub Stats:</h1>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" alt="Dave Conco Github Stats" height="300px" />
@@ -66,12 +68,14 @@ Yup... I focus on building something:
   <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=juicyfresh&no-bg=true" />
   <br><br>
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=php_slides" />
+	<br><br>
+	<img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=dark&hide_border=false" />
 </p>
 
 <br>
 <br>
 
-# <h1 align="center">My Tech Skills 🌟</h1>
+# <h1 align="center"># 💻 Tech Stack:</h1>
 
 <div align="center">
   <img src="./react-native.jpg" alt="React Native" width="100%" />
@@ -105,6 +109,10 @@ Yup... I focus on building something:
 
 <br>
 <br>
+
+# <h1 align="center">✍️ Random Dev Quote</h1>
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
 
 # <h1 align="center">Support Me 💫</h1>
 
