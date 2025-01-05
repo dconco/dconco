@@ -5,19 +5,19 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=ff008c&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.;Available+for+freelance+work.)](https://git.io/typing-svg)
 
 
-I'm dconco, short for Dave Conco, a creative fusion of coding expertise with diverse talents. Am a dedicated software developer with extensive experience.
+I'm dconco, short for Dave Conco, a creative fusion of coding expertise with diverse talents. Am a dedicated software developer with extensive experience. 💫
 
 
-I have a passion for community services, creating innovative frameworks and libraries, and contributing to public repositories.
+I have a passion for community services, creating innovative frameworks and libraries, and contributing to public repositories. 🌟
 
 
-Notably, I developed and maintain the __![PhpSlides framework](https://github.com/phpslides)__. My focus areas include:
+Notably, I developed and maintain the __[PhpSlides framework](https://github.com/phpslides)__. My focus areas include:
 
 - Building full-stack websites.
 
 - Designing and implementing APIs (Application Programming Interfaces).
 
-- Developing mobile applications for both Android and iOS using React Native.
+- Developing mobile applications for both Android and iOS using React Native & Ionic.js 💻
 
 
 ## <p align="center">💻 Time Coded:</p>
