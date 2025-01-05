@@ -3,31 +3,22 @@
 ---
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=ff008c&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.;Available+for+freelance+work.)](https://git.io/typing-svg)
-<br/>
 
 
-Yup... I focus on building something:
-- Interesting,
-- Useful and 
-- Of fun 💕
+I'm dconco, short for Dave Conco, a creative fusion of coding expertise with diverse talents. Am a dedicated software developer with extensive experience.
 
-👫 Work with Teams.
 
-💻 Software Developer.
+I have a passion for community services, creating innovative frameworks and libraries, and contributing to public repositories.
 
-🎯 I’m currently working on PHP & React/Native Based Projects.
 
-🌱 I’m currently learning more.
+Notably, I developed and maintain the __![PhpSlides framework](https://github.com/phpslides)__. My focus areas include:
 
-👯 I’m looking to collaborate on some web and mobile projects.
+- Building full-stack websites.
 
-💡 I like building frameworks/libraries that would be of helps to other developers and I myself 💯
+- Designing and implementing APIs (Application Programming Interfaces).
 
-⭐ Want to connect with me? 
+- Developing mobile applications for both Android and iOS using React Native.
 
-♎ Can chat me up on WhatsApp 👉 [WhatsApp](https://wa.me/+2348025983267)
-
-<br><br>
 
 ## <p align="center">💻 Time Coded:</p>
 
