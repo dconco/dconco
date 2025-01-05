@@ -58,9 +58,9 @@ Yup... I focus on building something:
 ## <p align="center">📊 GitHub Stats:</p>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" height="300px" />
-
-  <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" height="300px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" />
+  <br><br>
+  <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" />
 </div>
 
 <p align="center">
