@@ -55,7 +55,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 </div>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=php_slides" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa" />
 	<br><br>
 	<img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=dark&hide_border=false" />
 </p>
