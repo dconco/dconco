@@ -15,7 +15,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 
 - Building full-stack websites.
 
-- Designing and implementing APIs (Application Programming Interfaces).
+- Designing and implementing APIs (Application Programming Interfaces) using PHP, NodeJS and C++.
 
 - Developing mobile applications for both Android and iOS using React Native & Ionic.js 💻
 
