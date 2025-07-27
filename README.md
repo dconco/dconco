@@ -83,8 +83,9 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
   <img src="./ionic.png" alt="Ionic" height="40" />
   <br><br>
   <img src="./php.png" alt="PHP" height="40" />
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;
   <img src="./slides-logo.png" alt="PhpSlides" height="50" />
+  &nbsp;&nbsp;
   <img src="./laravel.png" alt="Laravel" height="50" />
 </div>
 
@@ -92,7 +93,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 <div align="center">
   <img src="./ts.png" alt="Typescript" height="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./tailwind.png" alt="Tailwindcss" height="50" />
+  <img src="./tailwind.png" alt="Tailwindcss" height="45" />
   &nbsp;&nbsp;&nbsp;
   <img src="./cpp-logo.png" alt="C++" height="40" />
 </div>
