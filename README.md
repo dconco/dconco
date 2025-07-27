@@ -75,22 +75,22 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 <div align="center">
   <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="50" width="100" />
   <br>
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="20"  />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="30"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./jquery.png" alt="jQuery" height="30" />
-  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="30" />
-  <img src="./ionic.png" alt="Ionic" height="30" />
+  <img src="./jquery.png" alt="jQuery" height="40" />
+  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="40" />
+  <img src="./ionic.png" alt="Ionic" height="40" />
   <br><br>
-  <img src="./php.png" alt="PHP" height="30" />
+  <img src="./php.png" alt="PHP" height="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./slides-logo.png" alt="PhpSlides" height="35" />
-  <img src="./laravel.png" alt="Laravel" height="50" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="50" />
+  <img src="./laravel.png" alt="Laravel" height="40" />
 </div>
 
 <br>
 <div align="center">
-  <img src="./ts.png" alt="Typescript" height="20" />
-  <img src="./tailwind.png" alt="Tailwindcss" height="30" />
+  <img src="./ts.png" alt="Typescript" height="30" />
+  <img src="./tailwind.png" alt="Tailwindcss" height="40" />
 </div>
 
 <br>
