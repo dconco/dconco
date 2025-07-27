@@ -1,8 +1,8 @@
 ---
-# <h1 align="center" style="color:blue"><a href="https://dconco.dev">dconco.dev</a></h1>
+# <h1 align="center" style="color:blue"><a href="https://dconco.github.io">dconco.dev</a></h1>
 ---
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=ff008c&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;Am+Onipede+David.;Usually+known+as+Dave+Conco.;A+young+Passionate+Developer.;Available+for+freelance+work.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=25&pause=1000&color=ff008c&random=false&width=435&lines=Welcome+to+my+ward+%F0%9F%91%8B.;I'm+Dave+Conco.;Usually+known+as+dconco.;A+young+Passionate+Developer.;Available+for+freelance+work.)](https://git.io/typing-svg)
 
 
 I'm dconco, short for Dave Conco, a creative fusion of coding expertise with diverse talents. A dedicated software developer with extensive experience. 💫
@@ -23,8 +23,6 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 ## <p align="center">💻 Time Coded:</p>
 
 [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
-
-[![CodeTime badge](https://img.shields.io/endpoint?style=plastic&color=g&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D21475%26project%3D%26in%3D0)](https://codetime.dev)
 
 ![](https://komarev.com/ghpvc/?username=dconco&color=dc143c)
 
@@ -71,33 +69,33 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 ## <p align="center">💻 Tech Stack:</p>
 
 <div align="center">
-  <img src="./react-native.jpg" alt="React Native" width="100%" />
+  <img src="./react-native.jpg" alt="React Native" width="80%" />
 </div>
 
 <div align="center">
-  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="100" width="200" />
+  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="50" width="100" />
   <br>
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="70"  />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="20"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./jquery.png" alt="jQuery" height="80" />
-  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="80" />
-  <img src="./ionic.png" alt="Ionic" height="80" />
+  <img src="./jquery.png" alt="jQuery" height="30" />
+  <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="30" />
+  <img src="./ionic.png" alt="Ionic" height="30" />
   <br><br>
-  <img src="./php.png" alt="PHP" height="80" />
+  <img src="./php.png" alt="PHP" height="30" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./slides-logo.png" alt="PhpSlides" height="85" />
-  <img src="./laravel.png" alt="Laravel" height="100" />
+  <img src="./slides-logo.png" alt="PhpSlides" height="35" />
+  <img src="./laravel.png" alt="Laravel" height="50" />
 </div>
 
 <br>
 <div align="center">
-  <img src="./ts.png" alt="Typescript" height="70" />
-  <img src="./tailwind.png" alt="Tailwindcss" height="80" />
+  <img src="./ts.png" alt="Typescript" height="20" />
+  <img src="./tailwind.png" alt="Tailwindcss" height="30" />
 </div>
 
 <br>
 <div align="center">
-  <img src="./vue.png" alt="Vue" width="100%" />
+  <img src="./vue.png" alt="Vue" width="80%" />
 </div>
 
 <br>
