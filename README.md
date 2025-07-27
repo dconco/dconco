@@ -73,9 +73,9 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 </div>
 
 <div align="center">
-  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="80" width="100" />
+  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="70" width="170" />
   <br>
-  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="50"  />
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="40"  />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./jquery.png" alt="jQuery" height="40" />
   <img src="https://ivazz.com/wp-content/uploads/2021/05/react.png" alt="ReactJS" height="40" />
