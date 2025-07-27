@@ -73,7 +73,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 </div>
 
 <div align="center">
-  <img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="70" width="170" />
+  <!--<img src="./web-slots.png" alt="HTML, CSS & JavaScript" height="70" width="170" />-->
   <br>
   <br>
   <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png" alt="Bootstrap" height="40"  />
@@ -91,7 +91,9 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 <br>
 <div align="center">
   <img src="./ts.png" alt="Typescript" height="40" />
-  <img src="./tailwind.png" alt="Tailwindcss" height="40" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="./tailwind.png" alt="Tailwindcss" height="50" />
+  &nbsp;&nbsp;&nbsp;
   <img src="./cpp-logo.png" alt="C++" height="40" />
 </div>
 
