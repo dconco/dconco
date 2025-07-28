@@ -92,8 +92,8 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 <div align="center">
   <img src="./ts.png" alt="Typescript" height="40" />
   &nbsp;&nbsp;&nbsp;
-  <img src="./nodejs.png" alt="Node.js & Express.js" height="40" />
-  &nbsp;&nbsp;&nbsp;
+  <img src="./nodejs.png" alt="Node.js & Express.js" height="45" />
+  &nbsp;&nbsp;
   <img src="./tailwind.png" alt="Tailwindcss" height="45" />
   &nbsp;&nbsp;&nbsp;
   <img src="./cpp-logo.png" alt="C++" height="40" />
