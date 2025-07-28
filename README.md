@@ -47,7 +47,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 ## <p align="center">📊 GitHub Stats:</p>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=7&theme=dark" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=8&theme=dark" />
   <br><br>
   <img src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=cobalt" />
 </div>
@@ -91,6 +91,8 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 <br>
 <div align="center">
   <img src="./ts.png" alt="Typescript" height="40" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="./nodejs.png" alt="Node.js & Express.js" height="40" />
   &nbsp;&nbsp;&nbsp;
   <img src="./tailwind.png" alt="Tailwindcss" height="45" />
   &nbsp;&nbsp;&nbsp;
