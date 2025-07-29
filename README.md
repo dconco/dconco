@@ -69,7 +69,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 ## <p align="center">💻 Tech Stack:</p>
 
 <div align="center">
-  <img src="./react-native.jpg" alt="React Native" width="80%" />
+  <img src="./react-native.jpg" alt="React Native" width="90%" />
 </div>
 
 <div align="center">
@@ -101,7 +101,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 
 <br>
 <div align="center">
-  <img src="./vue.png" alt="Vue" width="80%" />
+  <img src="./vue.png" alt="Vue" width="90%" />
 </div>
 
 <br>
