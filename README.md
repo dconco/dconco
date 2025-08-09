@@ -11,7 +11,7 @@ I'm dconco, short for Dave Conco, a creative fusion of coding expertise with div
 I have a passion for community services, creating innovative frameworks and libraries, and contributing to public repositories. 🌟
 
 
-Notably, I developed and maintain the __[PhpSlides framework](https://github.com/phpslides)__. My focus areas include:
+Notably, I developed and maintain the __[PhpSPA framework](https://phpspa.readthedocs.io)__. My focus areas include:
 
 - Building full-stack websites.
 
@@ -69,7 +69,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 ## <p align="center">💻 Tech Stack:</p>
 
 <div align="center">
-  <img src="./react-native.jpg" alt="React Native" width="250px" />
+  <img src="./react-native.jpg" alt="React Native" width="300px" />
 </div>
 
 <div align="center">
@@ -101,7 +101,7 @@ Notably, I developed and maintain the __[PhpSlides framework](https://github.com
 
 <br>
 <div align="center">
-  <img src="./vue.png" alt="Vue" width="250px" />
+  <img src="./vue.png" alt="Vue" width="300px" />
 </div>
 
 <br>
