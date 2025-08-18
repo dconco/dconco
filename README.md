@@ -1,5 +1,3 @@
-# <div align="center">🚀 **DAVE CONCO** 🚀</div>
-
 <div align="center">
   
   ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=dconco.dev&fontSize=50&fontAlignY=35&desc=Where%20Innovation%20Meets%20Excellence&descAlignY=55&descSize=20&animation=fadeIn)
