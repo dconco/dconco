@@ -34,6 +34,7 @@ const daveConco = {
   alias: "dconco",
   role: "Full-Stack Architect & Framework Creator",
   location: "🌍 Global Digital Nomad",
+  address: "1, Virtual Office, The Cloud, Worldwide.",
   
   passions: [
     "🚀 Building revolutionary frameworks",
