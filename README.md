@@ -59,41 +59,9 @@ const daveConco = {
 Want to test my AI bot that talks like me? 🚀  
 It's fun, smart, and knows everything about my work, projects, and dev journey.  
 
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/💬%20Let's%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=075E54" alt="Chat on WhatsApp" />
-  </a>
-</p>
-<br>
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/💬%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=128C7E" alt="Chat on WhatsApp" />
-  </a>
-</p>
-<br>
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/💬%20Let's%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&logoWidth=40" alt="Chat on WhatsApp" />
-  </a>
-</p>
-<br>
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/static/v1?message=Chat%20on%20WhatsApp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" alt="WhatsApp" height="35" />
-  </a>
-</p>
-<br>
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/Chat_on_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Chat on WhatsApp" />
-  </a>
-</p>
-<br>
-<p align="center">
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/💬_Let's_Talk_on_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=075E54" alt="Chat on WhatsApp" />
-  </a>
-</p>
+<a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
+  <img src="https://img.shields.io/badge/💬%20Let's%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=075E54" alt="Chat on WhatsApp" />
+</a>
 
 ⚡ **Try it now** → Ask me about my projects, frameworks, or even request help on your next idea.  
 I'll reply instantly (through my bot, but it *is* me 😉).
