@@ -104,14 +104,14 @@ const daveConco = {
 
 <div align="center">
   
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dconco&show_icons=true&theme=radical&include_all_commits=true&count_private=true&border_radius=15&border_color=FF6B6B"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dconco&layout=compact&langs_count=8&theme=radical&border_radius=15&border_color=FF6B6B"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=dconco&theme=radical"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dconco&theme=radical"/>
   
 </div>
 
 <div align="center">
   
-  ![GitHub Streak](https://streak-stats.demolab.com/?user=dconco&theme=radical&border_radius=15&border=FF6B6B&stroke=FF6B6B&ring=FF6B6B&fire=FFD700&currStreakLabel=FF6B6B)
+  ![GitHub Streak](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dconco&theme=radical)
   
 </div>
 
