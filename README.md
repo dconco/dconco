@@ -55,6 +55,22 @@ const daveConco = {
 
 ---
 
+## 💬 Chat With My WhatsApp Bot
+
+Want to test my AI bot that talks like me? 🚀  
+It’s fun, smart, and knows everything about my work, projects, and dev journey.  
+
+<p align="center">
+  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
+    <img src="https://img.shields.io/badge/💬%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Chat on WhatsApp" />
+  </a>
+</p>
+
+⚡ **Try it now** → Ask me about my projects, frameworks, or even request help on your next idea.  
+I’ll reply instantly (through my bot, but it *is* me 😉).  
+
+---
+
 ## 🔥 **SIGNATURE PROJECT**
 
 <div align="center">
