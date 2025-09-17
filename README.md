@@ -104,14 +104,14 @@ const daveConco = {
 
 <div align="center">
   
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dconco&theme=radical"/>
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dconco&theme=radical"/>
+  ![GitHub Streak](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dconco&theme=radical)
   
 </div>
 
 <div align="center">
   
-  ![GitHub Streak](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dconco&theme=radical)
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dconco&theme=radical"/>
+  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dconco&theme=radical"/>
   
 </div>
 
