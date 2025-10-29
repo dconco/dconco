@@ -1,12 +1,12 @@
 <div align="center">
   
-  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=dconco.dev&fontSize=50&fontAlignY=35&desc=Where%20Innovation%20Meets%20Excellence&descAlignY=55&descSize=20&animation=fadeIn)
+  [![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=dconco.tech&fontSize=50&fontAlignY=35&desc=Where%20Innovation%20Meets%20Excellence&descAlignY=55&descSize=20&animation=fadeIn)](https://www.dconco.tech)
   
 </div>
 
 <div align="center">
   
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=FF6B6B&background=FFFFFF00&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=120&lines=%F0%9F%91%8B+Welcome+to+my+digital+universe;%F0%9F%92%AB+I'm+Dave+Conco+%E2%80%A2+Full-Stack+Architect;%F0%9F%8C%9F+Building+tomorrow's+web+today)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=FF6B6B&background=FFFFFF00&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=120&lines=%F0%9F%91%8B+Welcome+to+my+digital+universe;%F0%9F%92%AB+I'm+Dave+Conco+%E2%80%A2+Full-Stack+Architect;%F0%9F%8C%9F+Building+tomorrow's+web+today)](https://www.dconco.tech)
   
 </div>
 
@@ -76,7 +76,7 @@ I'll reply instantly (through my bot, but it *is* me 😉).
   
   ### ⚡ **PhpSPA Framework** ⚡
   
-  <a href="https://phpspa.readthedocs.io">
+  <a href="https://phpspa.tech">
     <img src="https://img.shields.io/badge/PhpSPA-Revolutionary%20Framework-FF6B6B?style=for-the-badge&logo=php&logoColor=white&labelColor=2D3748" />
   </a>
   
@@ -95,6 +95,7 @@ I'll reply instantly (through my bot, but it *is* me 😉).
 ### 🌐 **Frontend Mastery**
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![PhpSPA](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
@@ -158,7 +159,7 @@ I'll reply instantly (through my bot, but it *is* me 😉).
 
 <div align="center">
   
-  [![Website](https://img.shields.io/badge/🌐_Portfolio-dconco.dev-FF6B6B?style=for-the-badge&logoColor=white)](https://dconco.github.io)
+  [![Website](https://img.shields.io/badge/🌐_Portfolio-dconco.tech-FF6B6B?style=for-the-badge&logoColor=white)](https://dconco.tech)
   [![Email](https://img.shields.io/badge/📧_Email-concodave@gmail.com-FF6B6B?style=for-the-badge&logoColor=white)](mailto:concodave@gmail.com)
   
   <br>
