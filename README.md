@@ -65,9 +65,6 @@ It's fun, smart, and knows everything about my work, projects, and dev journey.
 </a>
 <br>
 
-⚡ **Try it now** → Ask me about my projects, frameworks, or even request help on your next idea.  
-I'll reply instantly (through my bot, but it *is* me 😉).
-
 ---
 
 ## 🔥 **SIGNATURE PROJECT**
