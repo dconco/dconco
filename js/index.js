@@ -2,7 +2,7 @@
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle')
 const navLinks = document.querySelector('.nav-links')
 
-if (mobileMenuToggle) {
+if (mobileMenuToggle && navLinks) {
 	mobileMenuToggle.addEventListener('click', () => {
 		mobileMenuToggle.classList.toggle('active')
 		navLinks.classList.toggle('active')
@@ -18,7 +18,7 @@ if (mobileMenuToggle) {
 
 	// Close menu when clicking outside
 	document.addEventListener('click', (e) => {
-		if (!e.target.closest('nav')) {
+		if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
 			mobileMenuToggle.classList.remove('active')
 			navLinks.classList.remove('active')
 		}
