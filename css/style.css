@@ -46,6 +46,23 @@ body::before {
 	50% { opacity: 0.85; }
 }
 
+/* Accessibility: Reduce motion for users with vestibular disorders */
+@media (prefers-reduced-motion: reduce) {
+	body::before {
+		animation: none;
+	}
+	
+	.hero-greeting,
+	.profile-pic,
+	.floating,
+	.hero-text .highlight,
+	.ai-bot-icon,
+	.btn-whatsapp i,
+	.project-card::before {
+		animation: none !important;
+	}
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
