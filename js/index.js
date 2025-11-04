@@ -44,11 +44,11 @@ const nav = document.querySelector('nav')
 if (nav) {
 	window.addEventListener('scroll', () => {
 		if (window.scrollY > 100) {
-			nav.style.background = 'rgba(15, 15, 35, 0.98)'
-			nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.3)'
+			nav.style.background = 'rgba(255, 255, 255, 0.15)'
+			nav.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.15)'
 		} else {
-			nav.style.background = 'rgba(15, 15, 35, 0.95)'
-			nav.style.boxShadow = 'none'
+			nav.style.background = 'rgba(255, 255, 255, 0.1)'
+			nav.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)'
 		}
 	})
 }
