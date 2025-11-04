@@ -1,3 +1,30 @@
+// Mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle')
+const navLinks = document.querySelector('.nav-links')
+
+if (mobileMenuToggle) {
+	mobileMenuToggle.addEventListener('click', () => {
+		mobileMenuToggle.classList.toggle('active')
+		navLinks.classList.toggle('active')
+	})
+
+	// Close menu when clicking on a link
+	document.querySelectorAll('.nav-links a').forEach(link => {
+		link.addEventListener('click', () => {
+			mobileMenuToggle.classList.remove('active')
+			navLinks.classList.remove('active')
+		})
+	})
+
+	// Close menu when clicking outside
+	document.addEventListener('click', (e) => {
+		if (!e.target.closest('nav')) {
+			mobileMenuToggle.classList.remove('active')
+			navLinks.classList.remove('active')
+		}
+	})
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
@@ -17,8 +44,10 @@ window.addEventListener('scroll', () => {
 	const nav = document.querySelector('nav')
 	if (window.scrollY > 100) {
 		nav.style.background = 'rgba(15, 15, 35, 0.98)'
+		nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.3)'
 	} else {
 		nav.style.background = 'rgba(15, 15, 35, 0.95)'
+		nav.style.boxShadow = 'none'
 	}
 })
 
@@ -36,6 +65,6 @@ const observer = new IntersectionObserver(entries => {
 	})
 }, observerOptions)
 
-document.querySelectorAll('.project-card, .skill-category, .ai-bot-card').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .ai-bot-card, .resume-preview').forEach(el => {
 	observer.observe(el)
 })

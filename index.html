@@ -156,6 +156,11 @@
 		<nav>
 			<div class="container">
 				<a href="#" class="logo">dconco</a>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 				<ul class="nav-links">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -171,22 +176,25 @@
 			<div class="container">
 				<div class="hero-content">
 					<div class="hero-text animate-in">
-						<h1>Hi, I'm <span class="highlight">Dave Conco</span></h1>
+						<span class="hero-greeting">👋 Hey there! I'm</span>
+						<h1><span class="highlight">Dave Conco</span></h1>
 						<p class="subtitle">
-							Full-Stack Developer & Backend Engineer
+							Full-Stack Developer & Creative Problem Solver
 						</p>
 						<p>
-							I build amazing web applications and mobile apps using PHP,
-							C++, Node.js, and React. I train AI models and created a
-							WhatsApp bot. I love creating custom frameworks and tools
-							that make development faster and more enjoyable.
+							I craft exceptional web and mobile experiences with PHP,
+							C++, Node.js, and React. From training AI models to building
+							custom frameworks, I'm passionate about creating tools that
+							empower developers and delight users. Every line of code I
+							write is a step toward making the digital world more
+							intuitive and accessible.
 						</p>
 						<div class="cta-buttons">
 							<a href="#projects" class="btn btn-primary"
-								>View My Work</a
+								>Explore My Work</a
 							>
 							<a href="#contact" class="btn btn-secondary"
-								>Get In Touch</a
+								>Let's Connect</a
 							>
 						</div>
 					</div>
@@ -204,32 +212,37 @@
 
 		<section id="about" class="about">
 			<div class="container">
-				<h2 class="section-title">About Me</h2>
+				<h2 class="section-title">A Bit About Me</h2>
 				<div class="about-content">
 					<div class="about-text">
 						<p>
-							I'm a passionate full-stack developer with 5+ years of
-							experience building web applications and mobile apps. I
-							specialize in backend development using PHP, C++, and
-							Node.js, and I love creating tools that make other
-							developers' lives easier.
+							Hey! I'm a full-stack developer who's been writing code for
+							over 5 years now. What drives me? Building applications
+							that solve real problems and creating tools that make
+							fellow developers smile. Whether it's backend systems with
+							PHP, C++, or Node.js, I genuinely enjoy turning complex
+							challenges into elegant solutions.
 						</p>
 						<p>
-							When I'm not coding, I'm probably learning about new
-							technologies, contributing to open source projects, or
-							helping other developers solve challenging problems. I
-							believe in writing clean, maintainable code and building
-							things that actually work and help people.
+							When I'm not deep in code, you'll find me exploring
+							cutting-edge tech, giving back to open source communities,
+							or mentoring developers who are just starting their journey.
+							I'm a firm believer that great code isn't just
+							functional—it should be clean, maintainable, and a joy to
+							work with.
 						</p>
 						<p>
-							I've built custom PHP frameworks, created programming tools
-							with C++, and developed mobile apps that thousands of
-							people use. I enjoy the entire development process, from
-							planning and architecture to deployment and maintenance.
+							Over the years, I've crafted custom PHP frameworks,
+							developed system-level tools with C++, and built mobile
+							apps that are used by thousands daily. What excites me most
+							is being involved in every stage—from the initial spark of
+							an idea through design, development, and all the way to
+							seeing it live in the wild.
 						</p>
 					</div>
 					<div class="skills-grid">
 						<div class="skill-category">
+							<div class="skill-icon">⚙️</div>
 							<h3>Backend</h3>
 							<ul>
 								<li>PHP & Custom Frameworks</li>
@@ -240,6 +253,7 @@
 							</ul>
 						</div>
 						<div class="skill-category">
+							<div class="skill-icon">🎨</div>
 							<h3>Frontend & Mobile</h3>
 							<ul>
 								<li>React & Styled Components</li>
@@ -249,6 +263,7 @@
 							</ul>
 						</div>
 						<div class="skill-category">
+							<div class="skill-icon">🛠️</div>
 							<h3>Tools & Others</h3>
 							<ul>
 								<li>Git & GitHub</li>
@@ -269,23 +284,24 @@
 						<div class="ai-bot-icon">
 							<i class="fab fa-whatsapp"></i>
 						</div>
-						<h2>Want to test my AI bot that talks like me? 🚀</h2>
+						<h2>Curious about my AI bot? Let's chat! 🚀</h2>
 						<p>
-							It's fun, smart, and knows everything about my work,
-							projects, and dev journey.
+							I've built a smart WhatsApp bot that mirrors my expertise
+							and personality. It's like having a conversation with me,
+							anytime you need!
 						</p>
 						<div class="ai-bot-features">
 							<div class="feature-item">
 								<i class="fas fa-robot"></i>
-								<span>Trained on my portfolio & experience</span>
+								<span>Trained on my work & experience</span>
 							</div>
 							<div class="feature-item">
 								<i class="fas fa-lightning-bolt"></i>
-								<span>Instant responses 24/7</span>
+								<span>Always available, instant replies</span>
 							</div>
 							<div class="feature-item">
 								<i class="fas fa-brain"></i>
-								<span>Knows all my projects & skills</span>
+								<span>Deep knowledge of my projects</span>
 							</div>
 						</div>
 						<a
@@ -295,12 +311,12 @@
 							rel="noopener noreferrer"
 						>
 							<i class="fab fa-whatsapp"></i>
-							Chat on WhatsApp
+							Start Chatting
 						</a>
 						<p class="ai-bot-cta">
-							⚡ Try it now → Ask me about my projects, frameworks, or
-							even request help on your next idea.<br />
-							I'll reply instantly (through my bot, but it is me 😉).
+							⚡ Give it a try! Ask about my projects, technical expertise,
+							or even pitch your next big idea.<br />
+							You'll get instant responses—it's me, just automated 😉
 						</p>
 					</div>
 				</div>
@@ -309,32 +325,32 @@
 
 		<section id="resume" class="resume">
 			<div class="container">
-				<h2 class="section-title">My Resume</h2>
+				<h2 class="section-title">My Professional Journey</h2>
 				<div class="resume-content">
 					<div class="resume-preview">
 						<div class="resume-icon">
 							<i class="fas fa-file-pdf"></i>
 						</div>
-						<h3>Download My Resume</h3>
+						<h3>Grab My Resume</h3>
 						<p>
-							Get a comprehensive overview of my experience, skills, and
-							achievements in software development. My resume includes
-							detailed information about my 5+ years of experience in
-							full-stack development, backend engineering, and the
-							amazing projects I've built.
+							Want the full story? My resume dives deep into my 5+ years
+							of hands-on experience in full-stack development, backend
+							engineering, and all the exciting projects I've brought to
+							life. It's a comprehensive look at my technical skills,
+							achievements, and what makes me tick as a developer.
 						</p>
 						<div class="resume-highlights">
 							<div class="highlight-item">
 								<i class="fas fa-code"></i>
-								<span>6+ Years Experience</span>
+								<span>5+ Years Coding</span>
 							</div>
 							<div class="highlight-item">
 								<i class="fas fa-project-diagram"></i>
-								<span>20+ Projects Completed</span>
+								<span>20+ Shipped Projects</span>
 							</div>
 							<div class="highlight-item">
 								<i class="fas fa-tools"></i>
-								<span>Multiple Tech Stacks</span>
+								<span>Diverse Tech Stack</span>
 							</div>
 						</div>
 						<a
@@ -344,7 +360,7 @@
 							rel="noopener noreferrer"
 						>
 							<i class="fas fa-download"></i>
-							Download Resume
+							Get My Resume
 						</a>
 					</div>
 				</div>
@@ -353,107 +369,119 @@
 
 		<section id="projects" class="projects">
 			<div class="container">
-				<h2 class="section-title">Featured Projects</h2>
+				<h2 class="section-title">Projects I'm Proud Of</h2>
 				<div class="projects-grid">
 					<div class="project-card">
+						<div class="project-number">01</div>
 						<h3>VTU API Service</h3>
 						<div class="project-tech">
 							PHP • MySQL • JWT Authentication
 						</div>
 						<p>
-							A comprehensive API service for purchasing airtime and data
-							with advanced vendor management and wallet system.
+							Built a robust API service for purchasing airtime and data
+							bundles. Features smart vendor management and a secure
+							wallet system that handles real money transactions.
 						</p>
 						<ul>
-							<li>Handles real transactions with 99% uptime</li>
-							<li>Secure wallet system with transaction logging</li>
-							<li>Multi-vendor switching algorithm</li>
-							<li>JWT authentication and user management</li>
+							<li>Maintains 99% uptime for live transactions</li>
+							<li>Secure wallet with full transaction history</li>
+							<li>Intelligent multi-vendor switching</li>
+							<li>JWT-based auth & user management</li>
 						</ul>
 					</div>
 
 					<div class="project-card">
+						<div class="project-number">02</div>
 						<h3>E-commerce Platform</h3>
 						<div class="project-tech">
 							PHP • React • TailwindCSS • PayStack
 						</div>
 						<p>
-							Complete online shopping platform with modern UI, secure
-							payments, and comprehensive admin dashboard.
+							A full-featured online shopping experience with sleek UI,
+							secure payments through PayStack, and a powerful admin
+							dashboard for managing everything.
 						</p>
 						<ul>
-							<li>Full product catalog and shopping cart</li>
-							<li>User authentication and profiles</li>
-							<li>PayStack payment integration</li>
-							<li>Admin panel for order management</li>
+							<li>Complete product catalog & cart system</li>
+							<li>User accounts and authentication</li>
+							<li>Integrated PayStack for payments</li>
+							<li>Comprehensive admin control panel</li>
 						</ul>
 					</div>
 
 					<div class="project-card">
+						<div class="project-number">03</div>
 						<h3>PhpSlides Framework</h3>
 						<div class="project-tech">
 							PHP • MVC Architecture • CLI Tools
 						</div>
 						<p>
-							Custom lightweight PHP framework with MVC structure, built
-							to speed up web development projects.
+							Created a lightweight PHP framework that makes development
+							faster and more enjoyable. Built with a clean MVC pattern
+							that developers actually love using.
 						</p>
 						<ul>
-							<li>Clean MVC architecture</li>
-							<li>Built-in routing system</li>
-							<li>CLI commands and middleware</li>
-							<li>Used by multiple developers</li>
+							<li>Elegant MVC architecture</li>
+							<li>Intuitive routing system</li>
+							<li>Powerful CLI tools & middleware</li>
+							<li>Active community of users</li>
 						</ul>
 					</div>
 
 					<div class="project-card">
+						<div class="project-number">04</div>
 						<h3>PhpSPA Framework</h3>
 						<div class="project-tech">
 							PHP • React-like Syntax • Component System
 						</div>
 						<p>
-							Innovative framework that brings React-like component
-							syntax to PHP for building Single Page Applications.
+							An innovative framework bringing React-style components to
+							PHP. Makes building Single Page Applications feel natural
+							and intuitive for PHP developers.
 						</p>
 						<ul>
-							<li>React-like component structure in PHP</li>
-							<li>State management system</li>
-							<li>Dynamic component rendering</li>
-							<li>Simplified SPA development</li>
+							<li>React-inspired component architecture</li>
+							<li>Built-in state management</li>
+							<li>Dynamic rendering engine</li>
+							<li>Simplifies SPA development</li>
 						</ul>
 					</div>
 
 					<div class="project-card">
-						<h3>Real-time Chat App</h3>
+						<div class="project-number">05</div>
+						<h3>Real-time Chat Application</h3>
 						<div class="project-tech">
 							Node.js • Socket.io • React • MongoDB
 						</div>
 						<p>
-							Feature-rich chat application with real-time messaging,
-							multiple rooms, and user authentication.
+							A feature-packed chat app with instant messaging, multiple
+							chat rooms, and seamless authentication. Messages fly in
+							real-time thanks to Socket.io.
 						</p>
 						<ul>
-							<li>Real-time messaging with Socket.io</li>
-							<li>Multiple chat rooms support</li>
-							<li>User authentication system</li>
-							<li>Message history and persistence</li>
+							<li>Lightning-fast real-time messaging</li>
+							<li>Support for multiple chat rooms</li>
+							<li>Secure user authentication</li>
+							<li>Persistent message history</li>
 						</ul>
 					</div>
 
 					<div class="project-card">
+						<div class="project-number">06</div>
 						<h3>Mobile Task Manager</h3>
 						<div class="project-tech">
 							React Native • AsyncStorage • Firebase
 						</div>
 						<p>
-							Cross-platform mobile app for task management with offline
-							support and beautiful animations.
+							A cross-platform mobile app that helps users stay organized.
+							Works offline, syncs when online, and features smooth
+							animations that make task management actually enjoyable.
 						</p>
 						<ul>
-							<li>iOS and Android compatibility</li>
-							<li>Offline storage capabilities</li>
-							<li>Smooth animations and transitions</li>
-							<li>Clean, intuitive user interface</li>
+							<li>Runs on both iOS and Android</li>
+							<li>Full offline functionality</li>
+							<li>Buttery-smooth animations</li>
+							<li>Beautiful, intuitive interface</li>
 						</ul>
 					</div>
 				</div>
@@ -462,16 +490,16 @@
 
 		<section id="contact" class="contact">
 			<div class="container">
-				<h2 class="section-title">Let's Work Together</h2>
+				<h2 class="section-title">Let's Build Something Great</h2>
 				<div class="contact-content">
 					<p>
-						I'm always excited to work on interesting projects and
-						collaborate with amazing people. Whether you need a custom web
-						application, mobile app, or API development, let's build
-						something awesome together!
+						Got an exciting project in mind? I'm always up for a challenge
+						and love collaborating with creative people. Whether you're
+						looking for a custom web application, mobile app, or robust
+						API—let's turn your vision into reality!
 					</p>
 					<a href="https://wa.me/+2348025983267" class="btn btn-primary">
-						<i class="fas fa-envelope"></i> Get In Touch
+						<i class="fas fa-envelope"></i> Reach Out
 					</a>
 					<div class="contact-info">
 						<a href="mailto:me@dconco.tech" class="contact-item">
@@ -521,7 +549,7 @@
 
 		<footer>
 			<div class="container">
-				<p>&copy; 2025 Dave Conco. Built with ❤️ and lots of coffee ☕</p>
+				<p>&copy; 2025 Dave Conco. Crafted with ❤️, powered by countless cups of coffee ☕</p>
 			</div>
 		</footer>
 
