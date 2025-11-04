@@ -157,7 +157,7 @@ It's fun, smart, and knows everything about my work, projects, and dev journey.
 <div align="center">
   
   [![Website](https://img.shields.io/badge/🌐_Portfolio-dconco.tech-FF6B6B?style=for-the-badge&logoColor=white)](https://dconco.tech)
-  [![Email](https://img.shields.io/badge/📧_Email-concodave@gmail.com-FF6B6B?style=for-the-badge&logoColor=white)](mailto:concodave@gmail.com)
+  [![Email](https://img.shields.io/badge/📧_Email-me@dconco.tech-FF6B6B?style=for-the-badge&logoColor=white)](mailto:me@dconco.tech)
   
   <br>
 
