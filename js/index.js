@@ -40,16 +40,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })
 
 // Add scroll effect to navigation
-window.addEventListener('scroll', () => {
-	const nav = document.querySelector('nav')
-	if (window.scrollY > 100) {
-		nav.style.background = 'rgba(15, 15, 35, 0.98)'
-		nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.3)'
-	} else {
-		nav.style.background = 'rgba(15, 15, 35, 0.95)'
-		nav.style.boxShadow = 'none'
-	}
-})
+const nav = document.querySelector('nav')
+if (nav) {
+	window.addEventListener('scroll', () => {
+		if (window.scrollY > 100) {
+			nav.style.background = 'rgba(15, 15, 35, 0.98)'
+			nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.3)'
+		} else {
+			nav.style.background = 'rgba(15, 15, 35, 0.95)'
+			nav.style.boxShadow = 'none'
+		}
+	})
+}
 
 // Animate elements on scroll
 const observerOptions = {
