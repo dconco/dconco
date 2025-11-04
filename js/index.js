@@ -17,7 +17,7 @@ if (mobileMenuToggle && navLinks) {
 	})
 
 	// Close menu when clicking outside
-	document.addEventListener('click', (e) => {
+	document.addEventListener('click', e => {
 		if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
 			mobileMenuToggle.classList.remove('active')
 			navLinks.classList.remove('active')
@@ -33,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		if (target) {
 			target.scrollIntoView({
 				behavior: 'smooth',
-				block: 'start',
+				block: 'start'
 			})
 		}
 	})
@@ -53,6 +53,7 @@ if (nav) {
 	})
 }
 
+/*
 // Animate elements on scroll
 const observerOptions = {
 	threshold: 0.1,
@@ -70,3 +71,4 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.project-card, .skill-category, .ai-bot-card, .resume-preview').forEach(el => {
 	observer.observe(el)
 })
+*/
