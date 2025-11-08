@@ -179,7 +179,9 @@ It's fun, smart, and knows everything about my work, projects, and dev journey.
   [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg?style=for-the-badge)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
   
   ![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)
-  
+
+  ![](https://hit.yhype.me/github/profile?account_id=118613296)
+
 </div>
 
 ---

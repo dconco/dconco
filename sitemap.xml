@@ -30,14 +30,6 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- AI Bot Section -->
-  <url>
-    <loc>https://www.dconco.tech/#ai-bot</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
   <!-- Resume Section -->
   <url>
     <loc>https://www.dconco.tech/#resume</loc>
