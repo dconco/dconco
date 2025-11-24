@@ -181,7 +181,6 @@ It's fun, smart, and knows everything about my work, projects, and dev journey.
   ![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)
 
   ![](https://hit.yhype.me/github/profile?account_id=118613296)
-
 </div>
 
 ---
