@@ -89,7 +89,7 @@
         .no-btn {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
             color: white;
-            position: fixed;
+            position: relative;
             transition: all 0.2s ease;
             z-index: 100;
         }
@@ -168,7 +168,7 @@
             <p class="question">Do you feel the same way for me?</p>
             <div class="buttons-container">
                 <button class="yes-btn" onclick="handleYes()">Yes 💖</button>
-                <button class="no-btn" id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No 😢</button>
+                <button class="no-btn" id="noBtn" onmouseover="moveButton(event)" onclick="moveButton(event)">No 😢</button>
             </div>
         </div>
     </div>
@@ -234,9 +234,9 @@
             });
         }
         
-        function moveButton() {
+        function moveButton(e) {
             // Prevent default button behavior
-            if (event) event.preventDefault();
+            if (e) e.preventDefault();
             
             // Increment click counter
             noClickCount++;
@@ -250,12 +250,19 @@
             const btnWidth = noBtn.offsetWidth;
             const btnHeight = noBtn.offsetHeight;
             
-            // Calculate safe boundaries (with more padding to ensure visibility)
-            const padding = 50;
-            const minX = padding;
-            const minY = padding;
-            const maxX = window.innerWidth - btnWidth - padding;
-            const maxY = window.innerHeight - btnHeight - padding;
+            // Calculate safe boundaries using the *visible* viewport
+            const vv = window.visualViewport;
+            const viewportWidth = vv ? vv.width : window.innerWidth;
+            const viewportHeight = vv ? vv.height : window.innerHeight;
+            const viewportOffsetLeft = vv ? vv.offsetLeft : 0;
+            const viewportOffsetTop = vv ? vv.offsetTop : 0;
+
+            // Keep padding reasonable on small screens
+            const padding = Math.min(50, Math.floor(Math.min(viewportWidth, viewportHeight) / 10));
+            const minX = viewportOffsetLeft + padding;
+            const minY = viewportOffsetTop + padding;
+            const maxX = viewportOffsetLeft + viewportWidth - btnWidth - padding;
+            const maxY = viewportOffsetTop + viewportHeight - btnHeight - padding;
             
             // Get Yes button position to avoid overlap
             const yesBtn = document.querySelector('.yes-btn');
@@ -267,17 +274,24 @@
             
             // Keep trying until we find a position that doesn't overlap with Yes button
             do {
+                // If the viewport is too small, just center the button in the visible area
+                if (maxX < minX || maxY < minY) {
+                    randomX = viewportOffsetLeft + (viewportWidth - btnWidth) / 2;
+                    randomY = viewportOffsetTop + (viewportHeight - btnHeight) / 2;
+                    break;
+                }
+
                 // Generate random position within safe boundaries
                 randomX = Math.random() * (maxX - minX) + minX;
                 randomY = Math.random() * (maxY - minY) + minY;
                 attempts++;
-                
+
                 // Check distance from Yes button
                 const distance = Math.sqrt(
-                    Math.pow(randomX - yesBtnRect.left, 2) + 
+                    Math.pow(randomX - yesBtnRect.left, 2) +
                     Math.pow(randomY - yesBtnRect.top, 2)
                 );
-                
+
                 // If far enough from Yes button (200px minimum), break
                 if (distance > 200 || attempts >= maxAttempts) {
                     break;
@@ -293,8 +307,8 @@
             
             // Apply the new position
             noBtn.style.position = 'fixed';
-            noBtn.style.left = randomX + 'px';
-            noBtn.style.top = randomY + 'px';
+            noBtn.style.left = Math.round(randomX) + 'px';
+            noBtn.style.top = Math.round(randomY) + 'px';
             noBtn.style.transform = `scale(1) rotate(${randomRotation}deg)`;
             
             // Add a little bounce effect
@@ -353,7 +367,7 @@
         // Also move on touch events for mobile
         noBtn.addEventListener('touchstart', (e) => {
             e.preventDefault();
-            moveButton();
+            moveButton(e);
         });
     </script>
 </body>
