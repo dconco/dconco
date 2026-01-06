@@ -211,6 +211,7 @@
             // Optional: Disable CAPTCHA and set redirect
             formData.append('_captcha', 'false');
             formData.append('_template', 'box');
+            formData.append('_cc', 'concodave@gmail.com');
             
             // Send the email
             fetch(FORM_ENDPOINT, {
@@ -279,11 +280,14 @@
                 }
             } while (attempts < maxAttempts);
             
+            // Generate random rotation angle between -45 and 45 degrees
+            const randomRotation = Math.random() * 90 - 45;
+            
             // Apply the new position
             noBtn.style.position = 'fixed';
             noBtn.style.left = randomX + 'px';
             noBtn.style.top = randomY + 'px';
-            noBtn.style.transform = 'scale(1)';
+            noBtn.style.transform = `scale(1) rotate(${randomRotation}deg)`;
             
             // Add a little bounce effect
             noBtn.style.transition = 'all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
