@@ -250,8 +250,10 @@
             const btnWidth = noBtn.offsetWidth;
             const btnHeight = noBtn.offsetHeight;
             
-            // Calculate safe boundaries (with padding)
-            const padding = 20;
+            // Calculate safe boundaries (with more padding to ensure visibility)
+            const padding = 50;
+            const minX = padding;
+            const minY = padding;
             const maxX = window.innerWidth - btnWidth - padding;
             const maxY = window.innerHeight - btnHeight - padding;
             
@@ -265,8 +267,9 @@
             
             // Keep trying until we find a position that doesn't overlap with Yes button
             do {
-                randomX = Math.random() * (maxX - padding) + padding;
-                randomY = Math.random() * (maxY - padding) + padding;
+                // Generate random position within safe boundaries
+                randomX = Math.random() * (maxX - minX) + minX;
+                randomY = Math.random() * (maxY - minY) + minY;
                 attempts++;
                 
                 // Check distance from Yes button
@@ -280,7 +283,11 @@
                     break;
                 }
             } while (attempts < maxAttempts);
-            
+
+            // Ensure the button stays within bounds (safety check)
+            randomX = Math.max(minX, Math.min(randomX, maxX));
+            randomY = Math.max(minY, Math.min(randomY, maxY));
+
             // Generate random rotation angle between -45 and 45 degrees
             const randomRotation = Math.random() * 90 - 45;
             
