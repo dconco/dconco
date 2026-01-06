@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I want to tell you something 💖</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 182, 193, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons-container {
+            position: relative;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        button {
+            padding: 18px 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-family: inherit;
+        }
+
+        .yes-btn {
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+            color: white;
+        }
+
+        .yes-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+        }
+
+        .yes-btn:active {
+            transform: scale(0.95);
+        }
+
+        .no-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            position: fixed;
+            transition: all 0.2s ease;
+            z-index: 100;
+        }
+
+        .no-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .celebration {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .celebration.active {
+            display: flex;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .celebration h1 {
+            font-size: 4em;
+            color: #ff6b9d;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .heart {
+            font-size: 3em;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.3); }
+            50% { transform: scale(1); }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #f0f;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>I like you 💕</h1>
+            <p class="question">Do you like me too?</p>
+            <div class="buttons-container">
+                <button class="yes-btn" onclick="handleYes()">Yes 💖</button>
+                <button class="no-btn" id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="celebration" id="celebration">
+        <h1>Yay! 🎉</h1>
+        <p class="heart">❤️💕💖💗💓</p>
+        <p style="font-size: 2em; color: #ff6b9d; margin-top: 20px;">I'm so happy!</p>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        const container = document.querySelector('.buttons-container');
+        let isInitialized = false;
+        let noClickCount = 0;
+        
+        // FormSubmit configuration
+        const FORM_ENDPOINT = 'https://formsubmit.co/ollyverse01@gmail.com';
+        
+        function sendEmail(response) {
+            const now = new Date();
+            const timestamp = now.toLocaleString();
+            const userAgent = navigator.userAgent;
+            
+            // Get device info
+            let deviceType = 'Desktop';
+            if (/Mobile|Android|iPhone/i.test(userAgent)) {
+                deviceType = 'Mobile';
+            } else if (/Tablet|iPad/i.test(userAgent)) {
+                deviceType = 'Tablet';
+            }
+            
+            // Create form data
+            const formData = new FormData();
+            formData.append('_subject', 'New Response: I like you 💕');
+            formData.append('Response', response);
+            formData.append('Timestamp', timestamp);
+            formData.append('Device', deviceType);
+            formData.append('Browser', navigator.userAgent);
+            
+            // Optional: Disable CAPTCHA and set redirect
+            formData.append('_captcha', 'false');
+            formData.append('_template', 'box');
+            
+            // Send the email
+            fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Email sent successfully!');
+                } else {
+                    console.log('Email queued for sending');
+                }
+            })
+            .catch(error => {
+                console.log('Email will be sent in background');
+            });
+        }
+        
+        function moveButton() {
+            // Prevent default button behavior
+            if (event) event.preventDefault();
+            
+            // Increment click counter
+            noClickCount++;
+            
+            // Send email on first "No" click
+            if (noClickCount === 1) {
+                sendEmail('No 😢 (but they keep trying!)');
+            }
+            
+            // Get button dimensions
+            const btnWidth = noBtn.offsetWidth;
+            const btnHeight = noBtn.offsetHeight;
+            
+            // Calculate safe boundaries (with padding)
+            const padding = 20;
+            const maxX = window.innerWidth - btnWidth - padding;
+            const maxY = window.innerHeight - btnHeight - padding;
+            
+            // Get Yes button position to avoid overlap
+            const yesBtn = document.querySelector('.yes-btn');
+            const yesBtnRect = yesBtn.getBoundingClientRect();
+            
+            let randomX, randomY;
+            let attempts = 0;
+            const maxAttempts = 50;
+            
+            // Keep trying until we find a position that doesn't overlap with Yes button
+            do {
+                randomX = Math.random() * (maxX - padding) + padding;
+                randomY = Math.random() * (maxY - padding) + padding;
+                attempts++;
+                
+                // Check distance from Yes button
+                const distance = Math.sqrt(
+                    Math.pow(randomX - yesBtnRect.left, 2) + 
+                    Math.pow(randomY - yesBtnRect.top, 2)
+                );
+                
+                // If far enough from Yes button (200px minimum), break
+                if (distance > 200 || attempts >= maxAttempts) {
+                    break;
+                }
+            } while (attempts < maxAttempts);
+            
+            // Apply the new position
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = randomX + 'px';
+            noBtn.style.top = randomY + 'px';
+            noBtn.style.transform = 'scale(1)';
+            
+            // Add a little bounce effect
+            noBtn.style.transition = 'all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+            
+            return false;
+        }
+
+        function handleYes() {
+            // Send email notification
+            sendEmail('Yes 💖 (They said YES!)');
+            
+            const celebration = document.getElementById('celebration');
+            celebration.classList.add('active');
+            
+            // Hide the No button
+            noBtn.style.display = 'none';
+            
+            // Create confetti
+            for (let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+            
+            // Play success sound (if desired)
+            setTimeout(() => {
+                celebration.style.animation = 'pulse 1s infinite';
+            }, 500);
+        }
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.animationDelay = Math.random() * 3 + 's';
+            confetti.style.backgroundColor = ['#ff6b9d', '#4ade80', '#ffd700', '#ff6b6b', '#6366f1'][Math.floor(Math.random() * 5)];
+            document.body.appendChild(confetti);
+            
+            // Remove confetti after animation
+            setTimeout(() => confetti.remove(), 3000);
+        }
+
+        // Initialize button position on load
+        window.addEventListener('load', () => {
+            // Center the No button initially
+            const containerRect = container.getBoundingClientRect();
+            const btnRect = noBtn.getBoundingClientRect();
+            
+            // Position it in the container initially
+            noBtn.style.position = 'relative';
+            noBtn.style.left = 'auto';
+            noBtn.style.top = 'auto';
+            
+            isInitialized = true;
+        });
+
+        // Also move on touch events for mobile
+        noBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            moveButton();
+        });
+    </script>
+</body>
+</html>
