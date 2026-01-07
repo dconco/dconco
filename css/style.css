@@ -996,6 +996,15 @@ nav .container {
 	font-size: 0.95em;
 }
 
+.portfolio-tech {
+	margin: 0 0 12px;
+	color: #cbd5e1;
+	font-size: 0.9em;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	opacity: 0.9;
+}
+
 /* Contact Section */
 .contact {
 	padding: 100px 0;
