@@ -1,14 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
-import './index.css'
-import App from './App.tsx'
+import { BrowserRouter } from 'react-router-dom'
 import { portfolioTheme } from './theme/portfolioTheme'
+import App from './App'
+import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={portfolioTheme}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   </StrictMode>,
 )

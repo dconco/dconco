@@ -1,0 +1,472 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\HP\\Desktop\\node\\advanced-portfolio",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2026-03-23 17:15:18",
+            "filesum": 63,
+            "codesum": 3334,
+            "commentsum": 64,
+            "blanksum": 725,
+            "statistics": {
+                ".json": {
+                    "code": 91,
+                    "comment": 4,
+                    "blank": 4
+                },
+                ".ts": {
+                    "code": 165,
+                    "comment": 1,
+                    "blank": 18
+                },
+                ".tsx": {
+                    "code": 675,
+                    "comment": 0,
+                    "blank": 67
+                },
+                ".css": {
+                    "code": 189,
+                    "comment": 1,
+                    "blank": 26
+                },
+                ".html": {
+                    "code": 25,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".js": {
+                    "code": 78,
+                    "comment": 44,
+                    "blank": 3
+                },
+                "": {
+                    "code": 14,
+                    "comment": 9,
+                    "blank": 2
+                },
+                ".md": {
+                    "code": 3,
+                    "comment": 0,
+                    "blank": 2
+                },
+                ".yaml": {
+                    "code": 2094,
+                    "comment": 5,
+                    "blank": 603
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 9,
+                    "filename": ".gitignore"
+                },
+                {
+                    "filename": "dist\\assets\\about-expertise-1-C-K8Kbrv.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\about-expertise-2-6JsPd6lN.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\contact-overlay-_-fjJwLm.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 50,
+                    "comment": 44,
+                    "filename": "dist\\assets\\index-BxN_9_2h.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "dist\\assets\\index-DzZhht9G.css"
+                },
+                {
+                    "filename": "dist\\assets\\ITC-Cushing-Std-Bold-CrFsTnut.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\ITC-Cushing-Std-Book-Bcq-LKuB.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\project-1-Dv6QBuR6.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\project-2-C1sWBDdU.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\project-3-C2ngHqWU.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\project-4-DWaEeFzx.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertMonoTRIAL-Bold-BcSj3N6I.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertMonoTRIAL-Medium-BWWZbcFQ.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertMonoTRIAL-Regular-DjOtz44f.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertTRIAL-Bold-s6vhKPyh.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertTRIAL-Medium-CJ-YLHSk.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "dist\\assets\\RoobertTRIAL-Regular-CKbHlquu.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "dist\\index.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "eslint.config.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 603,
+                    "code": 2094,
+                    "comment": 5,
+                    "filename": "pnpm-lock.yaml"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "postcss.config.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\App.tsx"
+                },
+                {
+                    "filename": "src\\assets\\fonts\\ITC-Cushing-Std-Bold.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\ITC-Cushing-Std-Book.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertMonoTRIAL-Bold.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertMonoTRIAL-Medium.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertMonoTRIAL-Regular.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertTRIAL-Bold.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertTRIAL-Medium.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\fonts\\RoobertTRIAL-Regular.otf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\about-expertise-1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\about-expertise-2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\contact-overlay.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\assets\\images\\index.ts"
+                },
+                {
+                    "filename": "src\\assets\\images\\project-1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\project-2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\project-3.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\images\\project-4.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 3,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\components\\Footer.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 39,
+                    "comment": 0,
+                    "filename": "src\\components\\Header.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\components\\layout\\PortfolioShell.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\components\\ui\\BadgePill.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\components\\ui\\ProjectBentoCard.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\components\\ui\\SectionIntro.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": "src\\components\\ui\\SkillMeterCard.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "src\\components\\ui\\TimelineEntry.tsx"
+                },
+                {
+                    "blank": 4,
+                    "code": 78,
+                    "comment": 0,
+                    "filename": "src\\data\\portfolioData.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\hooks\\useLoadingProgress.ts"
+                },
+                {
+                    "blank": 26,
+                    "code": 188,
+                    "comment": 0,
+                    "filename": "src\\index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\main.tsx"
+                },
+                {
+                    "blank": 19,
+                    "code": 222,
+                    "comment": 0,
+                    "filename": "src\\pages\\About.tsx"
+                },
+                {
+                    "blank": 20,
+                    "code": 183,
+                    "comment": 0,
+                    "filename": "src\\pages\\Overview.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "src\\styles\\ButtonStyle.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\theme\\portfolioTheme.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\theme\\styled.d.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 2,
+                    "filename": "tsconfig.app.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 2,
+                    "filename": "tsconfig.node.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 1,
+                    "filename": "vite.config.ts"
+                }
+            ]
+        }
+    ]
+}

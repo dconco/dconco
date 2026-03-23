@@ -8,25 +8,36 @@ import { TimelineEntry } from '../components/ui/TimelineEntry';
 import { heroHighlights, projectCards, skillCards, timelineItems } from '../data/portfolioData';
 import { HoverLift } from "../components/layout/PortfolioShell";
 import { Icon } from "@iconify/react";
+import type { LinkType } from "../components/Header";
+import { portfolioImages } from "../assets/images";
 
-export default function Overview(): React.JSX.Element {
+export default function Overview({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
+   setActive('overview');
+
    return (
       <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
-         <section className="grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
+         <section className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
+            <img
+               src={portfolioImages.headerOverlay}
+               alt=""
+               aria-hidden="true"
+               className="pointer-events-none absolute inset-0 h-full md:h-[90%] w-full object-cover opacity-8"
+            />
+
             <div className="space-y-8 lg:col-span-8">
-               <div className="inline-flex items-center gap-2 rounded-full border border-outline-soft bg-surface-container-highest px-4 py-2">
+               <div className="inline-flex items-center gap-2 rounded-full border border-outline-soft bg-surface-container-highest px-4 py-2 mt-10">
                   <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
-                  <span className="text-xs font-nav-link font-bold tracking-normal text-on-surface-variant">
+                  <span className="text-xs font-nav-link font-medium tracking-normal text-on-surface-variant">
                      AVAILABLE FOR NEW PROJECTS
                   </span>
                </div>
 
-               <h1 className="font-headline text-4xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
+               <h1 className="font-headline text-4xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl mt-3">
                   Curating <span className="font-serif text-primary italic">Digital</span> Narrative through{' '}
                   <span className="font-serif text-secondary italic">Intentional</span> Design.
                </h1>
 
-               <p className="font-body max-w-2xl text-xl text-on-surface-variant">
+               <p className="font-body max-w-2xl text-xl text-on-surface-variant mt-10">
                   A multidisciplinary designer and developer crafting editorial-grade digital experiences. I
                   transform complex ideas into visually stunning, high-performance interfaces.
                </p>
@@ -45,15 +56,15 @@ export default function Overview(): React.JSX.Element {
             </div>
          </section>
 
-         <section id="work" className="space-y-12">
+         <section id="work" className="space-y-12 mt-20">
             <div className="flex items-end justify-between gap-4">
                <SectionIntro
                   title="Featured Gallery"
                   subtitle="Selected 'Live' projects that define our creative philosophy."
                   italic
                />
-               <button className="group hidden items-center gap-2 font-bold text-primary transition-colors hover:text-primary-fixed-dim md:flex">
-                  VIEW ALL ARCHIVE
+               <button className="group hidden items-center gap-2 font-medium font-body text-primary transition-colors hover:text-primary-fixed-dim md:flex">
+                  View all Archive
                   <Icon icon="material-symbols:arrow-forward-rounded" className="transition-transform group-hover:translate-x-1" />
                </button>
             </div>
@@ -150,7 +161,7 @@ export default function Overview(): React.JSX.Element {
 
                      <div className="flex -space-x-4">
                         <div className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-surface-container-low bg-primary">
-                           <Icon icon="material-symbols:palette-outline-rounded" className="text-on-primary" />
+                           <Icon icon="material-symbols:palette-outline" className="text-on-primary" />
                         </div>
                         <div className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-surface-container-low bg-secondary">
                            <Icon icon="material-symbols:code-rounded" className="text-on-secondary" />
@@ -168,7 +179,12 @@ export default function Overview(): React.JSX.Element {
             id="contact"
             className="relative overflow-hidden rounded-3xl bg-surface-container-low px-6 py-20 text-center md:px-12 md:py-24"
          >
-            <div className="pointer-events-none absolute inset-0 bg-contact-radial" />
+            <img
+					src={portfolioImages.contactOverlay}
+					alt=""
+					aria-hidden="true"
+					className="pointer-events-none absolute inset-x-0 top-0 h-full w-full object-cover opacity-15"
+				/>
 
             <div className="relative z-10 space-y-6">
                <span className="text-sm font-bold tracking-widest text-primary">CONTACT</span>
