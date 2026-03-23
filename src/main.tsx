@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 import { portfolioTheme } from './theme/portfolioTheme'
 import App from './App'
+import 'aos/dist/aos.css'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(

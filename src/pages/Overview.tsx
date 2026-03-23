@@ -10,13 +10,14 @@ import { HoverLift } from "../components/layout/PortfolioShell";
 import { Icon } from "@iconify/react";
 import type { LinkType } from "../components/Header";
 import { portfolioImages } from "../assets/images";
+import { Link } from "react-router-dom";
 
 export default function Overview({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
    setActive('overview');
 
    return (
       <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
-         <section className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
+         <section data-aos="fade-up" className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
             <img
                src={portfolioImages.headerOverlay}
                alt=""
@@ -33,20 +34,20 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                </div>
 
                <h1 className="font-headline text-4xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl mt-3">
-                  Curating <span className="font-serif text-primary italic">Digital</span> Narrative through{' '}
-                  <span className="font-serif text-secondary italic">Intentional</span> Design.
+                  Engineering <span className="font-serif text-primary italic">Scalable</span> Systems for{' '}
+                  <span className="font-serif text-secondary italic">Modern</span> Products.
                </h1>
 
                <p className="font-body max-w-2xl text-xl text-on-surface-variant mt-10">
-                  A multidisciplinary designer and developer crafting editorial-grade digital experiences. I
-                  transform complex ideas into visually stunning, high-performance interfaces.
+                  Dave Conco popularly known as 𝒅𝒄𝒐𝒏𝒄𝒐 is a full-stack engineer with deep backend strength and strong frontend execution.
+                  He builds scalable APIs and pairs them with React interfaces that feel fast, clear, and production-ready.
                </p>
             </div>
 
             <div className="flex flex-col gap-6 lg:col-span-4">
-               {heroHighlights.map((item) => (
+               {heroHighlights.map((item, index) => (
                   <HoverLift key={item.title}>
-                     <article className={`space-y-4 rounded-xl p-8 ${item.className}`}>
+                     <article data-aos="fade-left" data-aos-delay={index * 120} className={`space-y-4 rounded-xl p-8 ${item.className}`}>
                         <Icon icon={item.iconName} className={item.iconClass} />
                         <h3 className="font-headline text-2xl">{item.title}</h3>
                         <p className="font-body text-sm text-on-surface-variant">{item.detail}</p>
@@ -56,11 +57,11 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
             </div>
          </section>
 
-         <section id="work" className="space-y-12 mt-20">
+         <section id="work" data-aos="fade-up" className="space-y-12 mt-20">
             <div className="flex items-end justify-between gap-4">
                <SectionIntro
                   title="Featured Gallery"
-                  subtitle="Selected 'Live' projects that define our creative philosophy."
+                  subtitle="Selected frontend and backend initiatives showing architecture, usability, and real-world delivery."
                   italic
                />
                <button className="group hidden items-center gap-2 font-medium font-body text-primary transition-colors hover:text-primary-fixed-dim md:flex">
@@ -76,6 +77,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   cardClassName="bg-surface-container-low md:col-span-8"
                   heightClass="h-[500px]"
                   overlayClassName="bg-gradient-to-t from-background via-background/20 to-transparent"
+                  aos="zoom-in"
                >
                   <BadgePill className="bg-primary-container text-on-primary-container">
                      <Icon icon="material-symbols:sensors-rounded" className="text-xs" />
@@ -90,6 +92,8 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   imageAlt="High tech minimal server room aesthetics"
                   cardClassName="bg-surface-container md:col-span-4"
                   heightClass="h-[500px]"
+                  aos="zoom-in"
+                  aosDelay={100}
                >
                   <BadgePill className="bg-surface-container-highest text-on-surface">WEB DESIGN</BadgePill>
                   <h3 className="font-headline text-3xl font-bold">{projectCards.secondary.title}</h3>
@@ -102,6 +106,8 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   heightClass="h-[400px]"
                   contentClassName="absolute bottom-0 left-0 space-y-2 p-8"
                   overlayClassName="bg-gradient-to-t from-background/80 via-transparent to-transparent"
+                  aos="zoom-in"
+                  aosDelay={120}
                >
                   <h3 className="font-headline text-2xl font-bold">{projectCards.tertiary.title}</h3>
                   <p className="font-body text-sm text-on-surface-variant">{projectCards.tertiary.detail}</p>
@@ -114,24 +120,31 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   heightClass="h-[400px]"
                   contentClassName="relative flex h-full max-w-lg flex-col justify-center space-y-6 p-12"
                   overlayClassName="bg-gradient-to-r from-background to-transparent"
+                  aos="zoom-in"
+                  aosDelay={180}
                >
                   <BadgePill className="self-start bg-secondary-container text-on-secondary-container">
                      FEATURED CASE STUDY
                   </BadgePill>
-                  <h3 className="font-headline text-4xl font-bold">{projectCards.quaternary.title}</h3>
-                  <p className="font-body text-on-surface-variant">{projectCards.quaternary.detail}</p>
-                  <button className="w-fit rounded-full border border-white/10 bg-white/10 px-6 py-3 text-sm font-bold backdrop-blur-md transition-all hover:bg-white/20">
-                     EXPLORE SYSTEM
-                  </button>
+                  <h3 className="font-headline text-4xl font-bold">PhpSPA Framework</h3>
+                  <p className="font-body text-on-surface-variant">
+                     A component-based PHP library inspired by React, with reactive state,
+                     client-side routing, and performance-first rendering using Virtual DOM diffing.
+                  </p>
+                  <a href="https://phpspa.tech" target="_blank" rel="noreferrer">
+                     <button className="w-fit rounded-full border border-white/10 bg-white/10 px-6 py-3 text-sm font-bold backdrop-blur-md transition-all hover:bg-white/20">
+                        EXPLORE SYSTEM
+                     </button>
+                  </a>
                </ProjectBentoCard>
             </div>
          </section>
 
-         <section id="expertise" className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+         <section id="expertise" data-aos="fade-up" className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             <div className="space-y-12 lg:col-span-4">
                <SectionIntro
                   title="Experience"
-                  subtitle="A decade of refining digital craftsmanship across world-class teams."
+                  subtitle="A practical engineering journey shaped by real product constraints and long-term thinking."
                   italic
                />
 
@@ -143,7 +156,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
             </div>
 
             <div className="space-y-12 lg:col-span-8">
-               <SectionIntro title="Skills Matrix" subtitle="The intersection of art and engineering." italic />
+               <SectionIntro title="Skills Matrix" subtitle="Frontend craft, backend architecture, and modern delivery tooling." italic />
 
                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                   {skillCards.map((card) => (
@@ -152,10 +165,10 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
 
                   <article className="flex flex-col items-center justify-between gap-8 rounded-xl bg-surface-container-low p-8 md:col-span-2 md:flex-row">
                      <div className="space-y-2 text-center md:text-left">
-                        <h4 className="font-headline text-2xl font-bold">Philosophy of Asymmetry</h4>
+                        <h4 className="font-headline text-2xl font-bold">Engineering Mindset</h4>
                         <p className="font-body max-w-md text-sm text-on-surface-variant">
-                           I believe digital products should feel alive, shifting, breathing, and responding
-                           with human-like nuance rather than rigid grid systems.
+                           He values clarity over cleverness, builds for scale from day one, and treats
+                           maintainability as a core product feature.
                         </p>
                      </div>
 
@@ -177,6 +190,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
 
          <section
             id="contact"
+            data-aos="fade-up"
             className="relative overflow-hidden rounded-3xl bg-surface-container-low px-6 py-20 text-center md:px-12 md:py-24"
          >
             <img
@@ -192,17 +206,21 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   Ready to Curate Your <span className="italic font-serif text-secondary">Next Story</span>?
                </h2>
                <p className="font-body mx-auto max-w-2xl text-xl text-on-surface-variant">
-                  Currently accepting select project inquiries for late 2024 and 2025.
+                  Currently accepting select project inquiries for 2026 and beyond.
                </p>
             </div>
 
             <div className="relative z-10 mt-10 flex flex-wrap justify-center gap-6">
-               <button className="rounded-full bg-primary-container px-10 py-5 text-lg font-bold text-on-primary-container shadow-lg transition-all duration-300 hover:scale-105">
-                  Start a Project
-               </button>
-               <button className="rounded-full border border-white/10 bg-white/5 px-10 py-5 text-lg font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10">
-                  Get in Touch
-               </button>
+               <Link to="/contact">
+                  <button className="rounded-full bg-primary-container px-10 py-5 text-lg font-bold text-on-primary-container shadow-lg transition-all duration-300 hover:scale-105">
+                     Start a Project
+                  </button>
+               </Link>
+               <a href="https://wa.me/2349121235927" target="_blank">
+                  <button className="rounded-full border border-white/10 bg-white/5 px-10 py-5 text-lg font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10">
+                     Get in Touch
+                  </button>
+               </a>
             </div>
          </section>
       </main>

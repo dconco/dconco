@@ -7,6 +7,8 @@ type ProjectBentoCardProps = {
   cardClassName?: string;
   overlayClassName?: string;
   contentClassName?: string;
+  aos?: string;
+  aosDelay?: number;
   children: ReactNode;
 };
 
@@ -17,10 +19,16 @@ export function ProjectBentoCard({
   cardClassName = '',
   overlayClassName = 'bg-gradient-to-t from-background via-transparent to-transparent',
   contentClassName = 'absolute bottom-0 left-0 p-10 space-y-4',
+  aos,
+  aosDelay,
   children,
 }: ProjectBentoCardProps) {
   return (
-    <article className={`group relative overflow-hidden rounded-xl ${heightClass} ${cardClassName}`}>
+    <article
+      data-aos={aos}
+      data-aos-delay={aosDelay}
+      className={`group relative overflow-hidden rounded-xl ${heightClass} ${cardClassName}`}
+    >
       <img
         src={imageSrc}
         alt={imageAlt}

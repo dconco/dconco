@@ -4,17 +4,17 @@ export const heroHighlights = [
   {
     iconName: 'material-symbols:verified-rounded',
     iconClass: 'text-secondary text-4xl',
-    title: 'Proven Impact',
+    title: 'Frontend + Backend',
     detail:
-      'Helping Series A startups define their visual language and scale globally with intent.',
+      'Dave Conco ships polished React interfaces backed by robust APIs, creating complete product experiences.',
     className: 'bg-surface-container-low',
   },
   {
     iconName: 'material-symbols:auto-awesome-rounded',
     iconClass: 'text-primary text-4xl',
-    title: 'Strategic Flow',
+    title: 'Practical Innovation',
     detail:
-      'Balancing technical precision with editorial elegance to drive user engagement.',
+      'He combines clean architecture with experimentation to turn hard requirements into reliable software.',
     className: 'bg-surface-container-highest',
   },
 ];
@@ -22,61 +22,61 @@ export const heroHighlights = [
 export const projectCards = {
   primary: {
     image: portfolioImages.project1,
-    title: 'Lumina OS Architecture',
-    detail: 'Redefining operating system aesthetics with glassmorphism and neuro-spatial layering.',
+    title: 'Commerce Core Platform',
+    detail: 'Backend architecture for high-volume product catalogs, payments, and order orchestration.',
   },
   secondary: {
     image: portfolioImages.project2,
-    title: 'Cybercore Interface',
-    detail: 'Web design',
+    title: 'Secure API Gateway',
+    detail: 'Backend infrastructure',
   },
   tertiary: {
     image: portfolioImages.project3,
-    title: 'Aether Brand Identity',
-    detail: 'Editorial branding for a high-end fashion tech house.',
+    title: 'Real-Time Messaging Platform',
+    detail: 'A production chat app built with Go + PHP, supporting live messaging, room presence, and resilient delivery.',
   },
   quaternary: {
     image: portfolioImages.project4,
-    title: 'Vertex Productivity SaaS',
-    detail: "Designing the world's most intuitive workspace for creative agencies.",
+    title: 'Custom Framework Initiative',
+    detail: 'A modular internal toolkit that speeds up API development and service consistency.',
   },
 };
 
 export const timelineItems = [
   {
-    period: '2022 - PRESENT',
-    title: 'Principal Product Designer',
+    period: '2024 - PRESENT',
+    title: 'Backend Engineer',
     detail:
-      'Lead the design of core features for high-growth SaaS platforms, focusing on visual systems and user psychology.',
+      'Builds and maintains scalable APIs, authentication flows, and data-heavy services across multiple products.',
     active: true,
   },
   {
-    period: '2019 - 2022',
-    title: 'Senior UI/UX Designer',
+    period: '2022 - 2024',
+    title: 'Independent Builder',
     detail:
-      'Orchestrated the complete rebrand and UI overhaul for an international e-commerce giant.',
+      'Delivered backend solutions for e-commerce and operational systems with a focus on maintainability.',
     active: false,
   },
   {
-    period: '2016 - 2019',
-    title: 'Visual Designer',
+    period: '2019 - 2022',
+    title: 'Software Foundations',
     detail:
-      'Crafted award-winning digital campaigns and high-fidelity prototypes for Fortune 500 clients.',
+      'Strengthened core engineering skills through hands-on work in databases, Linux tooling, and system design.',
     active: false,
   },
 ];
 
 export const skillCards = [
   {
-    title: 'Creative Direction',
+    title: 'Backend Engineering',
     accentClass: 'text-primary',
-    tags: ['EDITORIAL LAYOUT', 'TYPOGRAPHY SYSTEM', 'BRANDING', 'MOTION'],
-    value: 98,
+    tags: ['PHP / LARAVEL', 'GOLANG / GOFIBER', 'NODE.JS / EXPRESS', 'MICROSERVICES'],
+    value: 95,
   },
   {
-    title: 'Front-End Engineering',
+    title: 'Data, Infra & Delivery',
     accentClass: 'text-secondary',
-    tags: ['REACT / NEXT.JS', 'TAILWIND CSS', 'THREE.JS', 'GSAP'],
-    value: 92,
+    tags: ['MYSQL / MONGODB', 'DOCKER', 'LINUX / UNIX', 'CI / CD'],
+    value: 90,
   },
 ];

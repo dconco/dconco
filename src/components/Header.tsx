@@ -1,23 +1,31 @@
-import type React from "react"
+import React, { useEffect, useState } from "react"
+import { Icon } from "@iconify/react"
 import { HeaderShell } from "./layout/PortfolioShell"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 
-export type LinkType = 'overview' | 'about' | 'expertise' | 'contact'
+export type LinkType = 'overview' | 'about' | 'projects' | 'contact'
 
 export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
+   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   const location = useLocation()
+
+   useEffect(() => {
+      setIsMenuOpen(false)
+   }, [location.pathname])
+
    const navItems = [
       { href: '/', label: 'Overview', active: active === 'overview' },
-      { href: '/expertise', label: 'Expertise', active: active === 'expertise' },
       { href: '/about', label: 'About', active: active === 'about' },
+      { href: '/projects', label: 'Projects', active: active === 'projects' },
       { href: '/contact', label: 'Contact', active: active === 'contact' },
    ]
 
    return (
-      <HeaderShell className="bg-slate-900/40">
-         <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
+      <HeaderShell className="relative bg-slate-900/40">
+         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
             <div className="font-headline cursor-pointer text-2xl font-bold italic text-emerald-400 transition-transform duration-300 active:scale-95">
-                @𝒅𝒄𝒐𝒏𝒄𝒐
+               @𝒅𝒄𝒐𝒏𝒄𝒐
             </div>
 
             <div className="hidden items-center gap-10 md:flex">
@@ -36,10 +44,72 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                ))}
             </div>
 
-            <button className="rounded-full bg-primary-container px-6 py-2.5 font-semibold text-on-primary-container transition-transform duration-300 hover:scale-105 active:scale-95">
-               Hire Me
-            </button>
+            <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer" className="hidden md:inline-flex">
+               <button className="rounded-full bg-primary-container px-6 py-2.5 font-semibold text-on-primary-container transition-transform duration-300 hover:scale-105 active:scale-95">
+                  Hire Me
+               </button>
+            </a>
+
+            <div className="flex items-center gap-3 md:hidden">
+               <a
+                  href="https://wa.me/2349121235927"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-emerald-400/40 bg-emerald-500/15 text-emerald-300"
+               >
+                  <Icon icon="mdi:briefcase-outline" className="text-lg" />
+               </a>
+               <button
+                  type="button"
+                  aria-label="Toggle menu"
+                  aria-expanded={isMenuOpen}
+                  onClick={() => setIsMenuOpen((current) => !current)}
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-high/70 text-on-surface transition-colors hover:bg-surface-container-highest"
+               >
+                  <Icon icon={isMenuOpen ? 'material-symbols:close-rounded' : 'material-symbols:menu-rounded'} className="text-xl" />
+               </button>
+            </div>
          </nav>
+
+         <div
+            className={`absolute left-4 right-4 top-[calc(100%+0.5rem)] z-40 rounded-2xl border border-outline-variant/35 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-emerald-950/70 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl transition-all duration-300 md:hidden ${
+               isMenuOpen ? 'pointer-events-auto translate-y-0 opacity-100' : 'pointer-events-none -translate-y-3 opacity-0'
+            }`}
+         >
+            <div className="mb-4 flex items-center justify-between rounded-xl border border-outline-variant/25 bg-surface-container-low/60 px-3 py-2">
+               <span className="font-nav-link text-[10px] uppercase tracking-[0.25em] text-on-surface-variant">Navigation</span>
+               <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+               {navItems.map((item, index) => (
+                  <Link
+                     key={item.label}
+                     to={item.href}
+                     onClick={() => setIsMenuOpen(false)}
+                     className={`group rounded-xl border px-4 py-4 transition-all duration-300 ${
+                        item.active
+                           ? 'border-emerald-300/40 bg-emerald-500/15'
+                           : 'border-outline-variant/25 bg-surface-container-low/40 hover:border-emerald-400/30 hover:bg-surface-container-high/60'
+                     }`}
+                     style={{ transitionDelay: `${index * 35}ms` }}
+                  >
+                     <div className="mb-2 flex items-center justify-between">
+                        <span className="font-nav-link text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">0{index + 1}</span>
+                        <Icon icon="material-symbols:arrow-outward-rounded" className="text-sm text-emerald-300/80 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                     </div>
+                     <span className={`font-headline text-lg ${item.active ? 'text-emerald-300' : 'text-on-surface'}`}>{item.label}</span>
+                  </Link>
+               ))}
+            </div>
+
+            <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer" className="mt-4 inline-flex w-full">
+               <button className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary-container px-6 py-3 font-semibold text-on-primary-container transition-transform duration-300 active:scale-95">
+                  Hire Me
+                  <Icon icon="material-symbols:arrow-forward-rounded" className="text-lg" />
+               </button>
+            </a>
+         </div>
       </HeaderShell>
    )
 }

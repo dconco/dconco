@@ -7,6 +7,10 @@ import aboutDataVisual from './about-expertise-2.jpg';
 import contactOverlay from './contact-overlay.jpg';
 import headerOverlay from './header-overlay.jpg';
 import contactGlobalMap from './contact-global-map.jpg';
+import liveProjectFeature from './live-project-feature.jpg';
+import liveProjectSide from './live-project-side.jpg';
+import liveProjectGrid from './live-project-grid.jpg';
+import liveProjectMobile from './live-project-mobile.jpg';
 
 export const portfolioImages = {
   project1,
@@ -18,4 +22,8 @@ export const portfolioImages = {
   contactOverlay,
   headerOverlay,
   contactGlobalMap,
+  liveProjectFeature,
+  liveProjectSide,
+  liveProjectGrid,
+  liveProjectMobile,
 };
