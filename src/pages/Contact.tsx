@@ -85,7 +85,7 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
       setFormStatus({ type: "idle", message: "" });
 
       try {
-         const response = await fetch("https://formsubmit.co/ajax/me@dconco.tech", {
+         const response = await fetch("https://formsubmit.co/ajax/1c41973ae1f0a00d7b78338ea422926e", {
             method: "POST",
             headers: {
                Accept: "application/json",
