@@ -268,6 +268,7 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
                      <div className="grid grid-cols-2 gap-4 pt-2">
                         <a
                            href="https://x.com/dave_conco"
+                           target="_blank"
                            className="flex items-center justify-center gap-2 rounded-lg bg-surface-container-lowest p-4 text-xs font-bold uppercase tracking-widest transition-colors hover:bg-primary/10"
                         >
                            <Icon
@@ -278,6 +279,7 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
                         </a>
                         <a
                            href="https://github.com/dconco"
+                           target="_blank"
                            className="flex items-center justify-center gap-2 rounded-lg bg-surface-container-lowest p-4 text-xs font-bold uppercase tracking-widest transition-colors hover:bg-primary/10"
                         >
                            <Icon
