@@ -22,23 +22,23 @@ export const heroHighlights = [
 export const projectCards = {
   primary: {
     image: portfolioImages.project1,
-    title: 'Commerce Core Platform',
-    detail: 'Backend architecture for high-volume product catalogs, payments, and order orchestration.',
+    title: 'bennybit.vercel.app',
+    detail: 'Secure fintech-style dashboard with auth flows, transaction tracking, and crypto + gift card operations.',
   },
   secondary: {
     image: portfolioImages.project2,
-    title: 'Secure API Gateway',
-    detail: 'Backend infrastructure',
+    title: 'usebennybit.com',
+    detail: 'Marketing landing page communicating core fintech value propositions and conversion-focused messaging.',
   },
   tertiary: {
     image: portfolioImages.project3,
-    title: 'Real-Time Messaging Platform',
-    detail: 'A production chat app built with Go + PHP, supporting live messaging, room presence, and resilient delivery.',
+    title: 'greenworld.com.ng',
+    detail: 'Renewable energy business website highlighting services, trust signals, and customer acquisition funnel.',
   },
   quaternary: {
     image: portfolioImages.project4,
-    title: 'Custom Framework Initiative',
-    detail: 'A modular internal toolkit that speeds up API development and service consistency.',
+    title: 'NeoFinance + PhpSPA + PipGalaxy',
+    detail: 'Backend docs and client products across GoFiber APIs, PhpSPA client architecture, and trading tools.',
   },
 };
 

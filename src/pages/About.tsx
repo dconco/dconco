@@ -85,7 +85,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						<img
 							src={portfolioImages.aboutPortrait}
 							alt="Professional portrait"
-							className="h-full w-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-105"
+							className="h-full w-full object-cover brightness-75 transition-transform duration-700 group-hover:scale-105"
 						/>
 					</div>
 				</div>

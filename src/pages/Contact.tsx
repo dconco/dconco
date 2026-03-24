@@ -79,7 +79,6 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
       formData.append("_subject", "New Project Inquiry from dconco.tech");
       formData.append("_template", "table");
       formData.append("_captcha", "false");
-      formData.append("g-recaptcha-response", recaptchaToken);
 
       setIsSending(true);
       setFormStatus({ type: "idle", message: "" });
