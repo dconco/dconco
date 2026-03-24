@@ -32,7 +32,7 @@ export const projectCards = {
   },
   tertiary: {
     image: portfolioImages.project3,
-    title: 'greenworld.com.ng',
+    title: 'greenworldpower.com.ng',
     detail: 'Renewable energy business website highlighting services, trust signals, and customer acquisition funnel.',
   },
   quaternary: {
