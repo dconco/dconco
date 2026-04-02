@@ -1,18 +1,23 @@
 import { AppShell, ScrollProgress } from './components/layout/PortfolioShell'
 import { Footer } from './components/Footer'
 import { Header, type LinkType } from './components/Header'
+import { CartDrawer } from './components/Store/CartDrawer'
 import Overview from './pages/Overview'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Store from './pages/Store'
+import Checkout from './pages/Checkout'
 import { useEffect, useState } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Projects from './pages/Projects'
 import AOS from 'aos'
 
 export default function App() {
    const [progress, setShowScrollProgress] = useState<number>(0)
    const [active, setActive] = useState<LinkType>('overview')
+   const [isCartOpen, setIsCartOpen] = useState(false)
    const location = useLocation()
+   const navigate = useNavigate()
 
    useEffect(() => {
       AOS.init({
@@ -39,6 +44,11 @@ export default function App() {
       return () => document.removeEventListener('scroll', onScroll)
    }, [])
 
+   const handleProceedToCheckout = () => {
+      setIsCartOpen(false)
+      navigate('/checkout')
+   }
+
    return (
       <AppShell className="selection:bg-primary-container selection:text-on-primary-container">
          <ScrollProgress style={{ width: progress + '%' }} />
@@ -47,9 +57,12 @@ export default function App() {
             <Route path="/" element={<Overview setActive={setActive} />} />
             <Route path="/about" element={<About setActive={setActive} />} />
             <Route path="/projects" element={<Projects setActive={setActive} />} />
+            <Route path="/store" element={<Store setActive={setActive} />} />
+            <Route path="/checkout" element={<Checkout setActive={setActive} />} />
             <Route path="/contact" element={<Contact setActive={setActive} />} />
          </Routes>
          <Footer />
+         <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} onProceedToCheckout={handleProceedToCheckout} />
       </AppShell>
    )
 }
