@@ -9,13 +9,13 @@ import 'aos/dist/aos.css'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ThemeProvider theme={portfolioTheme}>
-      <BrowserRouter>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </BrowserRouter>
-    </ThemeProvider>
-  </StrictMode>,
+	<StrictMode>
+		<ThemeProvider theme={portfolioTheme}>
+			<BrowserRouter>
+			<CartProvider>
+				<App />
+			</CartProvider>
+			</BrowserRouter>
+		</ThemeProvider>
+	</StrictMode>,
 )

@@ -11,13 +11,15 @@ import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Projects from './pages/Projects'
 import AOS from 'aos'
+import { useCart } from './hooks/useCart'
+
 
 export default function App() {
    const [progress, setShowScrollProgress] = useState<number>(0)
    const [active, setActive] = useState<LinkType>('overview')
-   const [isCartOpen, setIsCartOpen] = useState(false)
    const location = useLocation()
    const navigate = useNavigate()
+   const { isOpen: isCartOpen, closeCart } = useCart()
 
    useEffect(() => {
       AOS.init({
@@ -45,7 +47,7 @@ export default function App() {
    }, [])
 
    const handleProceedToCheckout = () => {
-      setIsCartOpen(false)
+      closeCart()
       navigate('/checkout')
    }
 
@@ -62,7 +64,7 @@ export default function App() {
             <Route path="/contact" element={<Contact setActive={setActive} />} />
          </Routes>
          <Footer />
-         <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} onProceedToCheckout={handleProceedToCheckout} />
+         <CartDrawer isOpen={isCartOpen} onClose={closeCart} onProceedToCheckout={handleProceedToCheckout} />
       </AppShell>
    )
 }

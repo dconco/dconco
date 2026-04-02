@@ -1,5 +1,5 @@
-import { createContext, useContext } from "react";
-import type { CartContextType } from "../contexts/CartContext";
+import { createContext, useContext } from 'react'
+import type { CartContextType } from "../contexts/CartContext"
 
 export const CartContext = createContext<CartContextType>({
    isOpen: false,
@@ -10,8 +10,8 @@ export const CartContext = createContext<CartContextType>({
    removeFromCart: () => {},
    clearCart: () => {},
    isInCart: () => false,
-});
+})
 
 export function useCart() {
-   return useContext(CartContext);
+   return useContext(CartContext)
 }

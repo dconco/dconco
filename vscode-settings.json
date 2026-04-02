@@ -1,0 +1,40 @@
+{
+   "editor.tabSize": 3,
+   "editor.fontSize": 13,
+   "editor.fontFamily": "'Google Sans Code', Consolas, 'Courier New', monospace",
+   "editor.fontLigatures": true,
+   "editor.tokenColorCustomizations": {
+      "textMateRules": [
+         {
+            "scope": ["keyword", "storage.type", "variable.language", "comment", "constant", "entity.name.class", "meta.type.annotation"],
+            "settings": {
+               "fontStyle": "italic"
+            }
+         }
+      ]
+   }
+}
+
+
+{
+   "editor.fontLigatures": true,
+   "editor.tokenColorCustomizations": {
+      "textMateRules": [
+         {
+               "scope": [
+                  "comment",
+                  "keyword",
+                  "storage",
+                  "string",
+                  "variable",
+                  "entity",
+                  "constant",
+                  "punctuation"
+               ],
+               "settings": {
+                  "fontStyle": "italic"
+               }
+         }
+      ]
+   }
+}

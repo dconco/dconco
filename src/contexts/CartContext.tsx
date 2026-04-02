@@ -1,8 +1,7 @@
-import type { ReactNode } from 'react';
-import { useState, useCallback } from 'react';
+import type { ReactNode } from 'react'
+import { useState, useCallback } from 'react'
 import { CartContext } from '../hooks/useCart';
-
-export type LicenseType = 'frontend' | 'backend' | 'full';
+export type LicenseType = 'frontend' | 'backend' | 'full'
 
 export interface Product {
    id: string;
@@ -37,40 +36,40 @@ export type CartContextType = {
 }
 
 export function CartProvider({ children }: { children: ReactNode }) {
-   const [isOpen, setIsOpen] = useState(false);
-   const [items, setItems] = useState<CartItem[]>([]);
+   const [isOpen, setIsOpen] = useState(false)
+   const [items, setItems] = useState<CartItem[]>([])
 
-   const openCart = useCallback(() => setIsOpen(true), []);
-   const closeCart = useCallback(() => setIsOpen(false), []);
+   const openCart = useCallback(() => setIsOpen(true), [])
+   const closeCart = useCallback(() => setIsOpen(false), [])
 
    const addToCart = useCallback((product: Product, license: LicenseType) => {
       setItems((prev) => {
          const exists = prev.some(
             (item) => item.product.id === product.id && item.license === license
-         );
-         if (exists) return prev;
-         return [...prev, { product, license }];
-      });
-   }, []);
+         )
+         if (exists) return prev
+         return [...prev, { product, license }]
+      })
+   }, [])
 
    const removeFromCart = useCallback((productId: string, license: LicenseType) => {
       setItems((prev) =>
          prev.filter(
             (item) => !(item.product.id === productId && item.license === license)
          )
-      );
-   }, []);
+      )
+   }, [])
 
-   const clearCart = useCallback(() => setItems([]), []);
+   const clearCart = useCallback(() => setItems([]), [])
 
    const isInCart = useCallback(
       (productId: string, license: LicenseType) => {
          return items.some(
             (item) => item.product.id === productId && item.license === license
-         );
+         )
       },
       [items]
-   );
+   )
 
    return (
       <CartContext.Provider
@@ -87,5 +86,5 @@ export function CartProvider({ children }: { children: ReactNode }) {
       >
          {children}
       </CartContext.Provider>
-   );
+   )
 }
