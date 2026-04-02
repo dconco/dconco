@@ -7,6 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Store from './pages/Store'
 import Checkout from './pages/Checkout'
+import PaymentSuccess from './pages/PaymentSuccess'
 import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Projects from './pages/Projects'
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/projects" element={<Projects setActive={setActive} />} />
             <Route path="/store" element={<Store setActive={setActive} />} />
             <Route path="/checkout" element={<Checkout setActive={setActive} />} />
+            <Route path="/payment-success" element={<PaymentSuccess />} />
             <Route path="/contact" element={<Contact setActive={setActive} />} />
          </Routes>
          <Footer />
