@@ -1,61 +1,61 @@
-import type React from 'react';
-import { useCallback, useMemo, useState } from 'react';
-import { Icon } from '@iconify/react';
-import type { Product, LicenseType } from '../contexts/CartContext';
-import { storeProducts } from '../data/storeData';
-import { ProductPreviewDialog } from '../components/Store/ProductPreviewDialog';
-import { BadgePill } from '../components/ui/BadgePill';
-import type { LinkType } from '../components/Header';
-import { useCart } from '../hooks/useCart';
+import type React from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Icon } from '@iconify/react'
+import type { Product, LicenseType } from '../contexts/CartContext'
+import { storeProducts } from '../data/storeData'
+import { ProductPreviewDialog } from '../components/Store/ProductPreviewDialog'
+import { BadgePill } from '../components/ui/BadgePill'
+import type { LinkType } from '../components/Header'
+import { useCart } from '../hooks/useCart'
 
 
 export default function Store({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-   setActive('store');
+   useEffect(() => setActive('store'), [setActive])
 
-   const { addToCart, isInCart, openCart } = useCart();
-   const [searchQuery, setSearchQuery] = useState('');
-   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
-   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
-   const [pendingAdd, setPendingAdd] = useState<{ product: Product; license: LicenseType } | null>(null);
+   const { addToCart, isInCart, openCart } = useCart()
+   const [searchQuery, setSearchQuery] = useState('')
+   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+   const [isPreviewOpen, setIsPreviewOpen] = useState(false)
+   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
+   const [pendingAdd, setPendingAdd] = useState<{ product: Product; license: LicenseType } | null>(null)
 
    const filteredProducts = useMemo(() => {
-      if (!searchQuery.trim()) return storeProducts;
-      const query = searchQuery.toLowerCase();
+      if (!searchQuery.trim()) return storeProducts
+      const query = searchQuery.toLowerCase()
       return storeProducts.filter(
          (p) =>
             p.name.toLowerCase().includes(query) ||
             p.tagline.toLowerCase().includes(query) ||
             p.tags.some((t) => t.toLowerCase().includes(query))
-      );
-   }, [searchQuery]);
+      )
+   }, [searchQuery])
 
    const handleViewProduct = useCallback((product: Product) => {
-      setSelectedProduct(product);
-      setIsPreviewOpen(true);
-   }, []);
+      setSelectedProduct(product)
+      setIsPreviewOpen(true)
+   }, [])
 
    const handleAddToCartClick = useCallback((product: Product, license: LicenseType) => {
-      setPendingAdd({ product, license });
-      setIsAddDialogOpen(true);
-   }, []);
+      setPendingAdd({ product, license })
+      setIsAddDialogOpen(true)
+   }, [])
 
    const confirmAddToCart = useCallback(() => {
       if (pendingAdd) {
-         addToCart(pendingAdd.product, pendingAdd.license);
-         setIsAddDialogOpen(false);
-         setPendingAdd(null);
-         openCart();
+         addToCart(pendingAdd.product, pendingAdd.license)
+         setIsAddDialogOpen(false)
+         setPendingAdd(null)
+         openCart()
       }
-   }, [pendingAdd, addToCart, openCart]);
+   }, [pendingAdd, addToCart, openCart])
 
    const formatPrice = (amount: number) => {
       return new Intl.NumberFormat('en-NG', {
          style: 'currency',
          currency: 'NGN',
          minimumFractionDigits: 0,
-      }).format(amount);
-   };
+      }).format(amount)
+   }
 
    return (
       <main className="mx-auto max-w-7xl space-y-16 px-6 pb-16 pt-32 lg:px-12">
@@ -230,5 +230,5 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
             </div>
          )}
       </main>
-   );
+   )
 }

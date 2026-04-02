@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react'
 import { portfolioImages } from '../assets/images'
 import type { LinkType } from '../components/Header'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const toolkit = [
 	{ label: 'Laravel', icon: 'flowbite:laravel-solid', level: 2 },
@@ -50,11 +51,11 @@ const milestones = [
 ]
 
 export default function About({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-   setActive('about')
+   useEffect(() => setActive('about'), [setActive])
 
 	return (
 		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 md:px-12 lg:px-24">
-			<section id="about" data-aos="fade-up" className="relative isolate grid grid-cols-1 items-end gap-12 overflow-hidden rounded-2xl p-6 lg:grid-cols-12 lg:p-10">
+			<section id="about" data-aos="fade-up" className="relative isolate md:grid max-sm:block max-md:flex items-end gap-12 overflow-hidden rounded-2xl p-6 md:grid-cols-12 md:p-10">
 				<img
 					src={portfolioImages.headerOverlay}
 					alt=""
@@ -63,7 +64,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 				/>
 				<div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/85 to-surface/70" />
 
-				<div className="relative z-10 space-y-8 lg:col-span-8">
+				<div className="relative z-10 space-y-8 md:col-span-8">
 					<div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-secondary">
 						<span className="h-px w-8 bg-secondary" />
 						Philosophy
@@ -80,7 +81,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 					</p>
 				</div>
 
-				<div className="relative z-10 hidden lg:col-span-4 lg:block">
+				<div className="relative z-10 md:col-span-4 md:block max-md:w-[70%] max-sm:mt-10 max-sm:max-w-70">
 					<div className="group aspect-[3/4] overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
 						<img
 							src={portfolioImages.aboutPortrait}

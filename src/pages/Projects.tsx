@@ -2,11 +2,12 @@ import type React from 'react'
 import { Icon } from '@iconify/react'
 import { portfolioImages } from '../assets/images'
 import type { LinkType } from '../components/Header'
+import { useEffect } from 'react'
 
 const filters = ['All Projects', 'Web Design', 'Mobile Apps', 'Brand Systems']
 
 export default function Projects({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-	setActive('projects')
+	useEffect(() => setActive('projects'), [setActive])
 
 	return (
 		<main className="mx-auto max-w-7xl px-8 pb-24 pt-32">

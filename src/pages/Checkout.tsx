@@ -1,35 +1,35 @@
-import type React from 'react';
-import { useCallback, useState } from 'react';
-import { Icon } from '@iconify/react';
-import { BadgePill } from '../components/ui/BadgePill';
-import type { LinkType } from '../components/Header';
-import { useCart } from '../hooks/useCart';
+import type React from 'react'
+import { useCallback, useEffect, useState } from 'react'
+import { Icon } from '@iconify/react'
+import { BadgePill } from '../components/ui/BadgePill'
+import type { LinkType } from '../components/Header'
+import { useCart } from '../hooks/useCart'
 
 export default function Checkout({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-   setActive('store');
+   useEffect(() => setActive('store'), [setActive])
 
-   const { items, clearCart } = useCart();
-   const [selectedMethod, setSelectedMethod] = useState<string>('');
-   const [showConfirmation, setShowConfirmation] = useState(false);
+   const { items, clearCart } = useCart()
+   const [selectedMethod, setSelectedMethod] = useState<string>('')
+   const [showConfirmation, setShowConfirmation] = useState(false)
 
    const formatPrice = (amount: number) => {
       return new Intl.NumberFormat('en-NG', {
          style: 'currency',
          currency: 'NGN',
          minimumFractionDigits: 0,
-      }).format(amount);
-   };
+      }).format(amount)
+   }
 
    const total = items.reduce((sum, item) => {
-      const price = item.product.price[item.license];
-      return sum + (price || 0);
-   }, 0);
+      const price = item.product.price[item.license]
+      return sum + (price || 0)
+   }, 0)
 
    const licenseLabel: Record<string, string> = {
       frontend: 'Frontend Only',
       backend: 'Backend Only',
       full: 'Full Package',
-   };
+   }
 
    const paymentMethods = [
       {
@@ -60,12 +60,12 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
          description: 'Scan QR code with Opera Mini browser',
          details: 'QR code will be generated after confirming order',
       },
-   ];
+   ]
 
    const handleConfirmOrder = useCallback(() => {
-      if (!selectedMethod) return;
-      setShowConfirmation(true);
-   }, [selectedMethod]);
+      if (!selectedMethod) return
+      setShowConfirmation(true)
+   }, [selectedMethod])
 
    if (items.length === 0 && !showConfirmation) {
       return (
@@ -76,7 +76,7 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
                <p className="text-lg text-on-surface-variant">Add some products before checking out</p>
             </div>
          </main>
-      );
+      )
    }
 
    return (
@@ -224,8 +224,8 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
                   <div className="flex gap-3">
                      <button
                         onClick={() => {
-                           setShowConfirmation(false);
-                           clearCart();
+                           setShowConfirmation(false)
+                           clearCart()
                         }}
                         className="flex-1 rounded-full bg-primary px-6 py-3 text-sm font-bold uppercase tracking-widest text-on-primary transition-all hover:bg-primary/80 active:scale-95"
                      >
@@ -236,5 +236,5 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
             </div>
          )}
       </main>
-   );
+   )
 }

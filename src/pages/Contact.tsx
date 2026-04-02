@@ -1,9 +1,9 @@
-import type React from "react";
-import { useState } from "react";
-import { Icon } from "@iconify/react";
-import ReCAPTCHA from "react-google-recaptcha";
-import { portfolioImages } from "../assets/images";
-import type { LinkType } from "../components/Header";
+import type React from "react"
+import { useEffect, useState } from "react"
+import { Icon } from "@iconify/react"
+import ReCAPTCHA from "react-google-recaptcha"
+import { portfolioImages } from "../assets/images"
+import type { LinkType } from "../components/Header"
 
 const projectTypes = [
    "Frontend Web Application (React)",
@@ -11,7 +11,7 @@ const projectTypes = [
    "Full-Stack Web Platform",
    "Real-Time Messaging or Socket System",
    "Microservices & Infrastructure",
-];
+]
 
 const socialProof = [
    {
@@ -38,50 +38,50 @@ const socialProof = [
       value: "High-End Luxury",
       tone: "text-primary",
    },
-];
+]
 
 export default function Contact({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-   setActive("contact");
-   const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined;
+   useEffect(() => setActive('contact'), [setActive])
+   const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY as string | undefined
 
-   const [isSending, setIsSending] = useState(false);
-   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+   const [isSending, setIsSending] = useState(false)
+   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null)
    const [formStatus, setFormStatus] = useState<{
       type: "idle" | "success" | "error";
       message: string;
    }>({
       type: "idle",
       message: "",
-   });
+   })
 
    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
+      event.preventDefault()
 
-      const form = event.currentTarget;
-      const formData = new FormData(form);
+      const form = event.currentTarget
+      const formData = new FormData(form)
 
       if (!recaptchaSiteKey) {
          setFormStatus({
             type: "error",
             message: "reCAPTCHA is not configured yet. Add VITE_RECAPTCHA_SITE_KEY to enable submissions.",
-         });
-         return;
+         })
+         return
       }
 
       if (!recaptchaToken) {
          setFormStatus({
             type: "error",
             message: "Please complete the reCAPTCHA challenge before sending.",
-         });
-         return;
+         })
+         return
       }
 
-      formData.append("_subject", "New Project Inquiry from dconco.tech");
-      formData.append("_template", "table");
-      formData.append("_captcha", "false");
+      formData.append("_subject", "New Project Inquiry from dconco.tech")
+      formData.append("_template", "table")
+      formData.append("_captcha", "false")
 
-      setIsSending(true);
-      setFormStatus({ type: "idle", message: "" });
+      setIsSending(true)
+      setFormStatus({ type: "idle", message: "" })
 
       try {
          const response = await fetch("https://formsubmit.co/ajax/1c41973ae1f0a00d7b78338ea422926e", {
@@ -90,27 +90,27 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
                Accept: "application/json",
             },
             body: formData,
-         });
+         })
 
          if (!response.ok) {
-            throw new Error("Unable to send inquiry right now.");
+            throw new Error("Unable to send inquiry right now.")
          }
 
          setFormStatus({
             type: "success",
             message: "Inquiry sent successfully. A response will come shortly.",
-         });
-         form.reset();
-         setRecaptchaToken(null);
+         })
+         form.reset()
+         setRecaptchaToken(null)
       } catch {
          setFormStatus({
             type: "error",
             message: "Something went wrong while sending. Please try again or email directly.",
-         });
+         })
       } finally {
-         setIsSending(false);
+         setIsSending(false)
       }
-   };
+   }
 
    return (
       <main className="mx-auto max-w-7xl space-y-12 px-6 pb-24 pt-32 md:px-12 lg:px-24">
@@ -334,5 +334,5 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
             ))}
          </section>
       </main>
-   );
+   )
 }
