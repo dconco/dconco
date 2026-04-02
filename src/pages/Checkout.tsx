@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 import { BadgePill } from '../components/ui/BadgePill'
 import type { LinkType } from '../components/Header'
 import { useCart } from '../hooks/useCart'
-import { QRCodeCanvas, QRCodeSVG } from 'qrcode.react'
+import { QRCodeSVG } from 'qrcode.react'
 
 export default function Checkout({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
    useEffect(() => setActive('store'), [setActive])
@@ -314,7 +314,7 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
                            <p className="text-sm font-bold text-on-surface-variant uppercase">Scan to Pay with Opera Mini</p>
                            <div className="flex justify-center">
                               <div className="inline-block rounded-lg bg-white p-4">
-                                 <QRCodeSVG 
+                                 <QRCodeSVG
                                     value={qrCodeUrl}
                                     size={200}
                                     level="H"
