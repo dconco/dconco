@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Icon } from "@iconify/react"
 import { HeaderShell } from "./layout/PortfolioShell"
 import { Link, useLocation } from "react-router-dom"
-import { useCart } from "../contexts/CartContext"
+import { useCart } from "../hooks/useCart"
 
 
 export type LinkType = 'overview' | 'about' | 'projects' | 'store' | 'contact'

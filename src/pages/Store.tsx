@@ -1,12 +1,13 @@
 import type React from 'react';
 import { useCallback, useMemo, useState } from 'react';
 import { Icon } from '@iconify/react';
-import { useCart } from '../contexts/CartContext';
 import type { Product, LicenseType } from '../contexts/CartContext';
 import { storeProducts } from '../data/storeData';
 import { ProductPreviewDialog } from '../components/Store/ProductPreviewDialog';
 import { BadgePill } from '../components/ui/BadgePill';
 import type { LinkType } from '../components/Header';
+import { useCart } from '../hooks/useCart';
+
 
 export default function Store({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
    setActive('store');

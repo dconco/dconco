@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
-import { createContext, useContext, useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
+import { CartContext } from '../hooks/useCart';
 
 export type LicenseType = 'frontend' | 'backend' | 'full';
 
@@ -24,7 +25,7 @@ export interface CartItem {
    license: LicenseType;
 }
 
-type CartContextType = {
+export type CartContextType = {
    isOpen: boolean;
    openCart: () => void;
    closeCart: () => void;
@@ -33,18 +34,7 @@ type CartContextType = {
    removeFromCart: (productId: string, license: LicenseType) => void;
    clearCart: () => void;
    isInCart: (productId: string, license: LicenseType) => boolean;
-};
-
-const CartContext = createContext<CartContextType>({
-   isOpen: false,
-   openCart: () => {},
-   closeCart: () => {},
-   items: [],
-   addToCart: () => {},
-   removeFromCart: () => {},
-   clearCart: () => {},
-   isInCart: () => false,
-});
+}
 
 export function CartProvider({ children }: { children: ReactNode }) {
    const [isOpen, setIsOpen] = useState(false);
@@ -98,8 +88,4 @@ export function CartProvider({ children }: { children: ReactNode }) {
          {children}
       </CartContext.Provider>
    );
-}
-
-export function useCart() {
-   return useContext(CartContext);
 }

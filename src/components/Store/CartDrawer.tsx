@@ -1,7 +1,8 @@
 import { Icon } from "@iconify/react";
 
 import { BadgePill } from "../ui/BadgePill";
-import { type LicenseType, useCart } from "../../contexts/CartContext";
+import { type LicenseType } from "../../contexts/CartContext";
+import { useCart } from "../../hooks/useCart";
 
 type CartDrawerProps = {
 	isOpen: boolean;

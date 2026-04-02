@@ -1,9 +1,9 @@
 import type React from 'react';
 import { useCallback, useState } from 'react';
 import { Icon } from '@iconify/react';
-import { useCart } from '../contexts/CartContext';
 import { BadgePill } from '../components/ui/BadgePill';
 import type { LinkType } from '../components/Header';
+import { useCart } from '../hooks/useCart';
 
 export default function Checkout({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
    setActive('store');
