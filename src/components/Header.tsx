@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react"
 import { Icon } from "@iconify/react"
 import { HeaderShell } from "./layout/PortfolioShell"
 import { Link, useLocation } from "react-router-dom"
+import { useCart } from "../hooks/useCart"
 
 
-export type LinkType = 'overview' | 'about' | 'projects' | 'contact'
+export type LinkType = 'overview' | 'about' | 'projects' | 'store' | 'contact'
 
 export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
    const [isMenuOpen, setIsMenuOpen] = useState(false)
    const location = useLocation()
+   const { items, openCart } = useCart()
 
    useEffect(() => {
       setIsMenuOpen(false)
@@ -18,6 +20,7 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
       { href: '/', label: 'Overview', active: active === 'overview' },
       { href: '/about', label: 'About', active: active === 'about' },
       { href: '/projects', label: 'Projects', active: active === 'projects' },
+      { href: '/store', label: 'Store', active: active === 'store' },
       { href: '/contact', label: 'Contact', active: active === 'contact' },
    ]
 
@@ -44,13 +47,39 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                ))}
             </div>
 
-            <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer" className="hidden md:inline-flex">
-               <button className="rounded-full bg-primary-container px-6 py-2.5 font-semibold text-on-primary-container transition-transform duration-300 hover:scale-105 active:scale-95">
-                  Hire Me
+            <div className="hidden items-center gap-4 md:flex">
+               <button
+                  onClick={openCart}
+                  className="relative rounded-full p-2 text-slate-300 transition-all duration-300 hover:scale-105 hover:text-white"
+                  aria-label="Open cart"
+               >
+                  <Icon icon="material-symbols:shopping-cart" className="text-2xl" />
+                  {items.length > 0 && (
+                     <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-on-primary">
+                        {items.length}
+                     </span>
+                  )}
                </button>
-            </a>
+               <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer">
+                  <button className="rounded-full bg-primary-container px-6 py-2.5 font-semibold text-on-primary-container transition-transform duration-300 hover:scale-105 active:scale-95">
+                     Hire Me
+                  </button>
+               </a>
+            </div>
 
             <div className="flex items-center gap-3 md:hidden">
+               <button
+                  onClick={openCart}
+                  className="relative inline-flex h-10 w-10 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-high/70 text-on-surface transition-colors hover:bg-surface-container-highest"
+                  aria-label="Open cart"
+               >
+                  <Icon icon="material-symbols:shopping-cart" className="text-lg" />
+                  {items.length > 0 && (
+                     <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-on-primary">
+                        {items.length}
+                     </span>
+                  )}
+               </button>
                <a
                   href="https://wa.me/2349121235927"
                   target="_blank"
@@ -102,6 +131,17 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                   </Link>
                ))}
             </div>
+
+            <button
+               onClick={() => {
+                  openCart();
+                  setIsMenuOpen(false);
+               }}
+               className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full border border-outline-variant/30 bg-surface-container-low/60 px-6 py-3 font-semibold text-on-surface transition-transform duration-300 active:scale-95"
+            >
+               <Icon icon="material-symbols:shopping-cart" className="text-lg" />
+               Cart ({items.length})
+            </button>
 
             <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer" className="mt-4 inline-flex w-full">
                <button className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary-container px-6 py-3 font-semibold text-on-primary-container transition-transform duration-300 active:scale-95">

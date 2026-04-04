@@ -1,19 +1,20 @@
-import type React from "react";
+import type React from "react"
 
-import { BadgePill } from '../components/ui/BadgePill';
-import { ProjectBentoCard } from '../components/ui/ProjectBentoCard';
-import { SectionIntro } from '../components/ui/SectionIntro';
-import { SkillMeterCard } from '../components/ui/SkillMeterCard';
-import { TimelineEntry } from '../components/ui/TimelineEntry';
-import { heroHighlights, projectCards, skillCards, timelineItems } from '../data/portfolioData';
-import { HoverLift } from "../components/layout/PortfolioShell";
-import { Icon } from "@iconify/react";
-import type { LinkType } from "../components/Header";
-import { portfolioImages } from "../assets/images";
-import { Link } from "react-router-dom";
+import { BadgePill } from '../components/ui/BadgePill'
+import { ProjectBentoCard } from '../components/ui/ProjectBentoCard'
+import { SectionIntro } from '../components/ui/SectionIntro'
+import { SkillMeterCard } from '../components/ui/SkillMeterCard'
+import { TimelineEntry } from '../components/ui/TimelineEntry'
+import { heroHighlights, projectCards, skillCards, timelineItems } from '../data/portfolioData'
+import { HoverLift } from "../components/layout/PortfolioShell"
+import { Icon } from "@iconify/react"
+import type { LinkType } from "../components/Header"
+import { portfolioImages } from "../assets/images"
+import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 export default function Overview({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
-   setActive('overview');
+   useEffect(() => setActive('overview'), [setActive])
 
    return (
       <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
@@ -38,7 +39,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   <span className="font-serif text-secondary italic">Modern</span> Products.
                </h1>
 
-               <p className="font-body max-w-2xl text-xl text-on-surface-variant mt-10">
+               <p className="font-body max-w-2xl text-xl max-md:text-base text-on-surface-variant mt-10">
                   Dave Conco popularly known as 𝒅𝒄𝒐𝒏𝒄𝒐 is a full-stack engineer with deep backend strength and strong frontend execution.
                   He builds scalable APIs and pairs them with React interfaces that feel fast, clear, and production-ready.
                </p>
@@ -202,10 +203,10 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
 
             <div className="relative z-10 space-y-6">
                <span className="text-sm font-bold tracking-widest text-primary">CONTACT</span>
-               <h2 className="font-headline mx-auto max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
+               <h2 className="font-headline mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
                   Ready to Curate Your <span className="italic font-serif text-secondary">Next Story</span>?
                </h2>
-               <p className="font-body mx-auto max-w-2xl text-xl text-on-surface-variant">
+               <p className="font-body mx-auto max-w-2xl text-xl max-md:text-[17px] text-on-surface-variant">
                   Currently accepting select project inquiries for 2026 and beyond.
                </p>
             </div>
