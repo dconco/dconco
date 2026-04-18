@@ -157,6 +157,8 @@ const dconco = {
   
   ![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)
 
+  [![committers.top badge](https://user-badge.committers.top/nigeria/dconco.svg)](https://user-badge.committers.top/nigeria/dconco)
+
   ![](https://hit.yhype.me/github/profile?account_id=118613296)
 </div>
 
