@@ -8,6 +8,7 @@
   
   [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=FF6B6B&background=FFFFFF00&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=120&lines=%F0%9F%91%8B+Welcome+to+my+digital+universe;%F0%9F%92%AB+I'm+Dave+Conco+%E2%80%A2+Full-Stack+Architect;%F0%9F%8C%9F+Building+tomorrow's+web+today)](https://www.dconco.tech)
   
+![](https://github-stats-alpha.vercel.app/api?username=dconco-007&cc=22272e&tc=37BCF6&ic=fff&bc=0000)
 </div>
 
 ---
