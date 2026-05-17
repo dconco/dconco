@@ -45,12 +45,14 @@ const dconco = {
     "🎯 Mentoring next-gen developers"
   ],
 
-  description: `I'm Dave Conco (dconco), a tech enthusiast specializing in websites, mobile apps, and APIs.
+  description: `
+    I'm Dave Conco (dconco), a tech enthusiast specializing in websites, mobile apps, and APIs.
     My stack includes PHP, JS/TS, React, Go, C++, and Python.
     I authored PhpSPA and an AI coding agent for Acode.
     Expert in backend development, I build high-concurrency systems and low-latency APIs with a focus on manual memory management and WebSockets.
     I prioritize 'library-first', high-performance code.
-    By understanding internal mechanics, I optimize software to the byte and thrive on pushing technical limits.`
+    By understanding internal mechanics, I optimize software to the byte and thrive on pushing technical limits.
+  `
   
   currentFocus: "Spyrochat – A messaging platform designed to give users security, monetization and 100% privacy.",
   availability: "Open for freelance projects",
@@ -60,6 +62,16 @@ const dconco = {
   }
 }
 ```
+
+I'm Dave Conco publicly known as dconco! An experienced young tech enthusiast 🚀
+
+I specialize in creating websites, mobile application, and APIs, with my tech stack, PHP, JS/TS, React, Go/C++, Python. I create libraries and frameworks including PhpSPA a component based library for PHP. I also train AI, created a coding agent on Acode (a mobile coding IDE) that assist developers in working faster, view, read, and edit their files directly on Acode.
+
+I've been working with software development for many years, my understanding in backend field makes me understand many other backend languages faster in a simple look, and learning new languages feels simple to me.
+
+In the backend field, I specialize in building high-concurrency systems and low-latency APIs. I have deep expertise in managing Unix sockets, manual memory management in C++, and implementing real-time communication using WebSockets and Go. My focus is always on writing lean, 'library-first' code that prioritizes execution speed over framework bloat.
+
+I don't just use library, or any functions, I understand how it works internally, which allows me to reverse-engineer bottlenecks, optimize performance down to the byte, and build custom tools from scratch when existing ones fall short. I thrive where software meets hardware, always aiming to push the limits of efficiency and build next-generation tech.
 
 <br clear="right"/>
 
