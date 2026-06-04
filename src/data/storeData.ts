@@ -1,7 +1,7 @@
 import type { Product } from "../contexts/CartContext";
 
 export const storeProducts: Product[] = [
-	{
+	/*{
 		id: "bennybit-full",
 		name: "Bennybit Dashboard",
 		tagline: "Secure fintech-style web dashboard with auth flows, transaction tracking, and crypto + gift card operations.",
@@ -104,5 +104,5 @@ export const storeProducts: Product[] = [
 		tags: ["React", "Node.js", "Media APIs"],
 		demoUrl: "https://skyshow-app.vercel.app",
 		liveDemo: true
-	}
+	}*/
 ]
