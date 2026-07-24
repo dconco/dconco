@@ -17,7 +17,6 @@ const links = [
    { label: 'Store', url: '/store' },
    { label: 'Contact', url: '/contact' },
    { label: 'Work Experience', url: '/#expertise' },
-   { label: 'Uptime', url: '/uptime' },
 ]
 
 const legal = [
@@ -52,8 +51,20 @@ export const Footer = (): React.ReactElement => {
                      <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
                   </div>
                   <p className="text-sm leading-relaxed text-on-surface-variant">
-                     Building practical, scalable software that keeps systems stable in production.
+                     Building high-concurrency backends, low-latency APIs, and real-time systems — from Go to React.
                   </p>
+                  <div className="flex gap-4 pt-1">
+                     {[
+                        { icon: 'mdi:github', url: 'https://github.com/dconco' },
+                        { icon: 'ri:twitter-x-fill', url: 'https://x.com/dave_conco' },
+                        { icon: 'mdi:youtube', url: 'https://youtube.com/@daveconco' },
+                        { icon: 'mdi:file-account-outline', url: 'https://drive.google.com/file/d/1B1D5Gjn-4czF67vRQmMX73aJvUqfd8WK/view?usp=drivesdk' },
+                     ].map((s) => (
+                        <a key={s.icon} href={s.url} target="_blank" rel="noreferrer" className="text-on-surface-variant/60 transition-colors hover:text-primary active:text-primary">
+                           <Icon icon={s.icon} className="text-xl" />
+                        </a>
+                     ))}
+                  </div>
                </div>
 
                <Col title="Tools">
@@ -108,19 +119,13 @@ export const Footer = (): React.ReactElement => {
                </Col>
             </div>
 
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-outline-variant/20 pt-8 text-xs text-on-surface-variant/60 md:flex-row md:gap-8">
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-outline-variant/20 pt-8 text-xs text-on-surface-variant/60 md:flex-row md:justify-between">
                <span>© {new Date().getFullYear()} Dave Conco. All rights reserved.</span>
-               <div className="flex gap-5">
-                  {[
-                     { icon: 'mdi:github', url: 'https://github.com/dconco' },
-                     { icon: 'ri:twitter-x-fill', url: 'https://x.com/dave_conco' },
-                     { icon: 'mdi:youtube', url: 'https://youtube.com/@daveconco' },
-                     { icon: 'mdi:file-account-outline', url: 'https://drive.google.com/file/d/1B1D5Gjn-4czF67vRQmMX73aJvUqfd8WK/view?usp=drivesdk' },
-                  ].map((s) => (
-                     <a key={s.icon} href={s.url} target="_blank" rel="noreferrer" className="text-on-surface-variant/60 transition-colors hover:text-primary active:text-primary">
-                        <Icon icon={s.icon} className="text-2xl" />
-                     </a>
-                  ))}
+               <div className="flex items-center gap-6">
+                  <Link to="/uptime" className="transition-colors hover:text-primary">Uptime</Link>
+                  <a href="https://github.com/dconco/dconco" target="_blank" rel="noreferrer" className="transition-colors hover:text-primary">
+                     This site is open source
+                  </a>
                </div>
             </div>
          </div>
