@@ -10,7 +10,8 @@
 		"preview": "vite preview",
 		"server:build": "tsc -p tsconfig.server.json",
 		"server:dev": "tsx watch --tsconfig tsconfig.server.json server/index.ts",
-		"server:start": "node server/dist/index.js"
+		"server:start": "node server/dist/index.js",
+		"postinstall": "cd node_modules/better-sqlite3 && npx node-gyp rebuild --release || true"
 	},
 	"dependencies": {
 		"@fontsource/inter": "^5.3.0",
