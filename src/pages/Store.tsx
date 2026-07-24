@@ -2,7 +2,7 @@ import type React from 'react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Icon } from '@iconify/react'
 import type { Product, LicenseType } from '../contexts/CartContext'
-import { storeProducts } from '../data/storeData'
+import { useProducts } from '../hooks/useProducts'
 import { ProductPreviewDialog } from '../components/Store/ProductPreviewDialog'
 import { BadgePill } from '../components/ui/BadgePill'
 import type { LinkType } from '../components/Header'
@@ -13,6 +13,7 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
    useEffect(() => setActive('store'), [setActive])
 
    const { addToCart, isInCart, openCart } = useCart()
+   const { products, loading, error } = useProducts()
    const [searchQuery, setSearchQuery] = useState('')
    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
    const [isPreviewOpen, setIsPreviewOpen] = useState(false)
@@ -20,15 +21,15 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
    const [pendingAdd, setPendingAdd] = useState<{ product: Product; license: LicenseType } | null>(null)
 
    const filteredProducts = useMemo(() => {
-      if (!searchQuery.trim()) return storeProducts
+      if (!searchQuery.trim()) return products
       const query = searchQuery.toLowerCase()
-      return storeProducts.filter(
+      return products.filter(
          (p) =>
             p.name.toLowerCase().includes(query) ||
             p.tagline.toLowerCase().includes(query) ||
             p.tags.some((t) => t.toLowerCase().includes(query))
       )
-   }, [searchQuery])
+   }, [searchQuery, products])
 
    const handleViewProduct = useCallback((product: Product) => {
       setSelectedProduct(product)
@@ -98,7 +99,19 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
          </section>
 
          <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProducts.map((product, index) => (
+            {loading && (
+               <div className="col-span-full flex items-center justify-center gap-3 py-20 text-on-surface-variant">
+                  <Icon icon="material-symbols:progress-activity" className="animate-spin text-3xl text-primary" />
+                  <span className="text-sm">Loading products...</span>
+               </div>
+            )}
+            {error && (
+               <div className="col-span-full flex flex-col items-center justify-center gap-3 py-20 text-center">
+                  <Icon icon="material-symbols:error-outline" className="text-4xl text-error" />
+                  <p className="text-sm text-on-surface-variant">Failed to load products. Is the server running?</p>
+               </div>
+            )}
+            {!loading && !error && filteredProducts.map((product, index) => (
                <article
                   key={product.id}
                   data-aos="fade-up"
@@ -177,7 +190,7 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
             ))}
          </section>
 
-         {filteredProducts.length === 0 && (
+         {!loading && !error && filteredProducts.length === 0 && (
             <section data-aos="fade-up" className="flex flex-col items-center justify-center gap-4 py-20 text-center">
                <Icon icon="material-symbols:search-off" className="text-6xl text-on-surface-variant/30" />
                <p className="font-body text-xl text-on-surface-variant">No products found</p>

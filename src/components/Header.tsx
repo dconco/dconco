@@ -20,15 +20,15 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
       { href: '/', label: 'Overview', active: active === 'overview' },
       { href: '/about', label: 'About', active: active === 'about' },
       { href: '/projects', label: 'Projects', active: active === 'projects' },
+      { href: '/tools', label: 'Tools', active: active === ('tools' as LinkType) },
       { href: '/store', label: 'Store', active: active === 'store' },
-      { href: '/contact', label: 'Contact', active: active === 'contact' },
    ]
 
    return (
       <HeaderShell className="relative bg-slate-900/40">
          <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
-            <div className="font-headline cursor-pointer text-2xl font-bold italic text-emerald-400 transition-transform duration-300 active:scale-95">
-               @𝒅𝒄𝒐𝒏𝒄𝒐
+            <div className="font-headline cursor-pointer text-2xl font-bold transition-transform duration-300 active:scale-95">
+               <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
             </div>
 
             <div className="hidden items-center gap-10 md:flex">
@@ -60,9 +60,9 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                      </span>
                   )}
                </button>
-               <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer">
+               <a href="/contact">
                   <button className="rounded-full bg-primary-container px-6 py-2.5 font-semibold text-on-primary-container transition-transform duration-300 hover:scale-105 active:scale-95">
-                     Hire Me
+                     Contact
                   </button>
                </a>
             </div>
@@ -143,9 +143,9 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                Cart ({items.length})
             </button>
 
-            <a href="https://wa.me/2349121235927" target="_blank" rel="noreferrer" className="mt-4 inline-flex w-full">
+            <a href="/contact" className="mt-4 inline-flex w-full">
                <button className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary-container px-6 py-3 font-semibold text-on-primary-container transition-transform duration-300 active:scale-95">
-                  Hire Me
+                  Contact
                   <Icon icon="material-symbols:arrow-forward-rounded" className="text-lg" />
                </button>
             </a>

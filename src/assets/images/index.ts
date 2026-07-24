@@ -4,6 +4,7 @@ import project3 from './project-3.jpg';
 import project4 from './project-4.jpg';
 import aboutPortrait from './office-pic.png';
 import aboutDataVisual from './about-expertise-2.jpg';
+import aboutExpertise1 from './about-expertise-1.jpg';
 import contactOverlay from './contact-overlay.jpg';
 import headerOverlay from './header-overlay.jpg';
 import contactGlobalMap from './contact-global-map.jpg';
@@ -20,6 +21,7 @@ export const portfolioImages = {
   project4,
   aboutPortrait,
   aboutDataVisual,
+  aboutExpertise1,
   contactOverlay,
   headerOverlay,
   contactGlobalMap,

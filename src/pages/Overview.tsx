@@ -27,21 +27,15 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
             />
 
             <div className="space-y-8 lg:col-span-8">
-               <div className="inline-flex items-center gap-2 rounded-full border border-outline-soft bg-surface-container-highest px-4 py-2 mt-10">
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
-                  <span className="text-xs font-nav-link font-medium tracking-normal text-on-surface-variant">
-                     AVAILABLE FOR NEW PROJECTS
-                  </span>
-               </div>
-
-               <h1 className="font-headline text-4xl font-bold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl mt-3">
-                  Engineering <span className="font-serif text-primary italic">Scalable</span> Systems for{' '}
-                  <span className="font-serif text-secondary italic">Modern</span> Products.
+               <h1 className="font-headline leading-[0.95] tracking-tight mt-3">
+                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-on-surface">Dave</span>
+                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-on-surface">Conco</span>
+                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold font-serif italic text-primary">dconco.</span>
                </h1>
 
                <p className="font-body max-w-2xl text-xl max-md:text-base text-on-surface-variant mt-10">
-                  Dave Conco popularly known as 𝒅𝒄𝒐𝒏𝒄𝒐 is a full-stack engineer with deep backend strength and strong frontend execution.
-                  He builds scalable APIs and pairs them with React interfaces that feel fast, clear, and production-ready.
+                  I partner with teams to build practical, scalable software that improves delivery speed,
+                  reduces operational costs, and keeps systems stable in production.
                </p>
             </div>
 
@@ -52,6 +46,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                         <Icon icon={item.iconName} className={item.iconClass} />
                         <h3 className="font-headline text-2xl">{item.title}</h3>
                         <p className="font-body text-sm text-on-surface-variant">{item.detail}</p>
+                        {item.detail2 && <p className="font-body text-sm text-on-surface-variant/70 italic">{item.detail2}</p>}
                      </article>
                   </HoverLift>
                ))}
@@ -168,7 +163,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                      <div className="space-y-2 text-center md:text-left">
                         <h4 className="font-headline text-2xl font-bold">Engineering Mindset</h4>
                         <p className="font-body max-w-md text-sm text-on-surface-variant">
-                           He values clarity over cleverness, builds for scale from day one, and treats
+                           I value clarity over cleverness, build for scale from day one, and treat
                            maintainability as a core product feature.
                         </p>
                      </div>

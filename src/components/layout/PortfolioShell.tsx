@@ -22,6 +22,7 @@ export const HeaderShell = styled.header`
 
 export const AppShell = styled.div`
    min-height: 100vh;
+   overflow-x: hidden;
    background-color: ${({ theme }) => theme.colors.background};
    color: ${({ theme }) => theme.colors.text};
 `;

@@ -75,19 +75,37 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						Architecture.
 					</h1>
 					<p className="max-w-2xl text-base leading-relaxed text-on-surface-variant md:text-lg">
-						Dave Conco is a full-stack engineer with strong frontend and backend expertise. He builds
-						React interfaces that feel polished and intuitive, then supports them with reliable APIs,
+						I'm a full-stack engineer with strong frontend and backend expertise. I build
+						React interfaces that feel polished and intuitive, then support them with reliable APIs,
 						clear architecture, and maintainable production code.
 					</p>
 				</div>
 
-				<div className="relative z-10 md:col-span-4 md:block max-md:w-[70%] max-sm:mt-10 max-sm:max-w-70">
-					<div className="group aspect-[3/4] overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
-						<img
-							src={portfolioImages.aboutPortrait}
-							alt="Professional portrait"
-							className="h-full w-full object-cover brightness-75 transition-transform duration-700 group-hover:scale-105"
-						/>
+				<div className="relative z-10 md:col-span-4 md:block w-full max-sm:mt-10">
+					<div className="flex flex-col gap-3">
+						{/* Wide image at top — desktop only */}
+						<div className="hidden md:block group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
+							<img src="/me/1.png" alt="" className="h-full w-full object-cover" />
+							<div className="pointer-events-none absolute inset-0 bg-black/40" />
+						</div>
+						{/* Two smaller images */}
+						<div className="grid grid-cols-2 gap-3">
+							<div className="aspect-video overflow-hidden rounded-xl border border-outline-variant/10">
+								<img src="/me/2.png" alt="" className="h-full w-full object-cover" />
+							</div>
+							<div className="aspect-video overflow-hidden rounded-xl border border-outline-variant/10">
+								<img src={portfolioImages.aboutPortrait} alt="" className="h-full w-full object-cover" />
+							</div>
+						</div>
+						{/* Main wide image */}
+						<div className="group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
+							<img
+								src="/me/3.png"
+								alt="Professional portrait"
+								className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+							/>
+							<div className="pointer-events-none absolute inset-0 bg-black/40" />
+						</div>
 					</div>
 				</div>
 			</section>
@@ -107,7 +125,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						</div>
 						<h3 className="font-headline text-3xl">Frontend Engineering</h3>
 						<p className="leading-relaxed text-on-surface-variant">
-							He crafts responsive React experiences with thoughtful interaction patterns,
+							I craft responsive React experiences with thoughtful interaction patterns,
 							strong component architecture, and clean state management.
 						</p>
 						<div className="flex flex-wrap gap-2 pt-4">
@@ -125,7 +143,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						</div>
 						<h3 className="font-headline text-3xl">Backend & Data Systems</h3>
 						<p className="leading-relaxed text-on-surface-variant">
-							From schema design to authentication, he builds backend services that protect data,
+							From schema design to authentication, I build backend services that protect data,
 							reduce operational risk, and scale confidently.
 						</p>
 						<div className="flex flex-wrap gap-2 pt-4">
@@ -144,25 +162,25 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 							</div>
 							<h3 className="font-headline text-3xl">Systems Strategy</h3>
 							<p className="leading-relaxed text-on-surface-variant">
-								His approach connects product UX goals with practical engineering choices,
+								My approach connects product UX goals with practical engineering choices,
 								including microservices, socket communication, and CI/CD-ready workflows.
 							</p>
 						</div>
-						<div className="aspect-square w-full overflow-hidden rounded-lg border border-outline-variant/10 bg-surface-container-lowest md:w-64">
+						<div className="aspect-square w-full overflow-hidden rounded-lg border border-outline-variant/10 bg-surface-container-lowest md:aspect-auto md:w-64 md:self-stretch md:max-h-[calc(100%-120px)]">
 							<img
-								src={portfolioImages.aboutDataVisual}
+								src="https://www.shutterstock.com/shutterstock/videos/4103544833/thumb/1.jpg?ip=x480"
 								alt="Data visualization"
-								className="h-full w-full object-cover opacity-50 grayscale transition-all duration-700 hover:grayscale-0"
+								className="h-full min-h-full w-full object-cover opacity-50 grayscale transition-all duration-700 hover:grayscale-0"
 							/>
 						</div>
 					</article>
 
-					<article data-aos="zoom-in" data-aos-delay="140" className="flex cursor-default flex-col justify-end space-y-6 rounded-xl bg-primary-container p-10 md:col-span-4 lg:col-span-2">
+					<article data-aos="zoom-in" data-aos-delay="140" className="flex cursor-default flex-col justify-end space-y-6 rounded-xl bg-primary-container p-10 md:col-span-4 lg:col-span-2 md:max-h-[calc(100%-120px)]">
 						<Icon icon="material-symbols:code-rounded" className="text-5xl text-on-primary-container" />
 						<div>
 							<h3 className="font-headline text-3xl text-on-primary-container">Continuous Learning</h3>
 							<p className="mt-2 text-on-primary-container/80">
-								He stays current by exploring new tools, contributing to open source, and sharing what he learns.
+								I stay current by exploring new tools, contributing to open source, and sharing what I learn.
 							</p>
 						</div>
 					</article>
@@ -232,6 +250,58 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 				</article>
 			</section>
 
+
+			<section data-aos="fade-up" className="space-y-10">
+				<div className="space-y-2">
+					<div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-secondary">
+						<span className="h-px w-8 bg-secondary" />
+						AI/ML in Development
+					</div>
+					<h2 className="font-headline text-4xl text-on-surface">Yes, I Use AI in My Workflow</h2>
+					<p className="max-w-2xl text-base leading-relaxed text-on-surface-variant">
+						AI is part of my day-to-day workflow to improve velocity, clarity, and code quality — while keeping me the final decision-maker.
+					</p>
+				</div>
+
+				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+					{[
+						{
+							icon: 'material-symbols:commit-rounded',
+							title: 'AI-Assisted Commit Generation',
+							detail: 'I use AI to generate commit messages with concise but detailed context, making history easier to review and audit.',
+						},
+						{
+							icon: 'material-symbols:analytics-outline-rounded',
+							title: 'LSP + Generative Code Analysis',
+							detail: 'Beyond traditional static diagnostics, I combine LSP tooling with generative analysis for deeper insights on code quality and architecture.',
+						},
+						{
+							icon: 'material-symbols:lightbulb-outline-rounded',
+							title: 'LLM-Powered Ideation & Research',
+							detail: 'I use multiple LLMs to brainstorm features, compare implementation strategies, and accelerate prototyping.',
+						},
+						{
+							icon: 'material-symbols:person-check-outline-rounded',
+							title: 'Human-in-the-Loop Review',
+							detail: 'AI suggestions are reviewed and validated before merge to keep output aligned with project standards, reliability, and intent.',
+						},
+					].map((item, index) => (
+						<article
+							key={item.title}
+							data-aos="fade-up"
+							data-aos-delay={index * 80}
+							className="bento-card space-y-4 rounded-xl p-8"
+						>
+							<div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+								<Icon icon={item.icon} className="text-2xl text-primary" />
+							</div>
+							<h3 className="font-headline text-lg leading-snug">{item.title}</h3>
+							<p className="text-sm leading-relaxed text-on-surface-variant">{item.detail}</p>
+						</article>
+					))}
+				</div>
+			</section>
+
 			<section data-aos="fade-up" className="-mx-6 space-y-12 rounded-2xl border border-outline-variant/10 bg-surface-container-low/30 px-6 py-20 md:-mx-12 md:px-12 lg:-mx-24 lg:px-24">
 				<h2 className="font-headline text-4xl">Milestones</h2>
 				<div className="flex flex-col gap-12 md:flex-row">
@@ -250,7 +320,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 				</div>
 			</section>
 
-			<section
+         {/*<section
 				id="contact"
 				data-aos="fade-up"
 				className="relative isolate space-y-8 overflow-hidden rounded-3xl bg-gradient-to-b from-transparent to-surface-container-low/20 py-20 text-center"
@@ -279,7 +349,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						</button>
 					</Link>
 				</div>
-			</section>
+			</section>*/}
 		</main>
 	)
 }

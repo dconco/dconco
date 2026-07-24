@@ -1,6 +1,13 @@
 @import "tailwindcss";
+@import "@fontsource/syne/400.css";
+@import "@fontsource/syne/700.css";
+@import "@fontsource/syne/800.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/600.css";
 @import "@fontsource/noto-serif";
-@import "@fontsource/plus-jakarta-sans";
 
 @font-face {
 	font-family: "ITC Cushing Std";
@@ -114,14 +121,15 @@
 	--color-on-surface: #dae2fd;
 	--color-surface-bright: #31394d;
 
-	--font-headline: var(--font-itc-cushing-std);
-	--font-body: var(--font-roobert);
-	--font-label: var(--font-roobert-mono);
-	--font-itc-cushing-std: "ITC Cushing Std", var(--font-sans);
-	--font-roobert-mono: 'Roobert Mono', var(--font-sans);
-	--font-roobert: 'Roobert', var(--font-sans);
+	--font-headline: var(--font-syne);
+	--font-body: var(--font-inter);
+	--font-label: var(--font-jetbrains-mono);
+	--font-syne: 'Syne', var(--font-sans);
+	--font-inter: 'Inter', var(--font-sans);
+	--font-jetbrains-mono: 'JetBrains Mono', var(--font-mono);
 	--font-noto-serif: 'Noto Serif', var(--font-serif);
-	--font-plus-jakarta-sans: 'Plus Jakarta Sans', var(--font-sans);
+	--font-roobert-mono: 'JetBrains Mono', var(--font-mono);
+	--font-roobert: 'Inter', var(--font-sans);
 
 	--radius-lg: 0.5rem;
 	--radius-xl: 0.75rem;

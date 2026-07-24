@@ -5,14 +5,15 @@ export const heroHighlights = [
 		iconName: 'material-symbols:verified-rounded',
 		iconClass: 'text-secondary text-4xl',
 		title: 'Frontend + Backend',
-		detail: 'Dave Conco ships polished React interfaces backed by robust APIs, creating complete product experiences.',
+		detail: 'I ship polished React interfaces backed by robust APIs, creating complete product experiences.',
 		className: 'bg-surface-container-low',
 	},
 	{
 		iconName: 'material-symbols:auto-awesome-rounded',
 		iconClass: 'text-primary text-4xl',
 		title: 'Practical Innovation',
-		detail: 'He combines clean architecture with experimentation to turn hard requirements into reliable software.',
+		detail: 'I focus on clean architecture, maintainable code, and continuous improvement after release. Great products aren\'t just launched, they are cared for, refined, and scaled over time.',
+		detail2: 'Quality is a long-term commitment, not a one-time effort.',
 		className: 'bg-surface-container-highest',
 	},
 ];

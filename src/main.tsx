@@ -12,9 +12,9 @@ createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<ThemeProvider theme={portfolioTheme}>
 			<BrowserRouter>
-			<CartProvider>
-				<App />
-			</CartProvider>
+   			<CartProvider>
+   				<App />
+   			</CartProvider>
 			</BrowserRouter>
 		</ThemeProvider>
 	</StrictMode>,

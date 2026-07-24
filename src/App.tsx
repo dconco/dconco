@@ -11,6 +11,13 @@ import PaymentSuccess from './pages/PaymentSuccess'
 import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Projects from './pages/Projects'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import WarpShare from './pages/tools/WarpShare'
+import RutexAI from './pages/tools/RutexAI'
+import ClassValidator from './pages/tools/ClassValidator'
+import PhpSchemaMigrator from './pages/tools/PhpSchemaMigrator'
+import PhpSPA from './pages/tools/PhpSPA'
+import Tools from './pages/Tools'
 import AOS from 'aos'
 import { useCart } from './hooks/useCart'
 
@@ -64,6 +71,13 @@ export default function App() {
             <Route path="/checkout" element={<Checkout setActive={setActive} />} />
             <Route path="/payment-success" element={<PaymentSuccess />} />
             <Route path="/contact" element={<Contact setActive={setActive} />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/tools/warpshare" element={<WarpShare />} />
+            <Route path="/tools/rutexai" element={<RutexAI />} />
+            <Route path="/tools/class-validator" element={<ClassValidator />} />
+            <Route path="/tools/php-schema-migrator" element={<PhpSchemaMigrator />} />
+            <Route path="/tools" element={<Tools setActive={setActive} />} />
+            <Route path="/tools/phpspa" element={<PhpSPA />} />
          </Routes>
          <Footer />
          <CartDrawer isOpen={isCartOpen} onClose={closeCart} onProceedToCheckout={handleProceedToCheckout} />
