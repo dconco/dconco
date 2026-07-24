@@ -16,6 +16,7 @@ const links = [
    { label: 'Projects', url: '/projects' },
    { label: 'Store', url: '/store' },
    { label: 'Contact', url: '/contact' },
+   { label: 'Work Experience', url: '/#expertise' },
    { label: 'Uptime', url: '/uptime' },
 ]
 
@@ -68,9 +69,15 @@ export const Footer = (): React.ReactElement => {
                <Col title="Links">
                   {links.map((l) => (
                      <li key={l.label}>
-                        <Link to={l.url} className="text-sm text-on-surface-variant transition-colors hover:text-primary active:text-primary">
-                           {l.label}
-                        </Link>
+                        {l.url.includes('#') ? (
+                           <a href={l.url} className="text-sm text-on-surface-variant transition-colors hover:text-primary">
+                              {l.label}
+                           </a>
+                        ) : (
+                           <Link to={l.url} className="text-sm text-on-surface-variant transition-colors hover:text-primary active:text-primary">
+                              {l.label}
+                           </Link>
+                        )}
                      </li>
                   ))}
                </Col>
