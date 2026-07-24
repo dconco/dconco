@@ -44,6 +44,17 @@ const formatLogDate = (timestamp: number) => new Date(timestamp * 1000).toLocale
    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
 })
 
+const formatUpDuration = (sinceTimestamp: number) => {
+   const secs = Math.floor(Date.now() / 1000) - sinceTimestamp
+   const h = Math.floor(secs / 3600)
+   const m = Math.floor((secs % 3600) / 60)
+   const s = secs % 60
+   return h > 0 ? `${h}h ${m}m ${s}s` : m > 0 ? `${m}m ${s}s` : `${s}s`
+}
+
+const getUpSince = (logs?: MonitorLog[]) =>
+   logs?.find(l => l.type === 2)?.datetime ?? null
+
 const averageUptime = (monitors: Monitor[], period: '30' | '90') => {
    const values = monitors
       .map(monitor => Number.parseFloat(period === '30' ? (monitor.uptime_ratio_30 ?? monitor.uptime_ratio) : (monitor.uptime_ratio_90 ?? '')))
@@ -61,6 +72,12 @@ export default function Uptime(): React.JSX.Element {
    const [lastChecked, setLastChecked] = useState<Date | null>(null)
    const [serverHealth, setServerHealth] = useState<ServerHealth | null>(null)
    const [serverError, setServerError] = useState(false)
+   const [tick, setTick] = useState(0)
+
+   useEffect(() => {
+      const id = setInterval(() => setTick(t => t + 1), 1000)
+      return () => clearInterval(id)
+   }, [])
 
    const fetchMonitors = () => {
       setLoading(true)
@@ -203,7 +220,10 @@ export default function Uptime(): React.JSX.Element {
                            <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${s.dot}`} />
                            <div className="min-w-0"><p className="truncate font-bold text-on-surface">{monitor.friendly_name}</p><p className="truncate text-xs text-on-surface-variant">{monitor.url}</p></div>
                         </div>
-                        <div className={`inline-flex items-center gap-1.5 text-sm font-bold ${s.color}`}><Icon icon={s.icon} />{s.label}</div>
+                        <div className="flex flex-col items-end gap-1">
+                           <div className={`inline-flex items-center gap-1.5 text-sm font-bold ${s.color}`}><Icon icon={s.icon} />{s.label}</div>
+                           {monitor.status === 2 && (() => { const upSince = getUpSince(monitor.logs); return upSince ? <p className="text-[11px] text-on-surface-variant">Up for <span className="font-mono text-primary">{formatUpDuration(upSince + tick * 0)}</span></p> : null })()}
+                        </div>
                      </div>
                      <div className="mt-5 grid grid-cols-2 gap-3 border-t border-outline-variant/15 pt-4 sm:grid-cols-3">
                         <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 days</p><p className="mt-1 font-bold text-on-surface">{monitor.uptime_ratio_30 ? `${Number.parseFloat(monitor.uptime_ratio_30).toFixed(2)}%` : monitor.uptime_ratio ? `${Number.parseFloat(monitor.uptime_ratio).toFixed(2)}%` : '—'}</p></div>
