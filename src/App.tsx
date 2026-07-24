@@ -12,6 +12,10 @@ import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Projects from './pages/Projects'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import RefundPolicy from './pages/RefundPolicy'
+import DeveloperClientAgreement from './pages/DeveloperClientAgreement'
+import Uptime from './pages/Uptime'
 import WarpShare from './pages/tools/WarpShare'
 import RutexAI from './pages/tools/RutexAI'
 import ClassValidator from './pages/tools/ClassValidator'
@@ -72,6 +76,10 @@ export default function App() {
             <Route path="/payment-success" element={<PaymentSuccess />} />
             <Route path="/contact" element={<Contact setActive={setActive} />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/developer-client-agreement" element={<DeveloperClientAgreement />} />
+            <Route path="/uptime" element={<Uptime />} />
             <Route path="/tools/warpshare" element={<WarpShare />} />
             <Route path="/tools/rutexai" element={<RutexAI />} />
             <Route path="/tools/class-validator" element={<ClassValidator />} />

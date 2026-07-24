@@ -16,14 +16,14 @@ const links = [
    { label: 'Projects', url: '/projects' },
    { label: 'Store', url: '/store' },
    { label: 'Contact', url: '/contact' },
+   { label: 'Uptime', url: '/uptime' },
 ]
 
 const legal = [
    { label: 'Privacy Policy', url: '/privacy-policy' },
-   { label: 'Terms of Service', url: '#' },
-   { label: 'Cookie Policy', url: '#' },
-   { label: 'Refund Policy', url: '#' },
-   { label: 'Developer Client Agreement', url: '#' },
+   { label: 'Terms of Service', url: '/terms-of-service' },
+   { label: 'Refund Policy', url: '/refund-policy' },
+   { label: 'Developer Client Agreement', url: '/developer-client-agreement' },
 ]
 
 const articles = [

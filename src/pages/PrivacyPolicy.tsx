@@ -25,13 +25,13 @@ export default function PrivacyPolicy(): React.JSX.Element {
             </p>
          </div>
 
-         <Section title="Who This Covers">
+         <Section title="1. Who This Covers">
             <p>
                This policy applies to all visitors and users of dconco.tech, including anyone who browses the portfolio, purchases digital products from the store, submits a contact form, or uses any tool hosted under this domain.
             </p>
          </Section>
 
-         <Section title="What I Collect">
+         <Section title="2. What I Collect">
             <p>I only collect what's necessary to operate this site and fulfill orders. That includes:</p>
             <ul className="list-disc space-y-2 pl-6">
                <li><span className="text-on-surface font-medium">Contact information</span> — name and email address when you fill out the contact form or place an order.</li>
@@ -40,7 +40,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
             <p>I don't collect anything I don't need. If a form only needs your email, that's all I ask for.</p>
          </Section>
 
-         <Section title="How I Use It">
+         <Section title="3. How I Use It">
             <p>The information collected is used strictly to:</p>
             <ul className="list-disc space-y-2 pl-6">
                <li>Respond to enquiries and project requests</li>
@@ -50,7 +50,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
             <p>I don't sell your data. I don't share it with advertisers. I don't use it to build profiles on you.</p>
          </Section>
 
-         <Section title="Cookies">
+         <Section title="4. Cookies">
             <p>
                This site uses minimal cookies to keep your session state intact during checkout. No tracking cookies from ad networks are used.
             </p>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
             </p>
          </Section>
 
-         <Section title="Third-Party Services">
+         <Section title="5. Third-Party Services">
             <p>I use a small number of trusted third-party services to run this site:</p>
             <ul className="list-disc space-y-2 pl-6">
                <li><span className="text-on-surface font-medium">Payment processors</span> — handle all financial transactions securely under their own privacy policies.</li>
@@ -68,14 +68,14 @@ export default function PrivacyPolicy(): React.JSX.Element {
             <p>Each of these services operates under their own privacy policies and data handling standards.</p>
          </Section>
 
-         <Section title="Data Retention">
+         <Section title="6. Data Retention">
             <p>
                I keep your data only as long as it's needed. Order records are retained for accounting and legal compliance. Contact form submissions are kept until the conversation is resolved.
             </p>
             <p>You can request deletion of your personal data at any time by contacting me directly.</p>
          </Section>
 
-         <Section title="Your Rights">
+         <Section title="7. Your Rights">
             <p>You have the right to:</p>
             <ul className="list-disc space-y-2 pl-6">
                <li>Access the personal data I hold about you</li>
@@ -87,25 +87,25 @@ export default function PrivacyPolicy(): React.JSX.Element {
             <p>To exercise any of these rights, reach out via the contact page or directly at <a href="mailto:me@dconco.tech" className="text-primary hover:underline">me@dconco.tech</a>.</p>
          </Section>
 
-         <Section title="Security">
+         <Section title="8. Security">
             <p>
                I take reasonable technical measures to protect the data processed through this site. Connections are encrypted via HTTPS. Payment data never touches my servers. That said, no system is perfectly immune — if you ever notice something suspicious, let me know immediately.
             </p>
          </Section>
 
-         <Section title="Children">
+         <Section title="9. Children">
             <p>
                This site is not directed at children under 13. I don't knowingly collect personal information from minors. If you believe a child has submitted data through this site, contact me and I'll remove it promptly.
             </p>
          </Section>
 
-         <Section title="Changes to This Policy">
+         <Section title="10. Changes to This Policy">
             <p>
                If this policy changes in a meaningful way, I'll update the date at the top of this page. I won't bury significant changes in fine print — if something important shifts, I'll make it clear.
             </p>
          </Section>
 
-         <Section title="Contact">
+         <Section title="11. Contact">
             <p>
                Questions about this policy or how your data is handled? Reach me at <a href="mailto:me@dconco.tech" className="text-primary hover:underline">me@dconco.tech</a> or through the <a href="/contact" className="text-primary hover:underline">contact page</a>.
             </p>
