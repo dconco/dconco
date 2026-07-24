@@ -66,67 +66,86 @@ export default function Tools({ setActive }: { setActive: (active: LinkType) => 
    useEffect(() => { setActive('tools' as LinkType); window.scrollTo(0, 0) }, [setActive])
 
    return (
-      <main className="mx-auto max-w-7xl space-y-16 px-6 pb-24 pt-32 md:px-12">
+      <main className="mx-auto max-w-7xl px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
 
-         {/* Header */}
-         <section className="space-y-4" data-aos="fade-up">
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-secondary">
-               <span className="h-px w-8 bg-secondary" />
-               Open Source
+         <section data-aos="fade-up" className="relative overflow-hidden rounded-[2rem] border border-outline-variant/15 bg-surface-container-lowest px-6 py-10 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
+            <div className="pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
+            <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+               <div className="max-w-3xl space-y-6">
+                  <div className="inline-flex items-center gap-3 font-nav-link text-[10px] font-bold uppercase tracking-[0.28em] text-secondary">
+                     <span className="h-px w-8 bg-secondary" />
+                     Open source / 2026
+                  </div>
+                  <h1 className="font-headline text-5xl font-bold leading-[0.95] tracking-tight text-on-surface sm:text-6xl lg:text-8xl">
+                     Tools that <span className="font-serif font-normal italic text-primary">carry</span> the work.
+                  </h1>
+                  <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant sm:text-lg">
+                     Libraries, CLI tools, plugins, and frameworks built from real constraints — made available so your next build can move faster.
+                  </p>
+               </div>
+               <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-outline-variant/20 bg-outline-variant/20 sm:w-fit">
+                  <div className="bg-surface-container px-5 py-4 sm:px-7"><span className="block font-headline text-3xl text-primary">05</span><span className="mt-1 block font-nav-link text-[9px] uppercase tracking-[0.18em] text-on-surface-variant">Active tools</span></div>
+                  <div className="bg-surface-container px-5 py-4 sm:px-7"><span className="block font-headline text-3xl text-secondary">04</span><span className="mt-1 block font-nav-link text-[9px] uppercase tracking-[0.18em] text-on-surface-variant">Tool types</span></div>
+               </div>
             </div>
-            <h1 className="font-headline text-5xl font-bold text-on-surface md:text-6xl">Tools I've Built</h1>
-            <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               Libraries, CLI tools, plugins, and frameworks — things I built because I needed them, then made available for everyone.
-            </p>
          </section>
 
-         {/* Tools grid */}
-         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {tools.map((tool, index) => (
+         <section className="mt-12 grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-6">
+            {tools.map((tool, index) => {
+               const featured = index === 0
+               // PhpSPA: full-width hero (col-span-6 on lg)
+               // RutexAI + WarpShare: col-span-3 each (row 2)
+               // ClassValidator + SchemaMigrator: col-span-3 each (row 3)
+               const colSpan = featured ? 'lg:col-span-6' : 'lg:col-span-3'
+               return (
                <article
                   key={tool.name}
                   data-aos="fade-up"
                   data-aos-delay={index * 80}
-                  className="group flex flex-col justify-between space-y-6 rounded-2xl border border-outline-variant/20 bg-surface-container p-8 transition-colors hover:border-primary/30 hover:bg-surface-container-high"
+                  className={`group relative flex h-full min-h-[350px] flex-col justify-between overflow-hidden rounded-2xl border p-6 transition-all duration-500 sm:p-8 lg:min-h-[370px] ${colSpan} ${featured ? 'border-primary/25 bg-gradient-to-br from-primary/15 via-surface-container to-surface-container-low lg:min-h-[300px]' : 'border-outline-variant/15 bg-surface-container-low hover:border-primary/30 hover:bg-surface-container'}`}
                >
-                  <div className="space-y-4">
+                  <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-primary/10 blur-3xl" />
+                  <div className="relative space-y-6">
                      <div className="flex items-start justify-between gap-4">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                           <Icon icon={tool.icon} className="text-2xl text-primary" />
+                        <div className={`flex h-12 w-12 items-center justify-center rounded-xl border ${featured ? 'border-primary/30 bg-primary/15' : 'border-outline-variant/20 bg-surface-container-highest/50'}`}>
+                           <Icon icon={tool.icon} className={`text-2xl ${featured ? 'text-primary' : 'text-on-surface-variant transition-colors group-hover:text-primary'}`} />
                         </div>
-                        <span className={`text-xs font-bold uppercase tracking-widest ${tool.labelColor}`}>{tool.label}</span>
+                        <span className={`font-nav-link text-[9px] font-bold uppercase tracking-[0.2em] ${tool.labelColor}`}>{tool.label}</span>
                      </div>
-                     <h2 className="font-headline text-2xl font-bold text-on-surface">{tool.name}</h2>
-                     <p className="text-sm leading-relaxed text-on-surface-variant">{tool.description}</p>
+                     <div className="space-y-3">
+                        <div className="flex items-center gap-3"><span className="font-nav-link text-[10px] text-on-surface-variant/40">0{index + 1}</span><h2 className={`font-headline font-bold text-on-surface ${featured ? 'text-3xl sm:text-4xl' : 'text-2xl sm:text-3xl'}`}>{tool.name}</h2></div>
+                        <p className="max-w-xl text-sm leading-relaxed text-on-surface-variant">{tool.description}</p>
+                     </div>
                      <div className="flex flex-wrap gap-2">
                         {tool.tags.map(tag => (
-                           <span key={tag} className="rounded-full bg-surface-container-highest/60 px-3 py-1 text-xs text-on-surface-variant">
+                           <span key={tag} className="rounded-full border border-outline-variant/15 bg-surface-container-highest/50 px-3 py-1 font-nav-link text-[9px] uppercase tracking-wider text-on-surface-variant">
                               {tag}
                            </span>
                         ))}
                      </div>
                   </div>
 
-                  <div className="flex items-center gap-3 pt-2">
+                  <div className="relative mt-8 flex flex-wrap items-center gap-4 border-t border-outline-variant/15 pt-5">
                      <Link
                         to={tool.href}
-                        className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-on-primary transition-opacity hover:opacity-80"
+                        className="group/link inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 font-nav-link text-[10px] font-bold uppercase tracking-widest text-on-primary transition-all hover:bg-primary-fixed active:scale-95"
                      >
-                        Learn more
-                        <Icon icon="material-symbols:arrow-forward-rounded" />
+                        Explore tool
+                        <Icon icon="material-symbols:arrow-forward-rounded" className="transition-transform group-hover/link:translate-x-1" />
                      </Link>
                      <a
                         href={tool.external}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-xs text-on-surface-variant transition-colors hover:text-primary"
+                        className="inline-flex max-w-full items-center gap-1 truncate text-xs text-on-surface-variant transition-colors hover:text-primary"
                      >
-                        {tool.externalLabel} ↗
+                        {tool.externalLabel} <span aria-hidden="true">↗</span>
                      </a>
                   </div>
                </article>
-            ))}
-         </div>
+               )
+            })}
+         </section>
 
       </main>
    )

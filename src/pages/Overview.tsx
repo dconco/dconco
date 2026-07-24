@@ -185,39 +185,40 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
          </section>
 
          <section
-            id="contact"
             data-aos="fade-up"
-            className="relative overflow-hidden rounded-3xl bg-surface-container-low px-6 py-20 text-center md:px-12 md:py-24"
+            className="grid grid-cols-1 gap-4 md:grid-cols-2"
          >
-            <img
-					src={portfolioImages.contactOverlay}
-					alt=""
-					aria-hidden="true"
-					className="pointer-events-none absolute inset-x-0 top-0 h-full w-full object-cover opacity-15"
-				/>
+            <Link to="/about" className="group relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low p-10 transition-colors hover:border-primary/30 hover:bg-surface-container">
+               <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
+               <div className="relative space-y-4">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">About</span>
+                  <h2 className="font-headline text-3xl font-bold text-on-surface md:text-4xl">
+                     Who's behind the work
+                  </h2>
+                  <p className="text-base leading-relaxed text-on-surface-variant">
+                     My background, how I think about engineering, the tools I use daily, and what I'm focused on right now.
+                  </p>
+                  <div className="inline-flex items-center gap-2 text-sm font-bold text-primary transition-transform group-hover:translate-x-1">
+                     Read about me <Icon icon="material-symbols:arrow-forward-rounded" />
+                  </div>
+               </div>
+            </Link>
 
-            <div className="relative z-10 space-y-6">
-               <span className="text-sm font-bold tracking-widest text-primary">CONTACT</span>
-               <h2 className="font-headline mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-                  Ready to Curate Your <span className="italic font-serif text-secondary">Next Story</span>?
-               </h2>
-               <p className="font-body mx-auto max-w-2xl text-xl max-md:text-[17px] text-on-surface-variant">
-                  Currently accepting select project inquiries for 2026 and beyond.
-               </p>
-            </div>
-
-            <div className="relative z-10 mt-10 flex flex-wrap justify-center gap-6">
-               <Link to="/contact">
-                  <button className="rounded-full bg-primary-container px-10 py-5 text-lg font-bold text-on-primary-container shadow-lg transition-all duration-300 hover:scale-105">
-                     Start a Project
-                  </button>
-               </Link>
-               <a href="https://wa.me/2349121235927" target="_blank">
-                  <button className="rounded-full border border-white/10 bg-white/5 px-10 py-5 text-lg font-bold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10">
-                     Get in Touch
-                  </button>
-               </a>
-            </div>
+            <Link to="/projects" className="group relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low p-10 transition-colors hover:border-secondary/30 hover:bg-surface-container">
+               <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-secondary/10 blur-3xl" />
+               <div className="relative space-y-4">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Projects</span>
+                  <h2 className="font-headline text-3xl font-bold text-on-surface md:text-4xl">
+                     See what I've shipped
+                  </h2>
+                  <p className="text-base leading-relaxed text-on-surface-variant">
+                     Real products, real constraints. A full look at the systems, interfaces, and tools I've built and delivered.
+                  </p>
+                  <div className="inline-flex items-center gap-2 text-sm font-bold text-secondary transition-transform group-hover:translate-x-1">
+                     View projects <Icon icon="material-symbols:arrow-forward-rounded" />
+                  </div>
+               </div>
+            </Link>
          </section>
       </main>
    )
