@@ -101,7 +101,7 @@ export const Footer = (): React.ReactElement => {
                </Col>
             </div>
 
-            <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-outline-variant/20 pt-8 text-xs text-on-surface-variant/60 md:flex-row">
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-outline-variant/20 pt-8 text-xs text-on-surface-variant/60 md:flex-row md:gap-8">
                <span>© {new Date().getFullYear()} Dave Conco. All rights reserved.</span>
                <div className="flex gap-5">
                   {[

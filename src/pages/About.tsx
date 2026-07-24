@@ -2,7 +2,6 @@ import type React from 'react'
 import { Icon } from '@iconify/react'
 import { portfolioImages } from '../assets/images'
 import type { LinkType } from '../components/Header'
-import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const toolkit = [
@@ -155,8 +154,8 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						</div>
 					</article>
 
-					<article data-aos="fade-up" data-aos-delay="120" className="bento-card flex flex-col items-start gap-10 overflow-hidden rounded-xl p-10 md:col-span-4 md:flex-row lg:col-span-4">
-						<div className="flex-1 space-y-6">
+					<article data-aos="fade-up" data-aos-delay="120" className="bento-card flex min-h-[270px] flex-col items-start rounded-xl p-10 md:col-span-4 lg:col-span-4">
+						<div className="max-w-2xl space-y-6">
 							<div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10">
 								<Icon icon="si:insights-fill" className="text-3xl text-primary" />
 							</div>
@@ -166,16 +165,9 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 								including microservices, socket communication, and CI/CD-ready workflows.
 							</p>
 						</div>
-						<div className="aspect-square w-full overflow-hidden rounded-lg border border-outline-variant/10 bg-surface-container-lowest md:aspect-auto md:w-64 md:self-stretch md:max-h-[calc(100%-120px)]">
-							<img
-								src="https://www.shutterstock.com/shutterstock/videos/4103544833/thumb/1.jpg?ip=x480"
-								alt="Data visualization"
-								className="h-full min-h-full w-full object-cover opacity-50 grayscale transition-all duration-700 hover:grayscale-0"
-							/>
-						</div>
 					</article>
 
-					<article data-aos="zoom-in" data-aos-delay="140" className="flex cursor-default flex-col justify-end space-y-6 rounded-xl bg-primary-container p-10 md:col-span-4 lg:col-span-2 md:max-h-[calc(100%-120px)]">
+					<article data-aos="zoom-in" data-aos-delay="140" className="flex cursor-default flex-col justify-end space-y-6 self-start rounded-xl bg-primary-container p-10 md:col-span-4 md:h-fit lg:col-span-2">
 						<Icon icon="material-symbols:code-rounded" className="text-5xl text-on-primary-container" />
 						<div>
 							<h3 className="font-headline text-3xl text-on-primary-container">Continuous Learning</h3>
