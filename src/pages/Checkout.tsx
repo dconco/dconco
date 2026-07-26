@@ -238,7 +238,7 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
 
    if (items.length === 0 && paymentStep === 'method') {
       return (
-         <main className="mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-12">
+         <main className="mx-auto max-w-[1920px] px-6 pb-16 pt-32 lg:px-12">
             <div className="flex min-h-[60vh] flex-col items-center justify-center gap-6 text-center">
                <Icon icon="material-symbols:shopping-cart-off" className="text-7xl text-on-surface-variant/30" />
                <h2 className="font-headline text-3xl text-on-surface">Your cart is empty</h2>
@@ -252,7 +252,7 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
       const method = paymentMethods.find((m) => m.id === selectedMethod)
 
       return (
-         <main className="mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-12">
+         <main className="mx-auto max-w-[1920px] px-6 pb-16 pt-32 lg:px-12">
             <section className="max-w-2xl mx-auto">
                <div className="mb-8 flex items-center gap-4">
                   <button
@@ -437,7 +437,7 @@ export default function Checkout({ setActive }: { setActive: (active: LinkType) 
    }
 
    return (
-      <main className="mx-auto max-w-7xl space-y-12 px-6 pb-16 pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-12 px-6 pb-16 pt-32 lg:px-12">
          <section data-aos="fade-up" className="space-y-4">
             <div className="inline-flex items-center gap-2 rounded-full border border-outline-soft bg-surface-container-highest px-4 py-2">
                <Icon icon="material-symbols:lock" className="text-lg text-primary" />

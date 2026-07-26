@@ -25,7 +25,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
    }, [])
 
    return (
-      <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-32 px-6 pb-16 pt-32 lg:px-12">
          <section data-aos="fade-up" className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
             <img
                src={portfolioImages.headerOverlay}

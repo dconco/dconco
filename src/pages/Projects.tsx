@@ -10,7 +10,7 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 	useEffect(() => setActive('projects'), [setActive])
 
 	return (
-		<main className="mx-auto max-w-7xl px-8 pb-24 pt-32">
+		<main className="mx-auto max-w-[1920px] px-6 pb-24 pt-32 md:px-12">
 			<header data-aos="fade-down" data-aos-duration="700" className="mb-20 max-w-3xl space-y-6">
 				<div className="inline-flex items-center gap-3 rounded-full border border-outline-variant/15 bg-surface-container-highest px-4 py-1.5">
 					<span className="h-2 w-2 animate-pulse rounded-full bg-primary" />

@@ -26,7 +26,8 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
 
    return (
       <HeaderShell className="relative border-b border-white/[0.06] bg-[#0b1326]/80">
-         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-4 md:px-8 lg:py-5">
+         <div className="w-full px-6 md:px-8 lg:px-12">
+         <nav className="mx-auto flex w-full max-w-[1920px] items-center justify-between gap-8 py-4 lg:py-5">
             <Link to="/" className="group flex shrink-0 items-center gap-3" aria-label="Dave Conco home">
                <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-primary/40 bg-primary/10 font-nav-link text-sm font-bold text-primary transition-colors group-hover:bg-primary/20">
                   DC
@@ -118,6 +119,7 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
                </button>
             </div>
          </nav>
+         </div>
 
          <div
             className={`absolute left-4 right-4 top-[calc(100%+0.5rem)] z-40 rounded-2xl border border-outline-variant/35 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-emerald-950/70 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl transition-all duration-300 lg:hidden ${

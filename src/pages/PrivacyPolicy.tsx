@@ -12,7 +12,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
    useEffect(() => { window.scrollTo(0, 0) }, [])
 
    return (
-      <main className="mx-auto max-w-3xl space-y-12 px-6 pb-24 pt-32 md:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-12 px-6 pb-24 pt-32 md:px-12">
          <div className="space-y-4">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-secondary">
                <span className="h-px w-8 bg-secondary" />

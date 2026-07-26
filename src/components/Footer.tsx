@@ -43,7 +43,7 @@ const Col = ({ title, children }: { title: string; children: React.ReactNode }) 
 export const Footer = (): React.ReactElement => {
    return (
       <footer className="mt-20 w-full rounded-t-3xl bg-surface-container-lowest">
-         <div className="mx-auto max-w-7xl px-6 py-16 md:px-12">
+         <div className="mx-auto max-w-[1920px] px-6 py-16 md:px-12">
             <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
                {/* Brand */}
                <div className="col-span-2 space-y-4 md:col-span-1">

@@ -126,7 +126,7 @@ export default function Uptime(): React.JSX.Element {
    const anyDown = monitors.some(m => m.status === 9)
 
    return (
-      <main className="mx-auto max-w-5xl space-y-12 px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-12 px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
 
          {/* Header */}
          <section className="space-y-4">
