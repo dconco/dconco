@@ -53,7 +53,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
    useEffect(() => setActive('about'), [setActive])
 
 	return (
-		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 md:px-12 lg:px-24 lg:pt-24">
+		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 lg:px-12 lg:pt-24">
 			<section id="about" data-aos="fade-up" className="relative isolate md:grid max-sm:block max-md:flex items-end gap-12 overflow-hidden rounded-2xl p-6 md:grid-cols-12 md:p-10">
 				<img
 					src={portfolioImages.headerOverlay}
@@ -294,7 +294,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 				</div>
 			</section>
 
-			<section data-aos="fade-up" className="-mx-6 space-y-12 rounded-2xl border border-outline-variant/10 bg-surface-container-low/30 px-6 py-20 md:-mx-12 md:px-12 lg:-mx-24 lg:px-24">
+			<section data-aos="fade-up" className="-mx-6 space-y-12 rounded-2xl border border-outline-variant/10 bg-surface-container-low/30 px-6 py-20 lg:-mx-12 lg:px-12">
 				<h2 className="font-headline text-4xl">Milestones</h2>
 				<div className="flex flex-col gap-12 md:flex-row">
 					{milestones.map((item, index) => (
