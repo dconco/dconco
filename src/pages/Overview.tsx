@@ -25,17 +25,20 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
    }, [])
 
    return (
-      <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
-         <section data-aos="fade-up" className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
+      <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12 lg:pt-24">
+         <section
+            data-aos="fade-up"
+            className="relative isolate grid grid-cols-1 items-end gap-12 overflow-hidden rounded-2xl p-6 md:p-10 lg:grid-cols-12"
+         >
             <img
                src={portfolioImages.headerOverlay}
                alt=""
                aria-hidden="true"
-               className="pointer-events-none absolute inset-0 h-full md:h-[90%] w-full object-cover opacity-8"
+               className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-8"
             />
 
-            <div className="space-y-8 lg:col-span-8 lg:mb-24">
-               <h1 className="font-headline leading-[0.95] tracking-tight mt-3">
+            <div className="relative z-10 space-y-8 lg:col-span-8 lg:mb-16">
+               <h1 className="font-headline leading-[0.95] tracking-tight">
                   <span className="block text-6xl md:text-7xl lg:text-7xl font-bold text-on-surface">Dave</span>
                   <span className="block text-6xl md:text-7xl lg:text-7xl font-bold text-on-surface">Conco</span>
                   <span className="block text-6xl md:text-7xl lg:text-7xl font-bold font-serif italic text-primary">dconco.</span>
@@ -47,7 +50,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                </p>
             </div>
 
-            <div className="flex flex-col gap-6 lg:col-span-4">
+            <div className="relative z-10 flex flex-col gap-6 lg:col-span-4">
                {heroHighlights.map((item, index) => (
                   <HoverLift key={item.title}>
                      <article data-aos="fade-left" data-aos-delay={index * 120} className={`space-y-4 rounded-xl p-8 ${item.className}`}>
