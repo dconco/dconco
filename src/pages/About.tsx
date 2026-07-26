@@ -53,7 +53,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
    useEffect(() => setActive('about'), [setActive])
 
 	return (
-		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 md:px-12 lg:px-24">
+		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 md:px-12 lg:px-24 lg:pt-24">
 			<section id="about" data-aos="fade-up" className="relative isolate md:grid max-sm:block max-md:flex items-end gap-12 overflow-hidden rounded-2xl p-6 md:grid-cols-12 md:p-10">
 				<img
 					src={portfolioImages.headerOverlay}
