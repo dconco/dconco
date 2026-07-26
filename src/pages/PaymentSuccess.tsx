@@ -23,7 +23,7 @@ export default function PaymentSuccess(): React.JSX.Element {
 
    if (method === 'paystack') {
       return (
-         <main className="mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-12">
+         <main className="mx-auto max-w-[1920px] px-6 pb-16 pt-32 lg:px-12">
             <section className="flex flex-col items-center justify-center gap-8 py-20">
                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/20">
                   <Icon icon="material-symbols:check-circle" className="text-7xl text-primary" />
@@ -67,7 +67,7 @@ export default function PaymentSuccess(): React.JSX.Element {
 
    if (method === 'transfer' || method === 'crypto') {
       return (
-         <main className="mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-12">
+         <main className="mx-auto max-w-[1920px] px-6 pb-16 pt-32 lg:px-12">
             <section className="flex flex-col items-center justify-center gap-8 py-20">
                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/20">
                   <Icon icon="material-symbols:check-circle" className="text-7xl text-primary" />
@@ -122,7 +122,7 @@ export default function PaymentSuccess(): React.JSX.Element {
 
    if (method === 'opera') {
       return (
-         <main className="mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-12">
+         <main className="mx-auto max-w-[1920px] px-6 pb-16 pt-32 lg:px-12">
             <section className="flex flex-col items-center justify-center gap-8 py-20">
                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/20">
                   <Icon icon="material-symbols:check-circle" className="text-7xl text-primary" />

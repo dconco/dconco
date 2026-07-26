@@ -21,7 +21,7 @@ export default function WarpShare(): React.JSX.Element {
    }, [])
 
    return (
-      <main className="mx-auto max-w-4xl space-y-20 px-6 pb-24 pt-32 md:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-20 px-6 pb-24 pt-32 md:px-12">
 
          {/* Hero */}
          <section className="space-y-6">

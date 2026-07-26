@@ -59,7 +59,7 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
    }
 
    return (
-      <main className="mx-auto max-w-7xl space-y-16 px-6 pb-16 pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-16 px-6 pb-16 pt-32 lg:px-12">
          <section data-aos="fade-up" className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-outline-soft bg-surface-container-highest px-4 py-2">
                <Icon icon="material-symbols:storefront" className="text-xl text-primary" />

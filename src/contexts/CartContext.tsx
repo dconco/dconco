@@ -37,30 +37,30 @@ export type CartContextType = {
 
 export function CartProvider({ children }: { children: ReactNode }) {
    const [isOpen, setIsOpen] = useState(false)
-   const [items, setItems] = useState<CartItem[]>([])
+   const [items, setItems] = useState<CartItem[]>(() => {
+      try { return JSON.parse(sessionStorage.getItem('cart') ?? '[]') } catch { return [] }
+   })
+
+   const persist = (next: CartItem[]) => {
+      sessionStorage.setItem('cart', JSON.stringify(next))
+      return next
+   }
 
    const openCart = useCallback(() => setIsOpen(true), [])
    const closeCart = useCallback(() => setIsOpen(false), [])
 
    const addToCart = useCallback((product: Product, license: LicenseType) => {
       setItems((prev) => {
-         const exists = prev.some(
-            (item) => item.product.id === product.id && item.license === license
-         )
-         if (exists) return prev
-         return [...prev, { product, license }]
+         if (prev.some(i => i.product.id === product.id && i.license === license)) return prev
+         return persist([...prev, { product, license }])
       })
    }, [])
 
    const removeFromCart = useCallback((productId: string, license: LicenseType) => {
-      setItems((prev) =>
-         prev.filter(
-            (item) => !(item.product.id === productId && item.license === license)
-         )
-      )
+      setItems((prev) => persist(prev.filter(i => !(i.product.id === productId && i.license === license))))
    }, [])
 
-   const clearCart = useCallback(() => setItems([]), [])
+   const clearCart = useCallback(() => { sessionStorage.removeItem('cart'); setItems([]) }, [])
 
    const isInCart = useCallback(
       (productId: string, license: LicenseType) => {

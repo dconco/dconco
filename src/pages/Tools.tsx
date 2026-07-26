@@ -66,7 +66,7 @@ export default function Tools({ setActive }: { setActive: (active: LinkType) => 
    useEffect(() => { setActive('tools' as LinkType); window.scrollTo(0, 0) }, [setActive])
 
    return (
-      <main className="mx-auto max-w-7xl px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
 
          <section data-aos="fade-up" className="relative overflow-hidden rounded-[2rem] border border-outline-variant/15 bg-surface-container-lowest px-6 py-10 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
             <div className="pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />

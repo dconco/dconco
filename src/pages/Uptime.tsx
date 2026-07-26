@@ -8,6 +8,7 @@ interface Monitor {
    url: string
    status: number // 0=paused, 1=not checked, 2=up, 8=seems down, 9=down
    uptime_ratio: string
+   custom_uptime_ratio?: string // pipe-separated: "30day-90day"
    uptime_ratio_30?: string
    uptime_ratio_90?: string
    average_response_time: string
@@ -44,11 +45,25 @@ const formatLogDate = (timestamp: number) => new Date(timestamp * 1000).toLocale
    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
 })
 
+const formatUpDuration = (sinceTimestamp: number) => {
+   const secs = Math.floor(Date.now() / 1000) - sinceTimestamp
+   const h = Math.floor(secs / 3600)
+   const m = Math.floor((secs % 3600) / 60)
+   const s = secs % 60
+   return h > 0 ? `${h}h ${m}m ${s}s` : m > 0 ? `${m}m ${s}s` : `${s}s`
+}
+
+const getUpSince = (logs?: MonitorLog[]) =>
+   logs?.find(l => l.type === 2)?.datetime ?? null
+
+const getCustomRatio = (monitor: Monitor, index: 0 | 1) =>
+   monitor.custom_uptime_ratio?.split('-')[index] ?? (index === 0 ? monitor.uptime_ratio : undefined)
+
 const averageUptime = (monitors: Monitor[], period: '30' | '90') => {
    const values = monitors
-      .map(monitor => Number.parseFloat(period === '30' ? (monitor.uptime_ratio_30 ?? monitor.uptime_ratio) : (monitor.uptime_ratio_90 ?? '')))
-      .filter(value => Number.isFinite(value))
-   return values.length ? `${(values.reduce((total, value) => total + value, 0) / values.length).toFixed(2)}%` : '—'
+      .map(m => Number.parseFloat(getCustomRatio(m, period === '30' ? 0 : 1) ?? ''))
+      .filter(v => Number.isFinite(v))
+   return values.length ? `${(values.reduce((a, b) => a + b, 0) / values.length).toFixed(2)}%` : '—'
 }
 
 
@@ -61,6 +76,12 @@ export default function Uptime(): React.JSX.Element {
    const [lastChecked, setLastChecked] = useState<Date | null>(null)
    const [serverHealth, setServerHealth] = useState<ServerHealth | null>(null)
    const [serverError, setServerError] = useState(false)
+   const [tick, setTick] = useState(0)
+
+   useEffect(() => {
+      const id = setInterval(() => setTick(t => t + 1), 1000)
+      return () => clearInterval(id)
+   }, [])
 
    const fetchMonitors = () => {
       setLoading(true)
@@ -82,12 +103,13 @@ export default function Uptime(): React.JSX.Element {
             response_times: '1',
             response_times_limit: '1',
             logs: '1',
-            logs_limit: '8',
+            logs_limit: '20',
          }),
       })
          .then(r => r.json())
          .then(d => {
             if (d.stat === 'ok') {
+               console.log('monitors:', JSON.stringify(d.monitors?.[0], null, 2))
                setMonitors(d.monitors ?? [])
                setLastChecked(new Date())
             } else {
@@ -104,7 +126,7 @@ export default function Uptime(): React.JSX.Element {
    const anyDown = monitors.some(m => m.status === 9)
 
    return (
-      <main className="mx-auto max-w-5xl space-y-12 px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-12 px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
 
          {/* Header */}
          <section className="space-y-4">
@@ -203,11 +225,14 @@ export default function Uptime(): React.JSX.Element {
                            <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${s.dot}`} />
                            <div className="min-w-0"><p className="truncate font-bold text-on-surface">{monitor.friendly_name}</p><p className="truncate text-xs text-on-surface-variant">{monitor.url}</p></div>
                         </div>
-                        <div className={`inline-flex items-center gap-1.5 text-sm font-bold ${s.color}`}><Icon icon={s.icon} />{s.label}</div>
+                        <div className="flex flex-col items-end gap-1">
+                           <div className={`inline-flex items-center gap-1.5 text-sm font-bold ${s.color}`}><Icon icon={s.icon} />{s.label}</div>
+                           {monitor.status === 2 && (() => { const upSince = getUpSince(monitor.logs); return <p className="text-[11px] text-on-surface-variant">Up for <span className="font-mono text-primary">{upSince ? formatUpDuration(upSince + tick * 0) : '—'}</span></p> })()}
+                        </div>
                      </div>
                      <div className="mt-5 grid grid-cols-2 gap-3 border-t border-outline-variant/15 pt-4 sm:grid-cols-3">
-                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 days</p><p className="mt-1 font-bold text-on-surface">{monitor.uptime_ratio_30 ? `${Number.parseFloat(monitor.uptime_ratio_30).toFixed(2)}%` : monitor.uptime_ratio ? `${Number.parseFloat(monitor.uptime_ratio).toFixed(2)}%` : '—'}</p></div>
-                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">90 days</p><p className="mt-1 font-bold text-on-surface">{monitor.uptime_ratio_90 ? `${Number.parseFloat(monitor.uptime_ratio_90).toFixed(2)}%` : '—'}</p></div>
+                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 0); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '—' })()}</p></div>
+                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">90 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 1); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '—' })()}</p></div>
                         <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Response</p><p className="mt-1 font-bold text-on-surface">{monitor.average_response_time ? `${monitor.average_response_time}ms` : '—'}</p></div>
                      </div>
                      {monitor.logs && monitor.logs.length > 0 && (

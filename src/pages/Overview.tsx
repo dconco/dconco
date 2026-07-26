@@ -25,7 +25,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
    }, [])
 
    return (
-      <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12">
+      <main className="mx-auto max-w-[1920px] space-y-32 px-6 pb-16 pt-32 lg:px-12">
          <section data-aos="fade-up" className="min-h-full inset-0 grid grid-cols-1 items-end gap-12 lg:grid-cols-12">
             <img
                src={portfolioImages.headerOverlay}
@@ -34,11 +34,11 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                className="pointer-events-none absolute inset-0 h-full md:h-[90%] w-full object-cover opacity-8"
             />
 
-            <div className="space-y-8 lg:col-span-8">
+            <div className="space-y-8 lg:col-span-8 lg:mb-24">
                <h1 className="font-headline leading-[0.95] tracking-tight mt-3">
-                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-on-surface">Dave</span>
-                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-on-surface">Conco</span>
-                  <span className="block text-6xl md:text-7xl lg:text-8xl font-bold font-serif italic text-primary">dconco.</span>
+                  <span className="block text-6xl md:text-7xl lg:text-7xl font-bold text-on-surface">Dave</span>
+                  <span className="block text-6xl md:text-7xl lg:text-7xl font-bold text-on-surface">Conco</span>
+                  <span className="block text-6xl md:text-7xl lg:text-7xl font-bold font-serif italic text-primary">dconco.</span>
                </h1>
 
                <p className="font-body max-w-2xl text-xl max-md:text-base text-on-surface-variant mt-10">
