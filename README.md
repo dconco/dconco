@@ -63,6 +63,7 @@ const dconco = {
 }
 ```
 
+<!--
 I'm Dave Conco publicly known as dconco! An experienced young tech enthusiast 🚀
 
 I specialize in creating websites, mobile application, and APIs, with my tech stack, PHP, JS/TS, React, Go/C++, Python. I create libraries and frameworks including PhpSPA a component based library for PHP. I also train AI, created a coding agent on Acode (a mobile coding IDE) that assist developers in working faster, view, read, and edit their files directly on Acode.
@@ -74,6 +75,7 @@ In the backend field, I specialize in building high-concurrency systems and low-
 I don't just use library, or any functions, I understand how it works internally, which allows me to reverse-engineer bottlenecks, optimize performance down to the byte, and build custom tools from scratch when existing ones fall short. I thrive where software meets hardware, always aiming to push the limits of efficiency and build next-generation tech.
 
 <br clear="right"/>
+-->
 
 ## 🔥 **SIGNATURE PROJECT**
 
