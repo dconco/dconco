@@ -88,9 +88,10 @@ I don't just use library, or any functions, I understand how it works internally
   </a>
   
   *🏗️ Redefining PHP development with modern SPA capabilities*
-  
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa&theme=radical&border_radius=15&border_color=FF6B6B" />
-  
+
+  [![Stars](https://img.shields.io/github/stars/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
+  [![Forks](https://img.shields.io/github/forks/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
+
 </div>
 
 ---
