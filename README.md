@@ -86,11 +86,11 @@ I don't just use library, or any functions, I understand how it works internally
   <a href="https://phpspa.tech">
     <img src="https://img.shields.io/badge/PhpSPA-Revolutionary%20Framework-FF6B6B?style=for-the-badge&logo=php&logoColor=white&labelColor=2D3748" />
   </a>
-  
-  *🏗️ Redefining PHP development with modern SPA capabilities*
 
   [![Stars](https://img.shields.io/github/stars/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
   [![Forks](https://img.shields.io/github/forks/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
+  
+  *🏗️ Redefining PHP development with modern SPA capabilities*
 
 </div>
 
