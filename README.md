@@ -89,6 +89,7 @@ I don't just use library, or any functions, I understand how it works internally
 
   [![Stars](https://img.shields.io/github/stars/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
   [![Forks](https://img.shields.io/github/forks/dconco/phpspa?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/dconco/phpspa)
+  [![Packagist Downloads](https://img.shields.io/packagist/dt/dconco/phpspa?style=for-the-badge&logo=packagist&logoColor=white&labelColor=20232A&color=FF6B6B)](https://packagist.org/packages/dconco/phpspa)
   
   *🏗️ Redefining PHP development with modern SPA capabilities*
 
