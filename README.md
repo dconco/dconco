@@ -1,6 +1,6 @@
 <div align="center">
   
-  [![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=dconco.tech&fontSize=50&fontAlignY=35&desc=Where%20Innovation%20Meets%20Excellence&descAlignY=55&descSize=20&animation=fadeIn)](https://www.dconco.tech)
+  [![Header](./assets/header.png)](https://www.dconco.tech)
   
 </div>
 
@@ -388,7 +388,7 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
 
 <div align="center">
   
-  ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=footer&text=Let's%20Build%20Something%20Amazing&fontSize=30&fontAlignY=65&desc=The%20Future%20is%20Code&descAlignY=85&descSize=16&animation=fadeIn)
+  ![Footer](./assets/footer.png)
   
   ### 🌈 *"Code is poetry in motion"* 🌈
   
