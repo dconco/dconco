@@ -73,21 +73,6 @@ const dconco = {
 
 ---
 
-## 💬 Chat With My WhatsApp Bot
-
-<div align="center">
-  
-  Want to test my AI bot that talks like me? 🚀  
-  It's fun, smart, and knows everything about my work, projects, and dev journey.
-  
-  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
-    <img src="https://img.shields.io/badge/💬%20Let's%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=075E54" alt="Chat on WhatsApp" />
-  </a>
-  
-</div>
-
----
-
 ## 🔥 **SIGNATURE PROJECT**
 
 <div align="center">
@@ -214,6 +199,8 @@ const dconco = {
 
 <div align="center">
   
+  <img src="./assets/anime-banner.gif" width="100%" alt="Favorite anime banner" />
+  
   > *"When I'm not shipping code, I'm deep in another world."* 🍿  
   > A curated list of the anime, animation and cartoon worlds I love most.
   
@@ -225,15 +212,77 @@ const dconco = {
 
 <br>
 
-| 🥇 Top Picks | 🔥 Also Loved |
-| :--- | :--- |
-| ⚔️ **The Eminence in Shadow** `S1-2` *(waiting S3)* | 🃏 **Black Clover** `EP1-170` *(waiting S2)* |
-| 🩸 **Demon Slayer** `S1-4` *(waiting S5)* | ⚔️ **Solo Leveling** *(waiting S3)* |
-| 👑 **She-Ra and the Princesses of Power** `S5` | 🛡️ **The Rising of the Shield Hero** *(waiting S4)* |
-| 🗡️ **Claymore** `EP1-26` | 🐉 **The Dragon Prince** `S1-7` |
-| 😈 **Devil May Cry** `S1-2` | 💥 **Arifureta** `S1-3` *(waiting S4)* |
-| 🔪 **Sakamoto Days** `S1` *(waiting S2)* | 👑 **Overlord** `S1-4` *(waiting S5)* |
-| 🐱 **Kitti Katz** `S1` *(waiting S2)* | 🦹 **NIMONA** |
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="./assets/anime/eminence-in-shadow.jpg" width="100%" alt="The Eminence in Shadow" /><br>
+      <b>⚔️ The Eminence in Shadow</b><br>
+      <sub><code>S1-2</code> · waiting S3</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="./assets/anime/demon-slayer.jpg" width="100%" alt="Demon Slayer" /><br>
+      <b>🩸 Demon Slayer</b><br>
+      <sub><code>S1-4</code> · waiting S5</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="./assets/anime/solo-leveling.jpg" width="100%" alt="Solo Leveling" /><br>
+      <b>⚔️ Solo Leveling</b><br>
+      <sub>waiting S3</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/anime/black-clover.jpg" width="100%" alt="Black Clover" /><br>
+      <b>🃏 Black Clover</b><br>
+      <sub><code>EP1-170</code> · waiting S2</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/anime/claymore.jpg" width="100%" alt="Claymore" /><br>
+      <b>🗡️ Claymore</b><br>
+      <sub><code>EP1-26</code></sub>
+    </td>
+    <td align="center">
+      <img src="./assets/anime/shield-hero.jpg" width="100%" alt="The Rising of the Shield Hero" /><br>
+      <b>🛡️ Shield Hero</b><br>
+      <sub>waiting S4</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/anime/sakamoto-days.jpg" width="100%" alt="Sakamoto Days" /><br>
+      <b>🔪 Sakamoto Days</b><br>
+      <sub><code>S1</code> · waiting S2</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/anime/overlord.jpg" width="100%" alt="Overlord" /><br>
+      <b>👑 Overlord</b><br>
+      <sub><code>S1-4</code> · waiting S5</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/anime/arifureta.jpg" width="100%" alt="Arifureta" /><br>
+      <b>💥 Arifureta</b><br>
+      <sub><code>S1-3</code> · waiting S4</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/anime/devil-may-cry.jpg" width="100%" alt="Devil May Cry" /><br>
+      <b>😈 Devil May Cry</b><br>
+      <sub><code>S1-2</code></sub>
+    </td>
+    <td align="center">
+      <img src="./assets/anime/nimona.jpg" width="100%" alt="Nimona" /><br>
+      <b>🦹 NIMONA</b><br>
+      <sub>Movie</sub>
+    </td>
+    <td align="center">
+      <b>👑 She-Ra</b> <code>S5</code><br>
+      <b>🐉 The Dragon Prince</b> <code>S1-7</code><br>
+      <b>🐱 Kitti Katz</b> <code>S1</code><br>
+      <sub>and 70+ more in the full list below</sub>
+    </td>
+  </tr>
+</table>
 
 <details>
 <summary>🎥 <b>Expand the full favorites list (22 titles)</b></summary>
