@@ -123,8 +123,14 @@ const dconco = {
   <a href="https://github.com/dconco/phpspa-client">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa-client&theme=radical&border_radius=15&border_color=FF6B6B" />
   </a>
-  <a href="https://github.com/dconco/express-todo-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=express-todo-app&theme=radical&border_radius=15&border_color=FF6B6B" />
+  <a href="https://github.com/dconco/phpspa-validator">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa-validator&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
+  <a href="https://github.com/hallofcodes/acode-ai-agent-plugin">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=hallofcodes&repo=acode-ai-agent-plugin&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
+  <a href="https://github.com/spyrochat/spyrochat">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=spyrochat&repo=spyrochat&theme=radical&border_radius=15&border_color=FF6B6B" />
   </a>
 
 </div>
@@ -145,6 +151,7 @@ const dconco = {
 
 ### ⚙️ **Backend Excellence**
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
@@ -178,7 +185,7 @@ const dconco = {
 
 <div align="center">
   
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=radical&hide_border=true&background=0D1117&ring=FF6B6B&fire=FF6B6B&currStreakLabel=FF6B6B" alt="Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=dconco&theme=radical&hide_border=true&background=0D1117&ring=FF6B6B&fire=FF6B6B&currStreakLabel=FF6B6B" alt="Streak Stats" />
   
 </div>
 
@@ -188,7 +195,7 @@ const dconco = {
 
 <div align="center">
   
-  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=radical&no-frame=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" />
   
 </div>
 
