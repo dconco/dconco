@@ -12,6 +12,14 @@
 
 </div>
 
+<div align="center">
+  
+  <a href="https://github.com/dconco?tab=followers"><img src="https://img.shields.io/github/followers/dconco?style=for-the-badge&color=FF6B6B&labelColor=0D1117&logo=github" alt="Followers" /></a>
+  <a href="https://github.com/dconco"><img src="https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" /></a>
+  <a href="https://github.com/dconco?tab=repositories"><img src="https://img.shields.io/badge/Repositories-113-FF6B6B?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117" alt="Repositories" /></a>
+
+</div>
+
 ---
 
 <div align="center">
@@ -63,19 +71,24 @@ const dconco = {
 }
 ```
 
-<!--
-I'm Dave Conco publicly known as dconco! An experienced young tech enthusiast 🚀
-
-I specialize in creating websites, mobile application, and APIs, with my tech stack, PHP, JS/TS, React, Go/C++, Python. I create libraries and frameworks including PhpSPA a component based library for PHP. I also train AI, created a coding agent on Acode (a mobile coding IDE) that assist developers in working faster, view, read, and edit their files directly on Acode.
-
-I've been working with software development for many years, my understanding in backend field makes me understand many other backend languages faster in a simple look, and learning new languages feels simple to me.
-
-In the backend field, I specialize in building high-concurrency systems and low-latency APIs. I have deep expertise in managing Unix sockets, manual memory management in C++, and implementing real-time communication using WebSockets and Go. My focus is always on writing lean, 'library-first' code that prioritizes execution speed over framework bloat.
-
-I don't just use library, or any functions, I understand how it works internally, which allows me to reverse-engineer bottlenecks, optimize performance down to the byte, and build custom tools from scratch when existing ones fall short. I thrive where software meets hardware, always aiming to push the limits of efficiency and build next-generation tech.
-
 <br clear="right"/>
--->
+
+---
+
+## 💬 Chat With My WhatsApp Bot
+
+<div align="center">
+  
+  Want to test my AI bot that talks like me? 🚀  
+  It's fun, smart, and knows everything about my work, projects, and dev journey.
+  
+  <a href="https://wa.me/2349064772574?text=Hey+dconco,+I+saw+your+GitHub+🤖">
+    <img src="https://img.shields.io/badge/💬%20Let's%20Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=075E54" alt="Chat on WhatsApp" />
+  </a>
+  
+</div>
+
+---
 
 ## 🔥 **SIGNATURE PROJECT**
 
@@ -92,6 +105,27 @@ I don't just use library, or any functions, I understand how it works internally
   [![Packagist Downloads](https://img.shields.io/packagist/dt/dconco/phpspa?style=for-the-badge&logo=packagist&logoColor=white&labelColor=20232A&color=FF6B6B)](https://packagist.org/packages/dconco/phpspa)
   
   *🏗️ Redefining PHP development with modern SPA capabilities*
+
+</div>
+
+---
+
+## 📌 **PINNED PROJECTS**
+
+<div align="center">
+
+  <a href="https://github.com/dconco/phpspa">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
+  <a href="https://github.com/hallofcodes/WarpShare">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=hallofcodes&repo=WarpShare&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
+  <a href="https://github.com/dconco/phpspa-client">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=phpspa-client&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
+  <a href="https://github.com/dconco/express-todo-app">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dconco&repo=express-todo-app&theme=radical&border_radius=15&border_color=FF6B6B" />
+  </a>
 
 </div>
 
@@ -142,6 +176,22 @@ I don't just use library, or any functions, I understand how it works internally
   
 </div>
 
+<div align="center">
+  
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dconco&theme=radical&hide_border=true&background=0D1117&ring=FF6B6B&fire=FF6B6B&currStreakLabel=FF6B6B" alt="Streak Stats" />
+  
+</div>
+
+---
+
+## 🏆 **GITHUB TROPHIES**
+
+<div align="center">
+  
+  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+  
+</div>
+
 ---
 
 ## ⚡ **ACTIVITY PULSE**
@@ -151,6 +201,80 @@ I don't just use library, or any functions, I understand how it works internally
   ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dconco&custom_title=dconco's%20Contribution%20Graph&bg_color=0D1117&color=FF6B6B&line=FF6B6B&point=FFFFFF&area=true&hide_border=true)
   
 </div>
+
+<div align="center">
+  
+  <img src="https://raw.githubusercontent.com/dconco/dconco/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+  
+</div>
+
+---
+
+## 🎌 **MY FAVORITE ANIME**
+
+<div align="center">
+  
+  > *"When I'm not shipping code, I'm deep in another world."* 🍿  
+  > A curated list of the anime, animation and cartoon worlds I love most.
+  
+  <a href="https://github.com/dconco/anime-watchlist">
+    <img src="https://img.shields.io/badge/📺%20Full%20Watchlist-88%2B%20Titles-FF6B6B?style=for-the-badge&logo=myanimelist&logoColor=white&labelColor=2D3748" alt="Full Watchlist" />
+  </a>
+  
+</div>
+
+<br>
+
+| 🥇 Top Picks | 🔥 Also Loved |
+| :--- | :--- |
+| ⚔️ **The Eminence in Shadow** `S1-2` *(waiting S3)* | 🃏 **Black Clover** `EP1-170` *(waiting S2)* |
+| 🩸 **Demon Slayer** `S1-4` *(waiting S5)* | ⚔️ **Solo Leveling** *(waiting S3)* |
+| 👑 **She-Ra and the Princesses of Power** `S5` | 🛡️ **The Rising of the Shield Hero** *(waiting S4)* |
+| 🗡️ **Claymore** `EP1-26` | 🐉 **The Dragon Prince** `S1-7` |
+| 😈 **Devil May Cry** `S1-2` | 💥 **Arifureta** `S1-3` *(waiting S4)* |
+| 🔪 **Sakamoto Days** `S1` *(waiting S2)* | 👑 **Overlord** `S1-4` *(waiting S5)* |
+| 🐱 **Kitti Katz** `S1` *(waiting S2)* | 🦹 **NIMONA** |
+
+<details>
+<summary>🎥 <b>Expand the full favorites list (22 titles)</b></summary>
+
+<br>
+
+1. ⚔️ The Eminence in Shadow `S1-2` – waiting S3
+2. 🩸 Demon Slayer `S1-4` – waiting S5
+3. 👑 She-Ra and the Princesses of Power `S5`
+4. 🗡️ Claymore `EP1-26`
+5. 😈 Devil May Cry `S1-2`
+6. 🐱 Kitti Katz `S1` – waiting S2
+7. 🔪 Sakamoto Days `S1` – waiting S2
+8. 🃏 Black Clover `EP1-170` – waiting S2
+9. ⚔️ Solo Leveling – waiting S3
+10. 🔮 Mysticons `S1-2`
+11. 🧚 Winx Club: The Magic is Back `S2` – waiting S3
+12. 🛡️ Jade Armor `S1-2`
+13. 🎓 Supernatural Academy `S1`
+14. 🐈 Puss in Boots `S1-6`
+15. 💫 LoliRock `S1-2` – waiting S3
+16. 🐉 The Dragon Prince `S1-7`
+17. 👑 Elena of Avalor `S1-3`
+18. 💥 Arifureta: From Commonplace to World's Strongest `S1-3` – waiting S4
+19. 🦹 NIMONA
+20. 👑 Overlord `S1-4` – waiting S5
+21. 🛡️ The Rising of the Shield Hero – waiting S4
+22. 🦸 Banished from the Hero's Party `S1-2`
+
+</details>
+
+<details>
+<summary>📚 <b>The full archive, to-watch queue and more</b></summary>
+
+<br>
+
+Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, Hunter x Hunter, My Hero Academia, Death Note and more) live in the dedicated repo:
+
+👉 **[dconco/anime-watchlist](https://github.com/dconco/anime-watchlist)**
+
+</details>
 
 ---
 
