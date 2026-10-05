@@ -327,6 +327,38 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
 
 ---
 
+## 🎮 **GAMES I PLAY**
+
+<div align="center">
+  
+  > *"Reflexes sharpened one match at a time."* 🕹️
+  
+</div>
+
+<br>
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/⚔️-Fighting-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Fighting" /><br>
+      <b>🥷 Shadow Fight 4</b><br>
+      <sub>RPG fighter · Arena duels</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/🪱-Multiplayer-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Multiplayer" /><br>
+      <b>🪱 Annelids</b><br>
+      <sub>Online worm battle · PvP chaos</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/🏹-Precision-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Precision" /><br>
+      <b>🏹 Archery Battle 3D</b><br>
+      <sub>1v1 archery duels · Aim & timing</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 🌐 **CONNECT WITH ME**
 
 <div align="center">
