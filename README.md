@@ -12,9 +12,10 @@
 
 <div align="center">
   
-  <a href="https://github.com/dconco?tab=followers"><img src="https://img.shields.io/github/followers/dconco?style=for-the-badge&color=FF6B6B&labelColor=0D1117&logo=github" alt="Followers" /></a>
-  <a href="https://github.com/dconco"><img src="https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" /></a>
-  <a href="https://github.com/dconco?tab=repositories"><img src="https://img.shields.io/badge/Repositories-113-FF6B6B?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117" alt="Repositories" /></a>
+  [![Followers](https://img.shields.io/github/followers/dconco?style=for-the-badge&color=FF6B6B&labelColor=0D1117&logo=github)](https://github.com/dconco?tab=followers)
+  [![Total Coding Time | Wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg?style=for-the-badge)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
+  [![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/dconco)
+  [![Repositories](https://img.shields.io/badge/Repositories-113-FF6B6B?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117)](https://github.com/dconco?tab=repositories)
 
 </div>
 
@@ -379,17 +380,6 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
   [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@daveconco)
   [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+2349064772574)
   
-</div>
-
----
-
-## 💎 **CODING METRICS**
-
-<div align="center">
-  
-  [![wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg?style=for-the-badge)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
-  ![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)
-  ![](https://hit.yhype.me/github/profile?account_id=118613296)
 </div>
 
 ---
