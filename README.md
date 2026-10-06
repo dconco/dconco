@@ -1,6 +1,6 @@
 <div align="center">
   
-  [![Header](./assets/header.png)](https://www.dconco.tech)
+  [![Header](./assets/header.webp)](https://www.dconco.tech)
   
 </div>
 
@@ -199,7 +199,7 @@ const dconco = {
 
 <div align="center">
   
-  <img src="./assets/anime-banner.gif" width="100%" alt="Favorite anime banner" />
+  <img src="./assets/anime-banner.webp" width="100%" alt="Favorite anime banner" />
   
   > *"When I'm not shipping code, I'm deep in another world."* 🍿  
   > A curated list of the anime, animation and cartoon worlds I love most.
@@ -215,63 +215,63 @@ const dconco = {
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="./assets/anime/eminence-in-shadow.jpg" width="100%" alt="The Eminence in Shadow" /><br>
+      <img src="./assets/anime/eminence-in-shadow.webp" width="100%" alt="The Eminence in Shadow" /><br>
       <b>⚔️ The Eminence in Shadow</b><br>
       <sub><code>S1-2</code> · waiting S3</sub>
     </td>
     <td align="center" width="33%">
-      <img src="./assets/anime/demon-slayer.jpg" width="100%" alt="Demon Slayer" /><br>
+      <img src="./assets/anime/demon-slayer.webp" width="100%" alt="Demon Slayer" /><br>
       <b>🩸 Demon Slayer</b><br>
       <sub><code>S1-4</code> · waiting S5</sub>
     </td>
     <td align="center" width="33%">
-      <img src="./assets/anime/solo-leveling.jpg" width="100%" alt="Solo Leveling" /><br>
+      <img src="./assets/anime/solo-leveling.webp" width="100%" alt="Solo Leveling" /><br>
       <b>⚔️ Solo Leveling</b><br>
       <sub>waiting S3</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/anime/black-clover.jpg" width="100%" alt="Black Clover" /><br>
+      <img src="./assets/anime/black-clover.webp" width="100%" alt="Black Clover" /><br>
       <b>🃏 Black Clover</b><br>
       <sub><code>EP1-170</code> · waiting S2</sub>
     </td>
     <td align="center">
-      <img src="./assets/anime/claymore.jpg" width="100%" alt="Claymore" /><br>
+      <img src="./assets/anime/claymore.webp" width="100%" alt="Claymore" /><br>
       <b>🗡️ Claymore</b><br>
       <sub><code>EP1-26</code></sub>
     </td>
     <td align="center">
-      <img src="./assets/anime/shield-hero.jpg" width="100%" alt="The Rising of the Shield Hero" /><br>
+      <img src="./assets/anime/shield-hero.webp" width="100%" alt="The Rising of the Shield Hero" /><br>
       <b>🛡️ Shield Hero</b><br>
       <sub>waiting S4</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/anime/sakamoto-days.jpg" width="100%" alt="Sakamoto Days" /><br>
+      <img src="./assets/anime/sakamoto-days.webp" width="100%" alt="Sakamoto Days" /><br>
       <b>🔪 Sakamoto Days</b><br>
       <sub><code>S1</code> · waiting S2</sub>
     </td>
     <td align="center">
-      <img src="./assets/anime/overlord.jpg" width="100%" alt="Overlord" /><br>
+      <img src="./assets/anime/overlord.webp" width="100%" alt="Overlord" /><br>
       <b>👑 Overlord</b><br>
       <sub><code>S1-4</code> · waiting S5</sub>
     </td>
     <td align="center">
-      <img src="./assets/anime/arifureta.jpg" width="100%" alt="Arifureta" /><br>
+      <img src="./assets/anime/arifureta.webp" width="100%" alt="Arifureta" /><br>
       <b>💥 Arifureta</b><br>
       <sub><code>S1-3</code> · waiting S4</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/anime/devil-may-cry.jpg" width="100%" alt="Devil May Cry" /><br>
+      <img src="./assets/anime/devil-may-cry.webp" width="100%" alt="Devil May Cry" /><br>
       <b>😈 Devil May Cry</b><br>
       <sub><code>S1-2</code></sub>
     </td>
     <td align="center">
-      <img src="./assets/anime/nimona.jpg" width="100%" alt="Nimona" /><br>
+      <img src="./assets/anime/nimona.webp" width="100%" alt="Nimona" /><br>
       <b>🦹 NIMONA</b><br>
       <sub>Movie</sub>
     </td>
@@ -420,7 +420,7 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
 
 <div align="center">
   
-  ![Footer](./assets/footer.png)
+  ![Footer](./assets/footer.webp)
   
   ### 🌈 *"Code is poetry in motion"* 🌈
   
