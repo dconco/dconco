@@ -4,100 +4,74 @@ import { getEntry, getFresh, put } from '../utils/fileCache'
 
 const router = Router()
 
-// Play Games OAuth creds live ONLY on the server (never shipped to the client).
-const CLIENT_ID = process.env.PLAY_GAMES_CLIENT_ID ?? ''
-const CLIENT_SECRET = process.env.PLAY_GAMES_CLIENT_SECRET ?? ''
-const REFRESH_TOKEN = process.env.PLAY_GAMES_REFRESH_TOKEN ?? ''
-const configured = Boolean(CLIENT_ID && CLIENT_SECRET && REFRESH_TOKEN)
+// Public Play Games profile slug (no API key / OAuth needed - this page is public).
+const SLUG = process.env.PLAY_GAMES_PROFILE ?? 'dconco'
+const PROFILE_URL = `https://play.google.com/profile/${SLUG}?hl=en_US`
 
-const TOKEN_URL = 'https://oauth2.googleapis.com/token'
-const GAMES_BASE = 'https://games.googleapis.com/games/v1'
-
-// File-backed cache: the live profile survives restarts and token outages.
 const CACHE_KEY = 'games_profile'
 const TTL = 24 * 60 * 60 * 1000 // 24 hours
 
+type Achievement = {
+	name: string
+	description: string
+	rarity: string | null
+	progress: string | null
+	icon: string | null
+}
 type PlayerProfile = {
 	playerName: string | null
 	avatar: string | null
 	gamerLevel: number | null
-	experiencePoints: number | null
+	achievements: Achievement[]
 }
 
-// Trade the long-lived refresh token for a short-lived access token.
-async function accessToken(): Promise<string> {
-	const body = new URLSearchParams({
-		client_id: CLIENT_ID,
-		client_secret: CLIENT_SECRET,
-		refresh_token: REFRESH_TOKEN,
-		grant_type: 'refresh_token',
-	})
-	const r = await fetch(TOKEN_URL, {
-		method: 'POST',
-		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-		body,
-	})
-	if (!r.ok) {
-		const txt = await r.text().catch(() => '')
-		throw new Error(`token ${r.status}: ${txt.slice(0, 300)}`)
-	}
-	const json = (await r.json()) as { access_token?: string }
-	if (!json.access_token) throw new Error('No access_token returned')
-	return json.access_token
-}
+const decode = (s: string) =>
+	s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&quot;/g, '"')
 
-// Pull the authenticated player's own Play Games profile (level + XP).
-async function fetchPlayer(): Promise<PlayerProfile> {
+// Scrape the public profile page: level/name from <title>, achievements + trophy
+// count from the server-rendered HTML. No credentials, no OAuth.
+async function scrapeProfile(): Promise<PlayerProfile> {
 	const fresh = getFresh<PlayerProfile>(CACHE_KEY, TTL)
 	if (fresh !== null) return fresh
 
-	const token = await accessToken()
+	const r = await fetch(PROFILE_URL, { headers: { 'Accept-Language': 'en-US', 'User-Agent': 'Mozilla/5.0' } })
+	if (!r.ok) throw new Error(`profile ${r.status}`)
+	const html = await r.text()
 
-	// players/me intermittently 500s with Google "backendError"; retry a few times.
-	let r: Awaited<ReturnType<typeof fetch>> | null = null
-	let lastBody = ''
-	for (let attempt = 0; attempt < 3; attempt++) {
-		r = await fetch(`${GAMES_BASE}/players/me?language=en`, {
-			headers: { Authorization: `Bearer ${token}` },
+	const title = html.match(/<title>([^<]+)<\/title>/)?.[1] ?? ''
+	const playerName = title.split('|')[0]?.trim() || SLUG
+	const gamerLevel = Number(title.match(/Level\s+(\d+)/)?.[1]) || null
+	const avatar = html.match(/og:image"\s+content="([^"]+)"/)?.[1] ?? `https://play.google.com/profile/preview/${SLUG}`
+
+	// Achievement cards: name / description / completion / rarity.
+	const achievements: Achievement[] = []
+	const cardRe = /class="TzqU8" title="([^"]+)">[^<]*<\/div><div class="pLKw6c" title="([^"]+)"/g
+	let m: RegExpExecArray | null
+	while ((m = cardRe.exec(html)) && achievements.length < 12) {
+		const after = html.slice(m.index, m.index + 500)
+		achievements.push({
+			name: decode(m[1]),
+			description: decode(m[2]),
+			progress: after.match(/>(\d+% complete)</)?.[1] ?? null,
+			rarity: after.match(/>(Ultra Rare|Very Rare|Rare|Uncommon|Common)</i)?.[1] ?? null,
+			icon: after.match(/url\('([^']+)'\)/)?.[1] ?? null,
 		})
-		if (r.ok) break
-		lastBody = await r.text().catch(() => '')
-		if (r.status !== 500 && r.status !== 503) break // only retry transient server errors
-		await new Promise((ok) => setTimeout(ok, 400 * (attempt + 1)))
-	}
-	if (!r || !r.ok) {
-		throw new Error(`players/me ${r?.status ?? '?'}: ${lastBody.slice(0, 300)}`)
-	}
-	const p = (await r.json()) as {
-		displayName?: string
-		avatarImageUrl?: string
-		experienceInfo?: { currentLevel?: { level?: number }; currentExperiencePoints?: string }
 	}
 
-	const profile: PlayerProfile = {
-		playerName: p.displayName ?? null,
-		avatar: p.avatarImageUrl ?? null,
-		gamerLevel: p.experienceInfo?.currentLevel?.level ?? null,
-		experiencePoints: p.experienceInfo?.currentExperiencePoints
-			? Number(p.experienceInfo.currentExperiencePoints)
-			: null,
-	}
+	const profile: PlayerProfile = { playerName, avatar, gamerLevel, achievements }
 	put(CACHE_KEY, profile)
 	return profile
 }
 
-// Serve curated per-game stats (games.json) merged with the LIVE Play Games
-// player profile. Per-game level/rank for third-party titles is not exposed by
-// the Play Games API, so those stay curated; the player-level profile is live.
+// Serve curated per-game stats (games.json) merged with the LIVE public profile
+// (level, trophies, achievements) scraped from the public Play Games page.
 router.get('/', async (_req: Request, res: Response) => {
 	const base = games as typeof games & {
 		profile: { playerName: string; totalGamesPlayed: number | null; gamerLevel: number | null }
 	}
 
-	if (!configured) return res.json({ data: base })
-
 	try {
-		const live = await fetchPlayer()
+		const live = await scrapeProfile()
 		const entry = getEntry<PlayerProfile>(CACHE_KEY)
 		res.json({
 			data: {
@@ -107,27 +81,26 @@ router.get('/', async (_req: Request, res: Response) => {
 					playerName: live.playerName ?? base.profile.playerName,
 					gamerLevel: live.gamerLevel ?? base.profile.gamerLevel,
 					avatar: live.avatar,
-					experiencePoints: live.experiencePoints,
+					achievements: live.achievements,
 					lastChecked: entry ? new Date(entry.at).toISOString() : null,
 				},
 			},
 		})
 	} catch (err) {
-		// On any auth/API failure, serve the last cached profile from disk;
-		// only if there is none at all do we drop to the curated data.
-		console.error('[games] live fetch failed:', (err as Error).message)
+		console.error('[games] profile scrape failed:', (err as Error).message)
 		const entry = getEntry<PlayerProfile>(CACHE_KEY)
 		if (entry) {
-			const stale = entry.data
+			const s = entry.data
 			return res.json({
 				data: {
 					...base,
 					profile: {
 						...base.profile,
-						playerName: stale.playerName ?? base.profile.playerName,
-						gamerLevel: stale.gamerLevel ?? base.profile.gamerLevel,
-						avatar: stale.avatar,
-						experiencePoints: stale.experiencePoints,
+						playerName: s.playerName ?? base.profile.playerName,
+						gamerLevel: s.gamerLevel ?? base.profile.gamerLevel,
+						avatar: s.avatar,
+						trophies: s.trophies,
+						achievements: s.achievements,
 						lastChecked: new Date(entry.at).toISOString(),
 					},
 				},
