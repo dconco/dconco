@@ -62,7 +62,7 @@ router.get('/', async (_req: Request, res: Response) => {
 					: null,
 				languages: top(s7.languages, 8),
 				editors: top(s7.editors, 5),
-				projects: top(s7.projects, 6),
+				categories: top(s7.categories, 6),
 				os: top(s7.operating_systems, 4),
 			},
 		})
@@ -78,7 +78,7 @@ type WakaStats = {
 	best_day?: { date: string; text: string }
 	languages?: WakaItem[]
 	editors?: WakaItem[]
-	projects?: WakaItem[]
+	categories?: WakaItem[]
 	operating_systems?: WakaItem[]
 }
 

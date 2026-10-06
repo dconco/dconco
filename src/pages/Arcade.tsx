@@ -16,7 +16,7 @@ type WakaData = {
 	bestDay: { date: string; text: string } | null
 	languages: WakaItem[]
 	editors: WakaItem[]
-	projects: WakaItem[]
+	categories: WakaItem[]
 	os: WakaItem[]
 }
 
@@ -154,7 +154,7 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 
 						<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 							<BarCard title="Languages" icon="material-symbols:code-rounded" items={waka.languages} />
-							<BarCard title="Projects" icon="material-symbols:folder-code-outline-rounded" items={waka.projects} />
+							<BarCard title="AI vs Human Coding" icon="material-symbols:robot-outline" items={waka.categories} />
 							<BarCard title="Editors" icon="material-symbols:edit-document-outline-rounded" items={waka.editors} />
 							<BarCard title="Operating Systems" icon="material-symbols:desktop-windows-outline-rounded" items={waka.os} />
 						</div>
