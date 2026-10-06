@@ -46,6 +46,7 @@ type GamesData = {
 		gamerLevel: number | null
 		avatar?: string | null
 		experiencePoints?: number | null
+		trophies?: number | null
 		achievements?: PlayAchievement[]
 		lastChecked?: string | null
 	}
@@ -245,6 +246,15 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 									</p>
 								)}
 							</div>
+							{games.profile.trophies != null && (
+								<div className="flex items-center gap-1.5 border-l border-outline-variant/20 pl-3 text-right">
+									<Icon icon="material-symbols:trophy-rounded" className="text-tertiary" />
+									<div>
+										<p className="font-headline text-2xl font-bold text-tertiary">{games.profile.trophies}</p>
+										<p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Trophies</p>
+									</div>
+								</div>
+							)}
 						</div>
 					)}
 				</div>

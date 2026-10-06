@@ -22,6 +22,7 @@ type PlayerProfile = {
 	playerName: string | null
 	avatar: string | null
 	gamerLevel: number | null
+	trophies: number | null
 	achievements: Achievement[]
 }
 
@@ -40,7 +41,12 @@ async function scrapeProfile(): Promise<PlayerProfile> {
 
 	const title = html.match(/<title>([^<]+)<\/title>/)?.[1] ?? ''
 	const playerName = title.split('|')[0]?.trim() || SLUG
-	const gamerLevel = Number(title.match(/Level\s+(\d+)/)?.[1]) || null
+	const gamerLevel =
+		Number(html.match(/class="LA9k3d">Level\s+(\d+)</)?.[1]) ||
+		Number(title.match(/Level\s+(\d+)/)?.[1]) ||
+		null
+	// Trophy total sits in the header next to the level (class daLzDe).
+	const trophies = Number(html.match(/class="daLzDe">(\d+)</)?.[1]) || null
 	// Real avatar is the first lh3 /pgs/ image in the header; preview url is only a fallback.
 	const avatar =
 		html.match(/https:\/\/lh3\.googleusercontent\.com\/pgs\/[A-Za-z0-9_-]+/)?.[0] ??
@@ -62,7 +68,7 @@ async function scrapeProfile(): Promise<PlayerProfile> {
 		})
 	}
 
-	const profile: PlayerProfile = { playerName, avatar, gamerLevel, achievements }
+	const profile: PlayerProfile = { playerName, avatar, gamerLevel, trophies, achievements }
 	put(CACHE_KEY, profile)
 	return profile
 }
@@ -85,6 +91,7 @@ router.get('/', async (_req: Request, res: Response) => {
 					playerName: live.playerName ?? base.profile.playerName,
 					gamerLevel: live.gamerLevel ?? base.profile.gamerLevel,
 					avatar: live.avatar,
+					trophies: live.trophies,
 					achievements: live.achievements,
 					lastChecked: entry ? new Date(entry.at).toISOString() : null,
 				},
@@ -103,6 +110,7 @@ router.get('/', async (_req: Request, res: Response) => {
 						playerName: s.playerName ?? base.profile.playerName,
 						gamerLevel: s.gamerLevel ?? base.profile.gamerLevel,
 						avatar: s.avatar,
+						trophies: s.trophies,
 						achievements: s.achievements,
 						lastChecked: new Date(entry.at).toISOString(),
 					},
