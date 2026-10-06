@@ -32,7 +32,13 @@ type Game = {
 	stats: { label: string; value: string }[]
 }
 type GamesData = {
-	profile: { playerName: string; totalGamesPlayed: number | null; gamerLevel: number | null }
+	profile: {
+		playerName: string
+		totalGamesPlayed: number | null
+		gamerLevel: number | null
+		avatar?: string | null
+		experiencePoints?: number | null
+	}
 	games: Game[]
 }
 
@@ -190,9 +196,23 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 						<h2 className="font-headline text-4xl text-on-surface">Games I Play</h2>
 					</div>
 					{games?.profile?.gamerLevel != null && (
-						<div className="text-right">
-							<p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Player level</p>
-							<p className="font-headline text-2xl font-bold text-secondary">{games.profile.gamerLevel}</p>
+						<div className="flex items-center gap-3">
+							{games.profile.avatar && (
+								<img
+									src={games.profile.avatar}
+									alt={games.profile.playerName ?? 'Player'}
+									className="h-11 w-11 rounded-full border border-outline-variant/30 object-cover"
+								/>
+							)}
+							<div className="text-right">
+								<p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Player level</p>
+								<p className="font-headline text-2xl font-bold text-secondary">{games.profile.gamerLevel}</p>
+								{games.profile.experiencePoints != null && (
+									<p className="text-[10px] text-on-surface-variant/70">
+										{games.profile.experiencePoints.toLocaleString()} XP
+									</p>
+								)}
+							</div>
 						</div>
 					)}
 				</div>
