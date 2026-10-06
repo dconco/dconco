@@ -69,6 +69,7 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 
 	const [games, setGames] = useState<GamesData | null>(null)
 	const [gamesLoading, setGamesLoading] = useState(true)
+	const [gamesDiag, setGamesDiag] = useState<{ warning?: string; detail?: string } | null>(null)
 
 	useEffect(() => {
 		fetch(`${API_BASE}/api/wakatime`)
@@ -82,7 +83,10 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 
 		fetch(`${API_BASE}/api/games`)
 			.then((r) => r.json())
-			.then((json) => setGames(json.data))
+			.then((json) => {
+				setGames(json.data)
+				if (json.warning || json.detail) setGamesDiag({ warning: json.warning, detail: json.detail })
+			})
 			.catch(() => setGames(null))
 			.finally(() => setGamesLoading(false))
 	}, [])
@@ -236,6 +240,19 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 						</div>
 					)}
 				</div>
+
+				{gamesDiag && (
+					<div className="rounded-xl border border-tertiary/30 bg-tertiary/5 p-4 text-sm text-on-surface-variant">
+						<p className="mb-1 font-semibold text-tertiary">
+							Live Play Games stats unavailable ({gamesDiag.warning ?? 'error'}) - showing curated data
+						</p>
+						{gamesDiag.detail && (
+							<pre className="mt-2 overflow-x-auto whitespace-pre-wrap break-words rounded-lg bg-surface-container p-3 text-[11px] leading-relaxed text-on-surface-variant/80">
+								{gamesDiag.detail}
+							</pre>
+						)}
+					</div>
+				)}
 
 				{gamesLoading && (
 					<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
