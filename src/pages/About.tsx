@@ -3,6 +3,7 @@ import Seo, { pageSeo } from '../components/Seo'
 import { Icon } from '@iconify/react'
 import { portfolioImages } from '../assets/images'
 import type { LinkType } from '../components/Header'
+import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const toolkit = [
@@ -312,6 +313,40 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 						</article>
 					))}
 				</div>
+			</section>
+
+			<section data-aos="fade-up" className="grid grid-cols-1 gap-4 md:grid-cols-2">
+				<Link to="/projects" className="group relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low p-10 transition-colors hover:border-secondary/30 hover:bg-surface-container">
+					<div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-secondary/10 blur-3xl" />
+					<div className="relative space-y-4">
+						<span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Projects</span>
+						<h2 className="font-headline text-3xl font-bold text-on-surface md:text-4xl">
+							See what I've shipped
+						</h2>
+						<p className="text-base leading-relaxed text-on-surface-variant">
+							Real products, real constraints. A full look at the systems, interfaces, and tools I've built and delivered.
+						</p>
+						<div className="inline-flex items-center gap-2 text-sm font-bold text-secondary transition-transform group-hover:translate-x-1">
+							View projects <Icon icon="material-symbols:arrow-forward-rounded" />
+						</div>
+					</div>
+				</Link>
+
+				<Link to="/arcade" className="group relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low p-10 transition-colors hover:border-primary/30 hover:bg-surface-container">
+					<div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
+					<div className="relative space-y-4">
+						<span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Arcade</span>
+						<h2 className="font-headline text-3xl font-bold text-on-surface md:text-4xl">
+							Beyond the code
+						</h2>
+						<p className="text-base leading-relaxed text-on-surface-variant">
+							Live WakaTime coding stats, the anime I watch, and the games I play. A look beyond the work.
+						</p>
+						<div className="inline-flex items-center gap-2 text-sm font-bold text-primary transition-transform group-hover:translate-x-1">
+							Enter the arcade <Icon icon="material-symbols:arrow-forward-rounded" />
+						</div>
+					</div>
+				</Link>
 			</section>
 
          {/*<section
