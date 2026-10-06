@@ -27,7 +27,7 @@ type Game = {
 	icon: string
 	genre: string
 	playUrl: string
-	level: number | null
+	hoursPlayed: number | null
 	rank: string | null
 	achievements: GameAchievements
 	stats: { label: string; value: string }[]
@@ -298,11 +298,13 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 								</div>
 
 								<div className="grid grid-cols-2 gap-3">
-									<GameMetric label="Level" value={game.level != null ? String(game.level) : '—'} accent="text-primary" />
+									<GameMetric label="Hours played" value={game.hoursPlayed != null ? `${game.hoursPlayed}h` : '—'} accent="text-primary" />
 									<GameMetric
 										label="Achievements"
-										value={game.achievements.unlocked != null && game.achievements.total != null
-											? `${game.achievements.unlocked}/${game.achievements.total}`
+										value={game.achievements.unlocked != null
+											? game.achievements.total != null
+												? `${game.achievements.unlocked}/${game.achievements.total}`
+												: String(game.achievements.unlocked)
 											: '—'}
 										accent="text-secondary"
 									/>

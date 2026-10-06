@@ -1,20 +1,42 @@
 {
 	"profile": {
 		"playerName": "dconco",
-		"totalGamesPlayed": 4,
+		"totalGamesPlayed": 6,
 		"gamerLevel": null
 	},
 	"games": [
 		{
+			"id": "archery-battle-3d",
+			"title": "Archery Battle 3D",
+			"icon": "archery-battle-3d.webp",
+			"genre": "Sports / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.cg.archery",
+			"hoursPlayed": 13.1,
+			"rank": null,
+			"achievements": { "unlocked": 13, "total": null },
+			"stats": []
+		},
+		{
+			"id": "shadow-fight-4",
+			"title": "Shadow Fight 4: Arena",
+			"icon": "shadow-fight-4.webp",
+			"genre": "Role Playing / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena",
+			"hoursPlayed": 11.9,
+			"rank": null,
+			"achievements": { "unlocked": 3, "total": null },
+			"stats": []
+		},
+		{
 			"id": "annelids",
 			"title": "Annelids: Online Battle",
 			"icon": "annelids.webp",
-			"genre": "Action",
+			"genre": "Action / PvP",
 			"playUrl": "https://play.google.com/store/apps/details?id=cz.gdmt.AnnelidsDemo",
-			"level": null,
+			"hoursPlayed": 10.3,
 			"rank": null,
-			"achievements": { "unlocked": null, "total": null },
-			"stats": [{ "label": "Play share", "value": "42%" }]
+			"achievements": { "unlocked": 5, "total": null },
+			"stats": []
 		},
 		{
 			"id": "piano-fire",
@@ -22,32 +44,32 @@
 			"icon": "piano-fire.webp",
 			"genre": "Music",
 			"playUrl": "https://play.google.com/store/apps/details?id=com.bitmango.go.pianofireedmmusicpianogame",
-			"level": null,
+			"hoursPlayed": 5.5,
 			"rank": null,
-			"achievements": { "unlocked": null, "total": null },
-			"stats": [{ "label": "Play share", "value": "38%" }]
+			"achievements": { "unlocked": 19, "total": null },
+			"stats": []
 		},
 		{
-			"id": "shadow-fight-4",
-			"title": "Shadow Fight 4: Arena",
-			"icon": "shadow-fight-4.webp",
-			"genre": "Role Playing",
-			"playUrl": "https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena",
-			"level": null,
+			"id": "dr-driving",
+			"title": "Dr. Driving",
+			"icon": "dr-driving.webp",
+			"genre": "Racing / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.ansangha.drdriving",
+			"hoursPlayed": 4.5,
 			"rank": null,
-			"achievements": { "unlocked": null, "total": null },
-			"stats": [{ "label": "Play share", "value": "9%" }]
+			"achievements": { "unlocked": 12, "total": null },
+			"stats": []
 		},
 		{
-			"id": "archery-battle-3d",
-			"title": "Archery Battle 3D",
-			"icon": "archery-battle-3d.webp",
-			"genre": "Sports",
-			"playUrl": "https://play.google.com/store/apps/details?id=com.cg.archery",
-			"level": null,
+			"id": "efootball",
+			"title": "eFootball",
+			"icon": "efootball.webp",
+			"genre": "Sports / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=jp.konami.pesam",
+			"hoursPlayed": 3.5,
 			"rank": null,
-			"achievements": { "unlocked": null, "total": null },
-			"stats": [{ "label": "Play share", "value": "8%" }]
+			"achievements": { "unlocked": 8, "total": null },
+			"stats": []
 		}
 	]
 }

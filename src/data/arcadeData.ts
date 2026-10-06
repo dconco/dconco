@@ -37,10 +37,14 @@ import shadowFight from '../assets/games/shadow-fight-4.webp'
 import annelids from '../assets/games/annelids.webp'
 import archery from '../assets/games/archery-battle-3d.webp'
 import pianoFire from '../assets/games/piano-fire.webp'
+import drDriving from '../assets/games/dr-driving.webp'
+import efootball from '../assets/games/efootball.webp'
 
 export const gameIcons: Record<string, string> = {
 	'shadow-fight-4': shadowFight,
 	'annelids': annelids,
 	'archery-battle-3d': archery,
 	'piano-fire': pianoFire,
+	'dr-driving': drDriving,
+	'efootball': efootball,
 }
