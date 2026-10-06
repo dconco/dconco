@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom"
 import { useCart } from "../hooks/useCart"
 
 
-export type LinkType = 'overview' | 'about' | 'projects' | 'tools' | 'store' | 'contact'
+export type LinkType = 'overview' | 'about' | 'projects' | 'tools' | 'store' | 'contact' | 'arcade'
 
 export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
    const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,6 +21,7 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
       { href: '/about', label: 'About', active: active === 'about' },
       { href: '/projects', label: 'Projects', active: active === 'projects' },
       { href: '/tools', label: 'Tools', active: active === ('tools' as LinkType) },
+      { href: '/arcade', label: 'Arcade', active: active === 'arcade' },
       { href: '/store', label: 'Store', active: active === 'store' },
    ]
 

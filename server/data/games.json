@@ -1,0 +1,42 @@
+{
+	"profile": {
+		"playerName": "dconco",
+		"totalGamesPlayed": 3,
+		"gamerLevel": null
+	},
+	"games": [
+		{
+			"id": "shadow-fight-4",
+			"title": "Shadow Fight 4: Arena",
+			"icon": "shadow-fight-4.webp",
+			"genre": "Fighting / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena",
+			"level": null,
+			"rank": null,
+			"achievements": { "unlocked": null, "total": null },
+			"stats": []
+		},
+		{
+			"id": "annelids",
+			"title": "Annelids: Online Battle",
+			"icon": "annelids.webp",
+			"genre": "Action / Multiplayer",
+			"playUrl": "https://play.google.com/store/apps/details?id=cz.gdmt.AnnelidsDemo",
+			"level": null,
+			"rank": null,
+			"achievements": { "unlocked": null, "total": null },
+			"stats": []
+		},
+		{
+			"id": "archery-battle-3d",
+			"title": "Archery Battle 3D",
+			"icon": "archery-battle-3d.webp",
+			"genre": "Sports / PvP",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.cg.archery",
+			"level": null,
+			"rank": null,
+			"achievements": { "unlocked": null, "total": null },
+			"stats": []
+		}
+	]
+}

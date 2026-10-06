@@ -16,6 +16,7 @@ import TermsOfService from './pages/TermsOfService'
 import RefundPolicy from './pages/RefundPolicy'
 import DeveloperClientAgreement from './pages/DeveloperClientAgreement'
 import Uptime from './pages/Uptime'
+import Arcade from './pages/Arcade'
 import WarpShare from './pages/tools/WarpShare'
 import RutexAI from './pages/tools/RutexAI'
 import ClassValidator from './pages/tools/ClassValidator'
@@ -80,6 +81,7 @@ export default function App() {
             <Route path="/refund-policy" element={<RefundPolicy />} />
             <Route path="/developer-client-agreement" element={<DeveloperClientAgreement />} />
             <Route path="/uptime" element={<Uptime />} />
+            <Route path="/arcade" element={<Arcade setActive={setActive} />} />
             <Route path="/tools/warpshare" element={<WarpShare />} />
             <Route path="/tools/rutexai" element={<RutexAI />} />
             <Route path="/tools/class-validator" element={<ClassValidator />} />
