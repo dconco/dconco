@@ -41,7 +41,11 @@ async function scrapeProfile(): Promise<PlayerProfile> {
 	const title = html.match(/<title>([^<]+)<\/title>/)?.[1] ?? ''
 	const playerName = title.split('|')[0]?.trim() || SLUG
 	const gamerLevel = Number(title.match(/Level\s+(\d+)/)?.[1]) || null
-	const avatar = html.match(/og:image"\s+content="([^"]+)"/)?.[1] ?? `https://play.google.com/profile/preview/${SLUG}`
+	// Real avatar is the first lh3 /pgs/ image in the header; preview url is only a fallback.
+	const avatar =
+		html.match(/https:\/\/lh3\.googleusercontent\.com\/pgs\/[A-Za-z0-9_-]+/)?.[0] ??
+		html.match(/og:image"\s+content="([^"]+)"/)?.[1] ??
+		`https://play.google.com/profile/preview/${SLUG}`
 
 	// Achievement cards: name / description / completion / rarity.
 	const achievements: Achievement[] = []
