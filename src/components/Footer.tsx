@@ -58,7 +58,7 @@ export const Footer = (): React.ReactElement => {
                         { icon: 'mdi:github', url: 'https://github.com/dconco' },
                         { icon: 'ri:twitter-x-fill', url: 'https://x.com/dave_conco' },
                         { icon: 'mdi:youtube', url: 'https://youtube.com/@daveconco' },
-                        { icon: 'mdi:file-account-outline', url: 'https://drive.google.com/file/d/1B1D5Gjn-4czF67vRQmMX73aJvUqfd8WK/view?usp=drivesdk' },
+                        { icon: 'mdi:file-account-outline', url: 'https://drive.google.com/file/d/1N-xiKhwM9wExnjE0xlio5A0MGoCdD6Yx/view?usp=drivesdk' },
                      ].map((s) => (
                         <a key={s.icon} href={s.url} target="_blank" rel="noreferrer" className="text-on-surface-variant/60 transition-colors hover:text-primary active:text-primary">
                            <Icon icon={s.icon} className="text-xl" />
