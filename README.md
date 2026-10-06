@@ -1,22 +1,13 @@
-
 <div align="center">
-  
+
+  [![Header](./assets/header.webp)](https://www.dconco.tech)
+
+  <img src="./assets/welcome.webp" width="85%" alt="Welcome - Dave Conco, Full-Stack Architect and Framework Creator" />
+
   [![Followers](https://img.shields.io/github/followers/dconco?style=for-the-badge&color=FF6B6B&labelColor=0D1117&logo=github)](https://github.com/dconco?tab=followers)
   [![Total Coding Time | Wakatime](https://wakatime.com/badge/user/0517f493-dfd0-4a97-8bab-04314ad333e1.svg?style=for-the-badge)](https://wakatime.com/@0517f493-dfd0-4a97-8bab-04314ad333e1)
   [![Profile Views](https://komarev.com/ghpvc/?username=dconco&color=FF6B6B&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/dconco)
   [![Repositories](https://img.shields.io/badge/Repositories-113-FF6B6B?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117)](https://github.com/dconco?tab=repositories)
-
-</div>
-
-<div align="center">
-  
-  [![Header](./assets/header.webp)](https://www.dconco.tech)
-  
-</div>
-
-<div align="center">
-  
-  <img src="./assets/welcome.webp" width="85%" alt="Welcome - Dave Conco, Full-Stack Architect and Framework Creator" />
 
 </div>
 
@@ -181,15 +172,14 @@ const dconco: Developer = {
   
 </div>
 
----
-
+<!-- 
 ## 🏆 **GITHUB TROPHIES**
 
 <div align="center">
   
   <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=onedark&column=7&margin-w=8&margin-h=8&no-bg=false" alt="GitHub Trophies" />
   
-</div>
+</div> -->
 
 ---
 
