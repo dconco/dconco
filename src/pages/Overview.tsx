@@ -1,4 +1,5 @@
 import type React from "react"
+import Seo, { pageSeo } from '../components/Seo'
 
 import { BadgePill } from '../components/ui/BadgePill'
 import { ProjectBentoCard } from '../components/ui/ProjectBentoCard'
@@ -27,6 +28,7 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
 
    return (
       <main className="mx-auto max-w-7xl space-y-32 px-6 pb-16 pt-32 lg:px-12 lg:pt-24">
+            <Seo {...pageSeo.overview} />
          <section
             data-aos="fade-up"
             className="relative isolate grid grid-cols-1 items-end gap-12 overflow-hidden rounded-2xl p-6 md:p-10 lg:grid-cols-12"

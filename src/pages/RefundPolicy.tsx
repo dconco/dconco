@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../components/Seo'
 import { useEffect } from 'react'
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -13,6 +14,7 @@ export default function RefundPolicy(): React.JSX.Element {
 
    return (
       <main className="mx-auto max-w-3xl space-y-12 px-6 pb-24 pt-32 md:px-12">
+            <Seo {...pageSeo.refund} />
          <div className="space-y-4">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-secondary">
                <span className="h-px w-8 bg-secondary" />

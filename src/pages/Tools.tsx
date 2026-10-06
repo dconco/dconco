@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../components/Seo'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
@@ -67,6 +68,7 @@ export default function Tools({ setActive }: { setActive: (active: LinkType) => 
 
    return (
       <main className="mx-auto max-w-7xl px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
+            <Seo {...pageSeo.tools} />
 
          <section data-aos="fade-up" className="relative overflow-hidden rounded-[2rem] border border-outline-variant/15 bg-surface-container-lowest px-6 py-10 sm:px-10 sm:py-14 lg:px-16 lg:py-16">
             <div className="pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />

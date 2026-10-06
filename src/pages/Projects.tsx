@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../components/Seo'
 import { Icon } from '@iconify/react'
 import { portfolioImages } from '../assets/images'
 import type { LinkType } from '../components/Header'
@@ -11,6 +12,7 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 
 	return (
 		<main className="mx-auto max-w-7xl px-8 pb-24 pt-32">
+            <Seo {...pageSeo.projects} />
 			<header data-aos="fade-down" data-aos-duration="700" className="mb-20 max-w-3xl space-y-6">
 				<div className="inline-flex items-center gap-3 rounded-full border border-outline-variant/15 bg-surface-container-highest px-4 py-1.5">
 					<span className="h-2 w-2 animate-pulse rounded-full bg-primary" />

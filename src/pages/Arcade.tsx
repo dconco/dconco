@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../components/Seo'
 import { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react'
 import type { LinkType } from '../components/Header'
@@ -102,6 +103,7 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 
 	return (
 		<main className="mx-auto max-w-7xl space-y-32 px-6 pb-24 pt-32 lg:px-12 lg:pt-28">
+            <Seo {...pageSeo.arcade} />
 
 			{/* Hero */}
 			<section data-aos="fade-up" className="relative isolate overflow-hidden rounded-3xl border border-outline-variant/15 bg-surface-container-low/40 p-8 md:p-14">

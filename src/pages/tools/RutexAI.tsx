@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../../components/Seo'
 import { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react'
 
@@ -56,6 +57,7 @@ export default function RutexAI(): React.JSX.Element {
 
    return (
       <main className="mx-auto max-w-4xl space-y-20 px-6 pb-24 pt-32 md:px-12">
+            <Seo {...pageSeo.rutexai} />
 
          {/* Hero */}
          <section className="space-y-6">

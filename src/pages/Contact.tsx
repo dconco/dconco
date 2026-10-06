@@ -1,4 +1,5 @@
 import type React from "react"
+import Seo, { pageSeo } from '../components/Seo'
 import { useEffect, useState } from "react"
 import { Icon } from "@iconify/react"
 import ReCAPTCHA from "react-google-recaptcha"
@@ -61,6 +62,7 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
 
    return (
       <main className="mx-auto max-w-7xl px-6 pb-24 pt-32 md:px-12 lg:px-24">
+            <Seo {...pageSeo.contact} />
 
          {/* Header */}
          <section data-aos="fade-up" className="mb-16">

@@ -1,4 +1,5 @@
 import type React from 'react'
+import Seo, { pageSeo } from '../components/Seo'
 import { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react'
 
@@ -127,6 +128,7 @@ export default function Uptime(): React.JSX.Element {
 
    return (
       <main className="mx-auto max-w-5xl space-y-12 px-5 pb-24 pt-28 sm:px-8 md:pt-32 lg:px-12">
+            <Seo {...pageSeo.uptime} />
 
          {/* Header */}
          <section className="space-y-4">
