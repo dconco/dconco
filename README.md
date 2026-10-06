@@ -124,7 +124,8 @@ const dconco = {
 
 <div align="center">
 
-#### 🌐 Frontend Mastery
+<b>🌐 Frontend Mastery</b>
+
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![PhpSPA](https://img.shields.io/badge/PhpSPA-7952B3?style=for-the-badge&logo=php&logoColor=white)
@@ -132,7 +133,8 @@ const dconco = {
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
 
-#### ⚙️ Backend Excellence
+<b>⚙️ Backend Excellence</b>
+
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -141,7 +143,8 @@ const dconco = {
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![GoLang](https://img.shields.io/badge/GoLang-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
-#### 🎨 Design & Styling
+<b>🎨 Design & Styling</b>
+
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
@@ -347,7 +350,7 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
     </td>
     <td align="center" width="33%">
       <img src="./assets/games/annelids.webp" width="110" alt="Annelids" /><br>
-      <img src="https://img.shields.io/badge/🪱-Multiplayer-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Multiplayer" /><br>
+      <img src="https://img.shields.io/badge/🎮-Multiplayer-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Multiplayer" /><br>
       <b>Annelids</b><br>
       <sub>Online worm battle · PvP chaos</sub>
     </td>
