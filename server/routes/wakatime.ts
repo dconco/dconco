@@ -1,4 +1,5 @@
 import { Router, Request, Response } from 'express'
+import { getFresh, getStale, put } from '../utils/fileCache'
 
 const router = Router()
 
@@ -9,20 +10,26 @@ const BASE = 'https://wakatime.com/api/v1/users/current'
 // Basic auth: WakaTime expects base64(api_key) with an empty password.
 const authHeader = () => `Basic ${Buffer.from(API_KEY).toString('base64')}`
 
-// Small in-memory cache so we never hammer WakaTime (stats change slowly).
-type CacheEntry = { at: number; data: unknown }
-const cache = new Map<string, CacheEntry>()
+// File-backed cache so stats survive restarts and outages (change slowly).
 const TTL = 10 * 60 * 1000 // 10 minutes
+const key = (path: string) => `waka_${path.replace(/[^a-z0-9]+/gi, '_')}`
 
 async function wakaFetch(path: string): Promise<unknown> {
-	const cached = cache.get(path)
-	if (cached && Date.now() - cached.at < TTL) return cached.data
+	const fresh = getFresh<unknown>(key(path), TTL)
+	if (fresh !== null) return fresh
 
-	const r = await fetch(`${BASE}${path}`, { headers: { Authorization: authHeader() } })
-	if (!r.ok) throw new Error(`WakaTime ${r.status}`)
-	const json = await r.json()
-	cache.set(path, { at: Date.now(), data: json })
-	return json
+	try {
+		const r = await fetch(`${BASE}${path}`, { headers: { Authorization: authHeader() } })
+		if (!r.ok) throw new Error(`WakaTime ${r.status}`)
+		const json = await r.json()
+		put(key(path), json)
+		return json
+	} catch (err) {
+		// Serve last-known-good from disk rather than failing the whole endpoint.
+		const stale = getStale<unknown>(key(path))
+		if (stale !== null) return stale
+		throw err
+	}
 }
 
 // One aggregated endpoint the client hits once: all the stats it needs.

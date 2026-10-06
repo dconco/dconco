@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express'
 import games from '../data/games.json'
+import { getFresh, getStale, put } from '../utils/fileCache'
 
 const router = Router()
 
@@ -12,9 +13,8 @@ const configured = Boolean(CLIENT_ID && CLIENT_SECRET && REFRESH_TOKEN)
 const TOKEN_URL = 'https://oauth2.googleapis.com/token'
 const GAMES_BASE = 'https://games.googleapis.com/games/v1'
 
-// Cache the live player profile so we never re-mint a token per request.
-type Cache = { at: number; data: PlayerProfile | null }
-let cache: Cache = { at: 0, data: null }
+// File-backed cache: the live profile survives restarts and token outages.
+const CACHE_KEY = 'games_profile'
 const TTL = 15 * 60 * 1000 // 15 minutes
 
 type PlayerProfile = {
@@ -45,7 +45,8 @@ async function accessToken(): Promise<string> {
 
 // Pull the authenticated player's own Play Games profile (level + XP).
 async function fetchPlayer(): Promise<PlayerProfile> {
-	if (cache.data && Date.now() - cache.at < TTL) return cache.data
+	const fresh = getFresh<PlayerProfile>(CACHE_KEY, TTL)
+	if (fresh !== null) return fresh
 
 	const token = await accessToken()
 	const r = await fetch(`${GAMES_BASE}/players/me`, {
@@ -66,7 +67,7 @@ async function fetchPlayer(): Promise<PlayerProfile> {
 			? Number(p.experienceInfo.currentExperiencePoints)
 			: null,
 	}
-	cache = { at: Date.now(), data: profile }
+	put(CACHE_KEY, profile)
 	return profile
 }
 
@@ -95,8 +96,25 @@ router.get('/', async (_req: Request, res: Response) => {
 			},
 		})
 	} catch (err) {
-		// On any auth/API failure, degrade cleanly to the curated data.
+		// On any auth/API failure, serve the last cached profile from disk;
+		// only if there is none at all do we drop to the curated data.
 		console.error('[games] live fetch failed:', (err as Error).message)
+		const stale = getStale<PlayerProfile>(CACHE_KEY)
+		if (stale) {
+			return res.json({
+				data: {
+					...base,
+					profile: {
+						...base.profile,
+						playerName: stale.playerName ?? base.profile.playerName,
+						gamerLevel: stale.gamerLevel ?? base.profile.gamerLevel,
+						avatar: stale.avatar,
+						experiencePoints: stale.experiencePoints,
+					},
+				},
+				warning: 'live_stale',
+			})
+		}
 		res.json({ data: base, warning: 'live_unavailable' })
 	}
 })

@@ -14,6 +14,9 @@ out
 dist-ssr
 *.local
 
+# Runtime API cache (file-backed, survives restarts; not source)
+server/.cache
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
