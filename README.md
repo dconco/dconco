@@ -371,10 +371,8 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
   
   [![Website](https://img.shields.io/badge/🌐_Portfolio-dconco.tech-FF6B6B?style=for-the-badge&logoColor=white)](https://dconco.tech)
   [![Email](https://img.shields.io/badge/📧_Email-me@dconco.tech-FF6B6B?style=for-the-badge&logoColor=white)](mailto:me@dconco.tech)
-  
   <br>
-
-  [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/@dave_conco)
+  [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/@dave_conco)
   [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/daveconco)
   [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/conco_dave)
   [![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@dconco)
