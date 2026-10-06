@@ -32,6 +32,13 @@ type Game = {
 	achievements: GameAchievements
 	stats: { label: string; value: string }[]
 }
+type PlayAchievement = {
+	name: string
+	description: string
+	rarity: string | null
+	progress: string | null
+	icon: string | null
+}
 type GamesData = {
 	profile: {
 		playerName: string
@@ -39,6 +46,7 @@ type GamesData = {
 		gamerLevel: number | null
 		avatar?: string | null
 		experiencePoints?: number | null
+		achievements?: PlayAchievement[]
 		lastChecked?: string | null
 	}
 	games: Game[]
@@ -322,10 +330,43 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 					</div>
 				)}
 
-				{!gamesLoading && games?.games.every((g) => g.level == null && g.achievements.unlocked == null) && (
-					<p className="text-center text-xs text-on-surface-variant">
-						Level, rank and achievement data appears here once connected to Play Games.
-					</p>
+				{!gamesLoading && games?.profile?.achievements && games.profile.achievements.length > 0 && (
+					<div className="space-y-5">
+						<div className="flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-tertiary">
+							<Icon icon="material-symbols:trophy-outline-rounded" />
+							Play Games Achievements
+						</div>
+						<div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+							{games.profile.achievements.map((a, i) => (
+								<div
+									key={`${a.name}-${i}`}
+									data-aos="fade-up"
+									data-aos-delay={i * 60}
+									className="bento-card flex items-center gap-3 rounded-xl p-4"
+								>
+									{a.icon && (
+										<img src={a.icon} alt={a.name} className="h-12 w-12 shrink-0 rounded-lg object-cover" />
+									)}
+									<div className="min-w-0 flex-1">
+										<p className="truncate font-headline text-sm font-bold text-on-surface">{a.name}</p>
+										<p className="truncate text-xs text-on-surface-variant" title={a.description}>{a.description}</p>
+										<div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+											{a.rarity && (
+												<span className="rounded-full bg-tertiary/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-tertiary">
+													{a.rarity}
+												</span>
+											)}
+											{a.progress && (
+												<span className="rounded-full bg-secondary/15 px-2 py-0.5 text-[10px] font-semibold text-secondary">
+													{a.progress}
+												</span>
+											)}
+										</div>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
 				)}
 			</section>
 		</main>

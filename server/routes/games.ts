@@ -99,7 +99,6 @@ router.get('/', async (_req: Request, res: Response) => {
 						playerName: s.playerName ?? base.profile.playerName,
 						gamerLevel: s.gamerLevel ?? base.profile.gamerLevel,
 						avatar: s.avatar,
-						trophies: s.trophies,
 						achievements: s.achievements,
 						lastChecked: new Date(entry.at).toISOString(),
 					},
