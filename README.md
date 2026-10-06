@@ -6,7 +6,7 @@
 
 <div align="center">
   
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=FF6B6B&background=FFFFFF00&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=120&lines=%F0%9F%91%8B+Welcome+to+my+digital+universe;%F0%9F%92%AB+I'm+Dave+Conco+%E2%80%A2+Full-Stack+Architect;%F0%9F%8C%9F+Building+tomorrow's+web+today)](https://www.dconco.tech)
+  <img src="./assets/welcome.webp" width="85%" alt="Welcome - Dave Conco, Full-Stack Architect and Framework Creator" />
 
 </div>
 
@@ -178,7 +178,7 @@ const dconco = {
 
 <div align="center">
   
-  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=radical&no-frame=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=dconco&theme=onedark&column=7&margin-w=8&margin-h=8&no-bg=false" alt="GitHub Trophies" />
   
 </div>
 
