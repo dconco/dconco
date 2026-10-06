@@ -1,42 +1,53 @@
 {
 	"profile": {
 		"playerName": "dconco",
-		"totalGamesPlayed": 3,
+		"totalGamesPlayed": 4,
 		"gamerLevel": null
 	},
 	"games": [
 		{
-			"id": "shadow-fight-4",
-			"title": "Shadow Fight 4: Arena",
-			"icon": "shadow-fight-4.webp",
-			"genre": "Fighting / PvP",
-			"playUrl": "https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena",
-			"level": null,
-			"rank": null,
-			"achievements": { "unlocked": null, "total": null },
-			"stats": []
-		},
-		{
 			"id": "annelids",
 			"title": "Annelids: Online Battle",
 			"icon": "annelids.webp",
-			"genre": "Action / Multiplayer",
+			"genre": "Action",
 			"playUrl": "https://play.google.com/store/apps/details?id=cz.gdmt.AnnelidsDemo",
 			"level": null,
 			"rank": null,
 			"achievements": { "unlocked": null, "total": null },
-			"stats": []
+			"stats": [{ "label": "Play share", "value": "42%" }]
+		},
+		{
+			"id": "piano-fire",
+			"title": "Piano Fire: Edm Music & Piano",
+			"icon": "piano-fire.webp",
+			"genre": "Music",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.bitmango.go.pianofireedmmusicpianogame",
+			"level": null,
+			"rank": null,
+			"achievements": { "unlocked": null, "total": null },
+			"stats": [{ "label": "Play share", "value": "38%" }]
+		},
+		{
+			"id": "shadow-fight-4",
+			"title": "Shadow Fight 4: Arena",
+			"icon": "shadow-fight-4.webp",
+			"genre": "Role Playing",
+			"playUrl": "https://play.google.com/store/apps/details?id=com.nekki.shadowfightarena",
+			"level": null,
+			"rank": null,
+			"achievements": { "unlocked": null, "total": null },
+			"stats": [{ "label": "Play share", "value": "9%" }]
 		},
 		{
 			"id": "archery-battle-3d",
 			"title": "Archery Battle 3D",
 			"icon": "archery-battle-3d.webp",
-			"genre": "Sports / PvP",
+			"genre": "Sports",
 			"playUrl": "https://play.google.com/store/apps/details?id=com.cg.archery",
 			"level": null,
 			"rank": null,
 			"achievements": { "unlocked": null, "total": null },
-			"stats": []
+			"stats": [{ "label": "Play share", "value": "8%" }]
 		}
 	]
 }
