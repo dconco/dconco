@@ -52,12 +52,21 @@ async function fetchPlayer(): Promise<PlayerProfile> {
 	if (fresh !== null) return fresh
 
 	const token = await accessToken()
-	const r = await fetch(`${GAMES_BASE}/players/me`, {
-		headers: { Authorization: `Bearer ${token}` },
-	})
-	if (!r.ok) {
-		const txt = await r.text().catch(() => '')
-		throw new Error(`players/me ${r.status}: ${txt.slice(0, 300)}`)
+
+	// players/me intermittently 500s with Google "backendError"; retry a few times.
+	let r: Awaited<ReturnType<typeof fetch>> | null = null
+	let lastBody = ''
+	for (let attempt = 0; attempt < 3; attempt++) {
+		r = await fetch(`${GAMES_BASE}/players/me?language=en`, {
+			headers: { Authorization: `Bearer ${token}` },
+		})
+		if (r.ok) break
+		lastBody = await r.text().catch(() => '')
+		if (r.status !== 500 && r.status !== 503) break // only retry transient server errors
+		await new Promise((ok) => setTimeout(ok, 400 * (attempt + 1)))
+	}
+	if (!r || !r.ok) {
+		throw new Error(`players/me ${r?.status ?? '?'}: ${lastBody.slice(0, 300)}`)
 	}
 	const p = (await r.json()) as {
 		displayName?: string
