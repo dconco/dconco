@@ -6,6 +6,7 @@ import { SectionIntro } from '../components/ui/SectionIntro'
 import { SkillMeterCard } from '../components/ui/SkillMeterCard'
 import { TimelineEntry } from '../components/ui/TimelineEntry'
 import { heroHighlights, projectCards, skillCards, timelineItems } from '../data/portfolioData'
+import { favoriteAnime, gameIcons } from '../data/arcadeData'
 import { HoverLift } from "../components/layout/PortfolioShell"
 import { Icon } from "@iconify/react"
 import type { LinkType } from "../components/Header"
@@ -227,6 +228,61 @@ export default function Overview({ setActive }: { setActive: (active: LinkType) 
                   </p>
                   <div className="inline-flex items-center gap-2 text-sm font-bold text-secondary transition-transform group-hover:translate-x-1">
                      View projects <Icon icon="material-symbols:arrow-forward-rounded" />
+                  </div>
+               </div>
+            </Link>
+         </section>
+
+         <section data-aos="fade-up">
+            <Link
+               to="/arcade"
+               className="group relative block overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low p-10 transition-colors hover:border-primary/30 hover:bg-surface-container"
+            >
+               <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
+               <div className="pointer-events-none absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-secondary/10 blur-3xl" />
+
+               <div className="relative grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+                  <div className="space-y-4 lg:col-span-5">
+                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Arcade</span>
+                     <h2 className="font-headline text-3xl font-bold text-on-surface md:text-4xl">
+                        Beyond the code
+                     </h2>
+                     <p className="text-base leading-relaxed text-on-surface-variant">
+                        Live WakaTime coding stats, the anime I watch, and the games I play. A look at
+                        what keeps me recharged outside the editor.
+                     </p>
+                     <div className="inline-flex items-center gap-2 text-sm font-bold text-primary transition-transform group-hover:translate-x-1">
+                        Enter the arcade <Icon icon="material-symbols:arrow-forward-rounded" />
+                     </div>
+                  </div>
+
+                  <div className="space-y-4 lg:col-span-7">
+                     <div className="flex -space-x-6">
+                        {favoriteAnime.slice(0, 6).map((a, i) => (
+                           <img
+                              key={a.title}
+                              src={a.cover}
+                              alt={a.title}
+                              loading="lazy"
+                              style={{ zIndex: 6 - i }}
+                              className="h-20 w-32 flex-none rounded-lg border-2 border-surface-container-low object-cover shadow-lg transition-transform duration-300 group-hover:-translate-y-1"
+                           />
+                        ))}
+                     </div>
+                     <div className="flex items-center gap-4 pt-2">
+                        {Object.entries(gameIcons).map(([key, src]) => (
+                           <img
+                              key={key}
+                              src={src}
+                              alt={key}
+                              loading="lazy"
+                              className="h-12 w-12 rounded-xl border border-outline-variant/20 object-cover"
+                           />
+                        ))}
+                        <span className="font-nav-link text-xs uppercase tracking-wider text-on-surface-variant/70">
+                           + live coding stats
+                        </span>
+                     </div>
                   </div>
                </div>
             </Link>
