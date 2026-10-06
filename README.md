@@ -340,16 +340,19 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
 <table>
   <tr>
     <td align="center" width="33%">
+      <img src="./assets/games/shadow-fight-4.webp" width="110" alt="Shadow Fight 4" /><br>
       <img src="https://img.shields.io/badge/⚔️-Fighting-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Fighting" /><br>
       <b>🥷 Shadow Fight 4</b><br>
       <sub>RPG fighter · Arena duels</sub>
     </td>
     <td align="center" width="33%">
+      <img src="./assets/games/annelids.webp" width="110" alt="Annelids" /><br>
       <img src="https://img.shields.io/badge/🪱-Multiplayer-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Multiplayer" /><br>
       <b>🪱 Annelids</b><br>
       <sub>Online worm battle · PvP chaos</sub>
     </td>
     <td align="center" width="33%">
+      <img src="./assets/games/archery-battle-3d.webp" width="110" alt="Archery Battle 3D" /><br>
       <img src="https://img.shields.io/badge/🏹-Precision-FF6B6B?style=for-the-badge&labelColor=0D1117" alt="Precision" /><br>
       <b>🏹 Archery Battle 3D</b><br>
       <sub>1v1 archery duels · Aim & timing</sub>
