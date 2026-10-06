@@ -35,42 +35,53 @@
 
 ## 🎨 **ABOUT ME**
 
-<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+<table>
+<tr>
+<td width="58%" valign="top">
 
 ```typescript
-const dconco = {
+const dconco: Developer = {
   name: "Dave Conco",
   alias: "dconco",
   role: "Full-Stack Architect & Framework Creator",
-  location: "🌍 Global Digital Nomad",
-  address: "1, Virtual Office, The Cloud, Worldwide.",
-  
+  location: "🌍 The Cloud, Worldwide",
+
+  stack: ["PHP", "JS/TS", "React", "Go", "C++", "Python"],
+
   passions: [
     "🚀 Building revolutionary frameworks",
-    "🌟 Community-driven development", 
+    "🌟 Community-driven development",
     "💡 Solving complex problems",
-    "🎯 Mentoring next-gen developers"
+    "🎯 Mentoring next-gen developers",
   ],
 
-  description: `
-    I'm Dave Conco (dconco), a tech enthusiast specializing in websites, mobile apps, and APIs.
-    My stack includes PHP, JS/TS, React, Go, C++, and Python.
-    I authored PhpSPA and an AI coding agent for Acode.
-    Expert in backend development, I build high-concurrency systems and low-latency APIs with a focus on manual memory management and WebSockets.
-    I prioritize 'library-first', high-performance code.
-    By understanding internal mechanics, I optimize software to the byte and thrive on pushing technical limits.
-  `
-  
-  currentFocus: "Spyrochat – A messaging platform designed to give users security, monetization and 100% privacy.",
-  availability: "Open for freelance projects",
-  
-  getMotivation: () => {
-    return "Turning ideas into reality, one commit at a time ✨";
-  }
-}
+  focus: {
+    building: "Spyrochat",
+    about: "Secure, monetizable, 100% private messaging",
+  },
+
+  philosophy: "Library-first, high-performance code. " +
+    "Optimize to the byte, push every technical limit.",
+
+  motivation: () => "Turning ideas into reality, one commit at a time ✨",
+};
 ```
 
-<br clear="right"/>
+</td>
+<td width="42%" valign="top" align="center">
+
+<img alt="Coding" width="320" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+
+<br><br>
+
+![Framework Author](https://img.shields.io/badge/🏗️_Framework_Author-PhpSPA-FF6B6B?style=for-the-badge&labelColor=0D1117)
+![Backend](https://img.shields.io/badge/⚡_Specialty-High_Concurrency-FF6B6B?style=for-the-badge&labelColor=0D1117)
+![Open Source](https://img.shields.io/badge/💎_Open_Source-Advocate-FF6B6B?style=for-the-badge&labelColor=0D1117)
+![Freelance](https://img.shields.io/badge/📬_Status-Open_to_Work-2ECC71?style=for-the-badge&labelColor=0D1117)
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -371,7 +382,7 @@ Over 88 watched titles plus a growing to-watch queue (Fate/Zero, Bleach: TYBW, H
   [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/conco_dave)
   [![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@dconco)
   [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@daveconco)
-  [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+2349064772574)
+  [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+2349121235927)
   
 </div>
 
