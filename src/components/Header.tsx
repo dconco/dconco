@@ -62,10 +62,6 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
 
             <div className="hidden items-center gap-5 lg:flex">
                <div className="hidden items-center gap-2 xl:flex">
-                  <span className="relative flex h-2 w-2">
-                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
-                     <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-                  </span>
                   <span className="font-nav-link text-[10px] uppercase tracking-[0.16em] text-on-surface-variant/75">Open to select work</span>
                </div>
                <span className="h-6 w-px bg-white/10" />
