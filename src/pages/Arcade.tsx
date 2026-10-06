@@ -9,6 +9,7 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL ?? ''
 type WakaItem = { name: string; percent: number; text: string }
 type WakaData = {
 	allTimeText: string | null
+	lastChecked: string | null
 	dailyAverage: string | null
 	last7Total: string | null
 	last30Total: string | null
@@ -38,12 +39,25 @@ type GamesData = {
 		gamerLevel: number | null
 		avatar?: string | null
 		experiencePoints?: number | null
+		lastChecked?: string | null
 	}
 	games: Game[]
 }
 
 const accentText = { primary: 'text-primary', secondary: 'text-secondary', tertiary: 'text-tertiary' } as const
 const accentBg = { primary: 'bg-primary', secondary: 'bg-secondary', tertiary: 'bg-tertiary' } as const
+
+// "2h ago" / "yesterday" style label for the last cache refresh.
+function fmtChecked(iso: string): string {
+	const then = new Date(iso).getTime()
+	const mins = Math.round((Date.now() - then) / 60000)
+	if (mins < 1) return 'just now'
+	if (mins < 60) return `${mins}m ago`
+	const hrs = Math.round(mins / 60)
+	if (hrs < 24) return `${hrs}h ago`
+	const days = Math.round(hrs / 24)
+	return days === 1 ? 'yesterday' : `${days}d ago`
+}
 
 export default function Arcade({ setActive }: { setActive: (active: LinkType) => void }): React.JSX.Element {
 	useEffect(() => setActive('arcade' as LinkType), [setActive])
@@ -104,6 +118,9 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 							Coding Activity
 						</div>
 						<h2 className="font-headline text-4xl text-on-surface">WakaTime Stats</h2>
+						{waka?.lastChecked && (
+							<p className="text-[11px] text-on-surface-variant">Updated {fmtChecked(waka.lastChecked)}</p>
+						)}
 					</div>
 					{waka?.allTimeText && (
 						<div className="text-right">
@@ -194,6 +211,9 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 							Press Start
 						</div>
 						<h2 className="font-headline text-4xl text-on-surface">Games I Play</h2>
+						{games?.profile?.lastChecked && (
+							<p className="text-[11px] text-on-surface-variant">Updated {fmtChecked(games.profile.lastChecked)}</p>
+						)}
 					</div>
 					{games?.profile?.gamerLevel != null && (
 						<div className="flex items-center gap-3">

@@ -34,6 +34,11 @@ export function getStale<T>(key: string): T | null {
 	return hit ? hit.data : null
 }
 
+// Last known entry WITH its cached-at time (for a "last checked" field).
+export function getEntry<T>(key: string): Entry<T> | null {
+	return (mem.get(key) as Entry<T>) ?? readFile<T>(key)
+}
+
 export function put<T>(key: string, data: T): void {
 	const entry: Entry<T> = { at: Date.now(), data }
 	mem.set(key, entry)

@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express'
-import { getFresh, getStale, put } from '../utils/fileCache'
+import { getEntry, getFresh, getStale, put } from '../utils/fileCache'
 
 const router = Router()
 
@@ -47,8 +47,11 @@ router.get('/', async (_req: Request, res: Response) => {
 		const s30 = (last30 as { data?: WakaStats }).data ?? {}
 		const total = (allTime as { data?: { text?: string; total_seconds?: number } }).data ?? {}
 
+		const entry = getEntry<unknown>(key('/all_time_since_today'))
+
 		res.json({
 			data: {
+				lastChecked: entry ? new Date(entry.at).toISOString() : null,
 				allTimeText: total.text ?? null,
 				allTimeSeconds: total.total_seconds ?? null,
 				dailyAverage: s7.human_readable_daily_average ?? null,

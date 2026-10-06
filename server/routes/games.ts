@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
 import games from '../data/games.json'
-import { getFresh, getStale, put } from '../utils/fileCache'
+import { getEntry, getFresh, put } from '../utils/fileCache'
 
 const router = Router()
 
@@ -37,7 +37,10 @@ async function accessToken(): Promise<string> {
 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 		body,
 	})
-	if (!r.ok) throw new Error(`Google token ${r.status}`)
+	if (!r.ok) {
+		const txt = await r.text().catch(() => '')
+		throw new Error(`token ${r.status}: ${txt.slice(0, 300)}`)
+	}
 	const json = (await r.json()) as { access_token?: string }
 	if (!json.access_token) throw new Error('No access_token returned')
 	return json.access_token
@@ -52,7 +55,10 @@ async function fetchPlayer(): Promise<PlayerProfile> {
 	const r = await fetch(`${GAMES_BASE}/players/me`, {
 		headers: { Authorization: `Bearer ${token}` },
 	})
-	if (!r.ok) throw new Error(`Play Games ${r.status}`)
+	if (!r.ok) {
+		const txt = await r.text().catch(() => '')
+		throw new Error(`players/me ${r.status}: ${txt.slice(0, 300)}`)
+	}
 	const p = (await r.json()) as {
 		displayName?: string
 		avatarImageUrl?: string
@@ -83,6 +89,7 @@ router.get('/', async (_req: Request, res: Response) => {
 
 	try {
 		const live = await fetchPlayer()
+		const entry = getEntry<PlayerProfile>(CACHE_KEY)
 		res.json({
 			data: {
 				...base,
@@ -92,6 +99,7 @@ router.get('/', async (_req: Request, res: Response) => {
 					gamerLevel: live.gamerLevel ?? base.profile.gamerLevel,
 					avatar: live.avatar,
 					experiencePoints: live.experiencePoints,
+					lastChecked: entry ? new Date(entry.at).toISOString() : null,
 				},
 			},
 		})
@@ -99,8 +107,9 @@ router.get('/', async (_req: Request, res: Response) => {
 		// On any auth/API failure, serve the last cached profile from disk;
 		// only if there is none at all do we drop to the curated data.
 		console.error('[games] live fetch failed:', (err as Error).message)
-		const stale = getStale<PlayerProfile>(CACHE_KEY)
-		if (stale) {
+		const entry = getEntry<PlayerProfile>(CACHE_KEY)
+		if (entry) {
+			const stale = entry.data
 			return res.json({
 				data: {
 					...base,
@@ -110,12 +119,13 @@ router.get('/', async (_req: Request, res: Response) => {
 						gamerLevel: stale.gamerLevel ?? base.profile.gamerLevel,
 						avatar: stale.avatar,
 						experiencePoints: stale.experiencePoints,
+						lastChecked: new Date(entry.at).toISOString(),
 					},
 				},
 				warning: 'live_stale',
 			})
 		}
-		res.json({ data: base, warning: 'live_unavailable' })
+		res.json({ data: base, warning: 'live_unavailable', detail: (err as Error).message })
 	}
 })
 
