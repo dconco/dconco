@@ -11,7 +11,7 @@ const BASE = 'https://wakatime.com/api/v1/users/current'
 const authHeader = () => `Basic ${Buffer.from(API_KEY).toString('base64')}`
 
 // File-backed cache so stats survive restarts and outages (change slowly).
-const TTL = 10 * 60 * 1000 // 10 minutes
+const TTL = 24 * 60 * 60 * 1000 // 24 hours
 const key = (path: string) => `waka_${path.replace(/[^a-z0-9]+/gi, '_')}`
 
 async function wakaFetch(path: string): Promise<unknown> {

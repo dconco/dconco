@@ -15,7 +15,7 @@ const GAMES_BASE = 'https://games.googleapis.com/games/v1'
 
 // File-backed cache: the live profile survives restarts and token outages.
 const CACHE_KEY = 'games_profile'
-const TTL = 15 * 60 * 1000 // 15 minutes
+const TTL = 24 * 60 * 60 * 1000 // 24 hours
 
 type PlayerProfile = {
 	playerName: string | null
