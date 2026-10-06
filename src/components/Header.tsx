@@ -27,7 +27,7 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
 
    return (
       <HeaderShell className="relative border-b border-white/[0.06] bg-[#0b1326]/80">
-         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-4 md:px-8 lg:py-5">
+         <nav className="mx-auto flex max-w-screen-2xl items-center justify-between gap-8 px-6 py-4 md:px-10 lg:px-14 lg:py-5">
             <Link to="/" className="group flex shrink-0 items-center gap-3" aria-label="Dave Conco home">
                <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-primary/40 bg-primary/10 font-nav-link text-sm font-bold text-primary transition-colors group-hover:bg-primary/20">
                   DC
