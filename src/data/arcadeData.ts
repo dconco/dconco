@@ -10,6 +10,8 @@ import overlord from '../assets/anime/overlord.webp'
 import arifureta from '../assets/anime/arifureta.webp'
 import devilMayCry from '../assets/anime/devil-may-cry.webp'
 import nimona from '../assets/anime/nimona.webp'
+import mysteryOfAaravos from '../assets/anime/mystery-of-aaravos.webp'
+import lolirock from '../assets/anime/lolirock.webp'
 
 export type Anime = {
 	title: string
@@ -19,17 +21,19 @@ export type Anime = {
 }
 
 export const favoriteAnime: Anime[] = [
-	{ title: 'Demon Slayer', cover: demonSlayer, genre: 'Action / Shonen', accent: 'tertiary' },
-	{ title: 'Solo Leveling', cover: soloLeveling, genre: 'Action / Fantasy', accent: 'primary' },
 	{ title: 'The Eminence in Shadow', cover: eminenceInShadow, genre: 'Isekai / Comedy', accent: 'secondary' },
 	{ title: 'Black Clover', cover: blackClover, genre: 'Action / Magic', accent: 'primary' },
+	{ title: 'The Dragon Prince: Mystery of Aaravos', cover: mysteryOfAaravos, genre: 'Fantasy / Adventure', accent: 'tertiary' },
+	{ title: 'Demon Slayer', cover: demonSlayer, genre: 'Action / Shonen', accent: 'tertiary' },
 	{ title: 'Claymore', cover: claymore, genre: 'Dark Fantasy', accent: 'tertiary' },
+	{ title: 'Nimona', cover: nimona, genre: 'Adventure / Sci-Fi', accent: 'secondary' },
+	{ title: 'LoliRock', cover: lolirock, genre: 'Magical Girl / Fantasy', accent: 'primary' },
+	{ title: 'Solo Leveling', cover: soloLeveling, genre: 'Action / Fantasy', accent: 'primary' },
 	{ title: 'The Rising of the Shield Hero', cover: shieldHero, genre: 'Isekai / Adventure', accent: 'secondary' },
 	{ title: 'Sakamoto Days', cover: sakamotoDays, genre: 'Action / Comedy', accent: 'primary' },
 	{ title: 'Overlord', cover: overlord, genre: 'Isekai / Dark Fantasy', accent: 'tertiary' },
 	{ title: 'Arifureta', cover: arifureta, genre: 'Isekai / Action', accent: 'secondary' },
 	{ title: 'Devil May Cry', cover: devilMayCry, genre: 'Action / Supernatural', accent: 'primary' },
-	{ title: 'Nimona', cover: nimona, genre: 'Adventure / Sci-Fi', accent: 'secondary' },
 ]
 
 // Game icons. Real Play Store art committed under src/assets/games.
