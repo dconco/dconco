@@ -23,7 +23,7 @@ export type Anime = {
 export const favoriteAnime: Anime[] = [
 	{ title: 'The Eminence in Shadow', cover: eminenceInShadow, genre: 'Isekai / Comedy', accent: 'secondary' },
 	{ title: 'Black Clover', cover: blackClover, genre: 'Action / Magic', accent: 'primary' },
-	{ title: 'The Dragon Prince: Mystery of Aaravos', cover: mysteryOfAaravos, genre: 'Fantasy / Adventure', accent: 'tertiary' },
+	{ title: 'Mystery of Aaravos', cover: mysteryOfAaravos, genre: 'Fantasy / Adventure', accent: 'tertiary' },
 	{ title: 'Demon Slayer', cover: demonSlayer, genre: 'Action / Shonen', accent: 'tertiary' },
 	{ title: 'Claymore', cover: claymore, genre: 'Dark Fantasy', accent: 'tertiary' },
 	{ title: 'Nimona', cover: nimona, genre: 'Adventure / Sci-Fi', accent: 'secondary' },
