@@ -48,13 +48,13 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_70%_100%,_rgba(78,222,163,0.12)_0%,_transparent_70%)]" />
 					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_20%_20%,_rgba(255,185,95,0.07)_0%,_transparent_70%)]" />
 
-					{/* Mobile layout — stacked */}
+					{/* Mobile layout: stacked */}
 					<div className="relative z-10 flex flex-col md:hidden px-8 pt-6 pb-0">
 						<span className="mb-4 text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Mobile App · VTU Platform</span>
 						<h3 className="font-noto-serif text-5xl italic leading-tight text-on-surface">Nol<span className="text-primary">Pay</span></h3>
 						<p className="mt-5 text-sm leading-relaxed text-on-surface-variant">
 							Buy airtime & data for all networks, pay electricity bills, subscribe to cable TV,
-							fund your wallet, and manage transactions — all from one clean, fast mobile app.
+							fund your wallet, and manage transactions, all from one clean, fast mobile app.
 						</p>
 						<div className="mt-6 flex flex-wrap gap-2">
 							{['Airtime & Data', 'Electricity', 'Cable TV', 'Wallet', 'Referrals'].map((tag) => (
@@ -88,13 +88,13 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 						</div>
 					</div>
 
-					{/* Content — left side (desktop only) */}
+					{/* Content: left side (desktop only) */}
 					<div className="hidden md:flex absolute left-0 top-0 z-10 h-full w-full flex-col justify-center px-8 md:w-[42%] md:px-12 lg:px-16">
 						<span className="mb-4 text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Mobile App · VTU Platform</span>
 						<h3 className="font-noto-serif text-5xl italic leading-tight text-on-surface lg:text-6xl">Nol<span className="text-primary">Pay</span></h3>
 						<p className="mt-5 max-w-sm text-sm leading-relaxed text-on-surface-variant">
 							Buy airtime & data for all networks, pay electricity bills, subscribe to cable TV,
-							fund your wallet, and manage transactions — all from one clean, fast mobile app.
+							fund your wallet, and manage transactions, all from one clean, fast mobile app.
 						</p>
 						<div className="mt-6 flex flex-wrap gap-2">
 							{['Airtime & Data', 'Electricity', 'Cable TV', 'Wallet', 'Referrals'].map((tag) => (
@@ -112,7 +112,7 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 						</div>
 					</div>
 
-					{/* Screenshots — right side, scattered (desktop only) */}
+					{/* Screenshots: right side, scattered (desktop only) */}
 					<div className="hidden md:block absolute bottom-0 right-0 h-full w-full md:w-[65%]">
 						<div data-aos="fade-up" data-aos-delay="350" data-aos-duration="600" className="absolute bottom-[-30px] left-[2%] w-[22%] rotate-[-8deg] overflow-hidden rounded-[2rem] border border-outline-variant/20 shadow-2xl">
 							<img src="/project-screenshots/nolpay/1.png" alt="Nolpay profile" className="w-full" />
@@ -185,14 +185,14 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 
 				{/* Row 2: Booking API (wide) + GreenWorld (narrow) */}
 				<article data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="750" className="group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:bg-surface-container md:col-span-7">
-					{/* Image zone — straight container, perspective-tilted image */}
+					{/* Image zone: straight container, perspective-tilted image */}
 					<div className="relative h-64 overflow-hidden bg-[#0d1117] md:h-72" style={{ perspective: '900px' }}>
 						{/* Gradient overlays */}
 						<div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(ellipse_90%_60%_at_10%_110%,_rgba(99,102,241,0.18)_0%,_transparent_65%)]" />
 						<div className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(ellipse_50%_50%_at_90%_10%,_rgba(236,72,153,0.09)_0%,_transparent_70%)]" />
-						{/* Edge fade — bottom */}
+						{/* Edge fade: bottom */}
 						<div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-20 bg-gradient-to-t from-surface-container-low to-transparent" />
-						{/* 3D tilted screenshot — fills container, snapped from bottom-left */}
+						{/* 3D tilted screenshot: fills container, snapped from bottom-left */}
 						<div
 							className="absolute inset-0 transition-transform duration-700"
 							style={{ transformStyle: 'preserve-3d' }}
@@ -211,7 +211,7 @@ export default function Projects({ setActive }: { setActive: (active: LinkType) 
 								<span className="text-[10px] font-bold uppercase tracking-[0.3em] text-indigo-400">Backend · REST API</span>
 								<h3 className="font-headline text-3xl text-on-surface">Booking API</h3>
 								<p className="max-w-sm text-sm text-on-surface-variant">
-									Full-featured booking system API with Stripe payment integration — handles reservations,
+									Full-featured booking system API with Stripe payment integration. Handles reservations,
 									availability, and secure checkout flows end-to-end.
 								</p>
 							</div>

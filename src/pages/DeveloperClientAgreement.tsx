@@ -78,7 +78,7 @@ export default function DeveloperClientAgreement(): React.JSX.Element {
 
          <Section title="5. Legal & Compliance">
             <p>
-               I'm not responsible for legal issues — including copyright infringement, intellectual property disputes, or platform policy violations — that arise from the content, design, or functionality of work delivered to you.
+               I'm not responsible for legal issues, including copyright infringement, intellectual property disputes, or platform policy violations, that arise from the content, design, or functionality of work delivered to you.
             </p>
             <p>
                You remain solely responsible for ensuring your application, website, or service complies with applicable laws, platform policies, copyright rules, and any required privacy policies or terms of service.
@@ -117,7 +117,7 @@ export default function DeveloperClientAgreement(): React.JSX.Element {
                I provide services on an "as-is" basis and make no guarantees regarding business outcomes, platform approvals, or performance results.
             </p>
             <p>
-               Under no circumstances am I liable for indirect, incidental, or consequential damages — including loss of profits, business interruptions, or platform rejection decisions.
+               Under no circumstances am I liable for indirect, incidental, or consequential damages, including loss of profits, business interruptions, or platform rejection decisions.
             </p>
          </Section>
 

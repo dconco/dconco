@@ -10,7 +10,7 @@ const CodeBlock = ({ code, lang = 'php' }: { code: string; lang?: string }) => (
 )
 
 const features = [
-   { icon: 'material-symbols:widgets-outline-rounded', title: 'Component Architecture', detail: 'Build reusable PHP components the same way you think in React — but it\'s pure PHP, server-rendered.' },
+   { icon: 'material-symbols:widgets-outline-rounded', title: 'Component Architecture', detail: 'Build reusable PHP components the same way you think in React, except it\'s pure PHP, server-rendered.' },
    { icon: 'material-symbols:sync-rounded', title: 'Reactive State', detail: 'useState() keeps your UI in sync with data changes automatically. No manual DOM manipulation.' },
    { icon: 'material-symbols:bolt-rounded', title: 'SPA Navigation', detail: 'Smooth page transitions without full reloads. Client-side routing built in.' },
    { icon: 'material-symbols:search-rounded', title: 'SEO Ready', detail: 'Everything is server-rendered. Search engines see real content, not a blank shell.' },
@@ -46,10 +46,10 @@ export default function PhpSPA(): React.JSX.Element {
                PhpSPA
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               A component-based PHP library for building modern, dynamic web applications — with reactive state, SPA-like navigation, and server-side rendering. No JavaScript framework required.
+               A component-based PHP library for building modern, dynamic web applications, with reactive state, SPA-like navigation, and server-side rendering. No JavaScript framework required.
             </p>
             <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant">
-               This is my most ambitious project. Built across PHP, TypeScript, JavaScript, C++, and HTML — it's the one I keep coming back to, refining, and pushing further.
+               This is my most ambitious project. Built across PHP, TypeScript, JavaScript, C++, and HTML, it's the one I keep coming back to, refining, and pushing further.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -130,7 +130,7 @@ export default function PhpSPA(): React.JSX.Element {
 
                <h2 className="font-headline text-3xl text-on-surface pt-4">Building components</h2>
                <p className="text-sm leading-relaxed text-on-surface-variant">
-                  Components are plain PHP functions. State is reactive. The UI updates when state changes — no JavaScript needed.
+                  Components are plain PHP functions. State is reactive. The UI updates when state changes, with no JavaScript needed.
                </p>
                <CodeBlock code={`use PhpSPA\\App;
 use PhpSPA\\Component;
@@ -156,7 +156,7 @@ $app->run();`} />
             <section className="space-y-6">
                <h2 className="font-headline text-3xl text-on-surface">Backend & API routing</h2>
                <p className="text-sm leading-relaxed text-on-surface-variant">
-                  PhpSPA has a full router built in. You can build APIs alongside your components — same app, same entry point.
+                  PhpSPA has a full router built in. You can build APIs alongside your components, all in the same app, same entry point.
                </p>
 
                <p className="text-xs uppercase tracking-widest text-on-surface-variant">Route groups & prefixes</p>
@@ -207,7 +207,7 @@ $app->useStatic('/assets', __DIR__ . '/../public/assets');`} />
          <section className="rounded-2xl border border-outline-variant/20 bg-surface-container-low px-8 py-12 text-center space-y-6">
             <h2 className="font-headline text-3xl text-on-surface">The full picture is in the docs</h2>
             <p className="text-on-surface-variant">
-               Hooks, state arrays, CSRF protection, compression, asset caching, client-side events — it's all documented at phpspa.tech.
+               Hooks, state arrays, CSRF protection, compression, asset caching, client-side events: it's all documented at phpspa.tech.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                <a

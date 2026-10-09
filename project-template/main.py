@@ -1,7 +1,7 @@
 # =============================================================================
 #  Project: {PROJECT_NAME}
 #  Client:  {CLIENT_NAME}
-#  Delivered by: Dave Conco (dconco) — https://dconco.tech
+#  Delivered by: Dave Conco (dconco), https://dconco.tech
 #  Delivery Date: {DELIVERY_DATE}
 # =============================================================================
 #
@@ -22,8 +22,8 @@
 #  in future work, as per the agreement.
 #
 #  For questions, support, or disputes:
-#  Email  — me@dconco.tech
-#  Web    — https://dconco.tech/contact
+#  Email:  me@dconco.tech
+#  Web:    https://dconco.tech/contact
 # =============================================================================
 
 

@@ -19,12 +19,12 @@ export default function RutexAI(): React.JSX.Element {
       {
          icon: 'material-symbols:folder-open-outline-rounded',
          title: 'File System Mastery',
-         detail: 'Reads, creates, edits, renames, and deletes files and directories directly — no manual steps.',
+         detail: 'Reads, creates, edits, renames, and deletes files and directories directly, with no manual steps.',
       },
       {
          icon: 'material-symbols:loop-rounded',
          title: 'Agentic Loop',
-         detail: 'Executes tasks in a chain — Read → Analyze → Edit → Verify — without requiring constant prompts.',
+         detail: 'Executes tasks in a chain (Read, Analyze, Edit, Verify) without requiring constant prompts.',
       },
       {
          icon: 'material-symbols:terminal-rounded',
@@ -39,7 +39,7 @@ export default function RutexAI(): React.JSX.Element {
       {
          icon: 'material-symbols:difference-outline-rounded',
          title: 'Intelligent Diff Engine',
-         detail: 'Uses a precise line-based edit system with real-time line shift calculation — surgical updates, no accidental data loss.',
+         detail: 'Uses a precise line-based edit system with real-time line shift calculation for surgical updates and no accidental data loss.',
       },
       {
          icon: 'material-symbols:security-rounded',
@@ -69,7 +69,7 @@ export default function RutexAI(): React.JSX.Element {
                Rutex AI
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               An autonomous AI agent plugin for Acode that enables LLMs to directly read, create, and refactor files — while executing terminal commands through a secure agentic loop. Desktop-class AI automation, on Android.
+               An autonomous AI agent plugin for Acode that enables LLMs to directly read, create, and refactor files while executing terminal commands through a secure agentic loop. Desktop-class AI automation, on Android.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -117,7 +117,7 @@ export default function RutexAI(): React.JSX.Element {
          <section className="space-y-6">
             <h2 className="font-headline text-3xl text-on-surface">What it does</h2>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               Rutex transforms Acode from a mobile text editor into a fully agentic IDE. You give it a task — it figures out what files to read, what to change, and how to verify the result. You stay in control; it handles the execution.
+               Rutex transforms Acode from a mobile text editor into a fully agentic IDE. You give it a task and it figures out what files to read, what to change, and how to verify the result. You stay in control; it handles the execution.
             </p>
             <p className="text-base leading-relaxed text-on-surface-variant">
                Built with TypeScript and Webpack, it uses a secure tool-calling protocol to interact with the Acode API. Every action is intentional, traceable, and reversible.

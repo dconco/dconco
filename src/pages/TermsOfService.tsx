@@ -32,7 +32,7 @@ export default function TermsOfService(): React.JSX.Element {
             <ul className="list-disc space-y-2 pl-6">
                <li>This portfolio website (dconco.tech)</li>
                <li>The digital products store</li>
-               <li>All tools listed under /tools — including PhpSPA, RutexAI, WarpShare, Class Validator, and PHP Schema Migrator</li>
+               <li>All tools listed under /tools, including PhpSPA, RutexAI, WarpShare, Class Validator, and PHP Schema Migrator</li>
                <li>Any related pages, APIs, or services operated under this domain</li>
             </ul>
          </Section>
@@ -48,7 +48,7 @@ export default function TermsOfService(): React.JSX.Element {
 
          <Section title="3. Store and Digital Products">
             <p>
-               When you purchase a digital product from the store, you're buying a license to use it — not ownership of the underlying code or assets unless explicitly stated.
+               When you purchase a digital product from the store, you're buying a license to use it, not ownership of the underlying code or assets unless explicitly stated.
             </p>
             <ul className="list-disc space-y-2 pl-6">
                <li>All sales are final unless covered by the Refund Policy</li>
@@ -68,7 +68,7 @@ export default function TermsOfService(): React.JSX.Element {
 
          <Section title="5. Third-Party Services">
             <p>
-               Some parts of this site interact with third-party providers — payment processors, email delivery, and hosting infrastructure. Those services operate under their own terms and policies. I'm not responsible for their practices or any issues arising from their side.
+               Some parts of this site interact with third-party providers such as payment processors, email delivery, and hosting infrastructure. Those services operate under their own terms and policies. I'm not responsible for their practices or any issues arising from their side.
             </p>
          </Section>
 

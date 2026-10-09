@@ -32,7 +32,7 @@ const tools = [
       name: 'WarpShare',
       label: 'CLI Tool',
       labelColor: 'text-primary',
-      description: 'Share files directly from your device. No repository setup, no collaborator invites — just a link. The other person opens it in their browser and they\'re in.',
+      description: 'Share files directly from your device. No repository setup, no collaborator invites, just a link. The other person opens it in their browser and they\'re in.',
       tags: ['Python', 'Linux', 'Windows'],
       icon: 'material-symbols:share-outline-rounded',
       href: '/tools/warpshare',
@@ -82,7 +82,7 @@ export default function Tools({ setActive }: { setActive: (active: LinkType) => 
                      Tools that <span className="font-serif font-normal italic text-primary">carry</span> the work.
                   </h1>
                   <p className="max-w-2xl text-base leading-relaxed text-on-surface-variant sm:text-lg">
-                     Libraries, CLI tools, plugins, and frameworks built from real constraints — made available so your next build can move faster.
+                     Libraries, CLI tools, plugins, and frameworks built from real constraints, made available so your next build can move faster.
                   </p>
                </div>
                <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-outline-variant/20 bg-outline-variant/20 sm:w-fit">

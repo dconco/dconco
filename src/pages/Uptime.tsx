@@ -64,7 +64,7 @@ const averageUptime = (monitors: Monitor[], period: '30' | '90') => {
    const values = monitors
       .map(m => Number.parseFloat(getCustomRatio(m, period === '30' ? 0 : 1) ?? ''))
       .filter(v => Number.isFinite(v))
-   return values.length ? `${(values.reduce((a, b) => a + b, 0) / values.length).toFixed(2)}%` : '—'
+   return values.length ? `${(values.reduce((a, b) => a + b, 0) / values.length).toFixed(2)}%` : '-'
 }
 
 
@@ -162,22 +162,22 @@ export default function Uptime(): React.JSX.Element {
          <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-xl border border-outline-variant/20 bg-surface-container px-4 py-5 sm:px-6">
                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 day uptime</p>
-               <p className="mt-2 font-headline text-2xl font-bold text-primary">{loading ? '—' : averageUptime(monitors, '30')}</p>
+               <p className="mt-2 font-headline text-2xl font-bold text-primary">{loading ? '-' : averageUptime(monitors, '30')}</p>
                <p className="mt-1 text-[11px] text-on-surface-variant">Rolling average</p>
             </div>
             <div className="rounded-xl border border-outline-variant/20 bg-surface-container px-4 py-5 sm:px-6">
                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">90 day uptime</p>
-               <p className="mt-2 font-headline text-2xl font-bold text-secondary">{loading ? '—' : averageUptime(monitors, '90')}</p>
+               <p className="mt-2 font-headline text-2xl font-bold text-secondary">{loading ? '-' : averageUptime(monitors, '90')}</p>
                <p className="mt-1 text-[11px] text-on-surface-variant">Rolling average</p>
             </div>
             <div className="rounded-xl border border-outline-variant/20 bg-surface-container px-4 py-5 sm:px-6">
                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Services monitored</p>
-               <p className="mt-2 font-headline text-2xl font-bold text-on-surface">{loading ? '—' : monitors.length}</p>
+               <p className="mt-2 font-headline text-2xl font-bold text-on-surface">{loading ? '-' : monitors.length}</p>
                <p className="mt-1 text-[11px] text-on-surface-variant">Live checks</p>
             </div>
             <div className="rounded-xl border border-outline-variant/20 bg-surface-container px-4 py-5 sm:px-6">
                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Current state</p>
-               <p className={`mt-2 font-headline text-2xl font-bold ${allUp ? 'text-primary' : anyDown ? 'text-tertiary' : 'text-secondary'}`}>{loading ? '—' : allUp ? 'Stable' : anyDown ? 'Issues' : 'Watch'}</p>
+               <p className={`mt-2 font-headline text-2xl font-bold ${allUp ? 'text-primary' : anyDown ? 'text-tertiary' : 'text-secondary'}`}>{loading ? '-' : allUp ? 'Stable' : anyDown ? 'Issues' : 'Watch'}</p>
                <p className="mt-1 text-[11px] text-on-surface-variant">Right now</p>
             </div>
          </section>
@@ -229,13 +229,13 @@ export default function Uptime(): React.JSX.Element {
                         </div>
                         <div className="flex flex-col items-end gap-1">
                            <div className={`inline-flex items-center gap-1.5 text-sm font-bold ${s.color}`}><Icon icon={s.icon} />{s.label}</div>
-                           {monitor.status === 2 && (() => { const upSince = getUpSince(monitor.logs); return <p className="text-[11px] text-on-surface-variant">Up for <span className="font-mono text-primary">{upSince ? formatUpDuration(upSince + tick * 0) : '—'}</span></p> })()}
+                           {monitor.status === 2 && (() => { const upSince = getUpSince(monitor.logs); return <p className="text-[11px] text-on-surface-variant">Up for <span className="font-mono text-primary">{upSince ? formatUpDuration(upSince + tick * 0) : '-'}</span></p> })()}
                         </div>
                      </div>
                      <div className="mt-5 grid grid-cols-2 gap-3 border-t border-outline-variant/15 pt-4 sm:grid-cols-3">
-                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 0); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '—' })()}</p></div>
-                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">90 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 1); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '—' })()}</p></div>
-                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Response</p><p className="mt-1 font-bold text-on-surface">{monitor.average_response_time ? `${monitor.average_response_time}ms` : '—'}</p></div>
+                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">30 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 0); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '-' })()}</p></div>
+                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">90 days</p><p className="mt-1 font-bold text-on-surface">{(() => { const v = getCustomRatio(monitor, 1); return v ? `${Number.parseFloat(v).toFixed(2)}%` : '-' })()}</p></div>
+                        <div><p className="text-[10px] uppercase tracking-widest text-on-surface-variant">Response</p><p className="mt-1 font-bold text-on-surface">{monitor.average_response_time ? `${monitor.average_response_time}ms` : '-'}</p></div>
                      </div>
                      {monitor.logs && monitor.logs.length > 0 && (
                         <div className="mt-5 border-t border-outline-variant/15 pt-4">

@@ -224,7 +224,7 @@ export default function Store({ setActive }: { setActive: (active: LinkType) => 
                         : pendingAdd.license === 'backend'
                         ? 'Backend Only'
                         : 'Full Package'}{' '}
-                     — {formatPrice(pendingAdd.product.price[pendingAdd.license])}
+                     · {formatPrice(pendingAdd.product.price[pendingAdd.license])}
                   </p>
 
                   <div className="flex gap-3">

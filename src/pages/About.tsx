@@ -56,7 +56,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 
 	return (
 		<main className="mx-auto max-w-7xl space-y-40 px-6 pb-24 pt-32 lg:px-12 lg:pt-24">
-            <Seo {...pageSeo.about} />
+			<Seo {...pageSeo.about} />
 			<section id="about" data-aos="fade-up" className="relative isolate md:grid max-sm:block max-md:flex items-end gap-12 overflow-hidden rounded-2xl p-6 md:grid-cols-12 md:p-10">
 				<img
 					src={portfolioImages.headerOverlay}
@@ -83,24 +83,30 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 					</p>
 				</div>
 
-				<div className="relative z-10 md:col-span-4 md:block w-full max-sm:mt-10">
-					<div className="flex flex-col gap-3">
-						{/* Wide image at top — desktop only */}
-						<div className="hidden md:block group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
+
+				<div className="relative z-10 md:col-span-4 md:block w-full max-sm:mt-10 ml-8">
+					<div className='w-full profile2 relative max-sm:w-[80%] max-sm:ml-auto max-sm:mr-3'>
+						<div className='profile relative w-full h-full'></div>
+						<img src="/profile.webp" alt="" className='w-full relative z-10' />
+					</div>
+
+					{/* <div className="flex flex-col gap-3"> */}
+						{/* Wide image at top: desktop only */}
+						{/* <div className="hidden md:block group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
 							<img src="/me/1.png" alt="" className="h-full w-full object-cover" />
 							<div className="pointer-events-none absolute inset-0 bg-black/40" />
-						</div>
+						</div> */}
 						{/* Two smaller images */}
-						<div className="grid grid-cols-2 gap-3">
+						{/* <div className="grid grid-cols-2 gap-3">
 							<div className="aspect-video overflow-hidden rounded-xl border border-outline-variant/10">
 								<img src="/me/2.png" alt="" className="h-full w-full object-cover" />
 							</div>
 							<div className="aspect-video overflow-hidden rounded-xl border border-outline-variant/10">
 								<img src={portfolioImages.aboutPortrait} alt="" className="h-full w-full object-cover" />
 							</div>
-						</div>
+						</div> */}
 						{/* Main wide image */}
-						<div className="group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
+						{/* <div className="group relative aspect-video overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low">
 							<img
 								src="/me/3.png"
 								alt="Professional portrait"
@@ -108,7 +114,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 							/>
 							<div className="pointer-events-none absolute inset-0 bg-black/40" />
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 
@@ -254,7 +260,7 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 					</div>
 					<h2 className="font-headline text-4xl text-on-surface">Yes, I Use AI in My Workflow</h2>
 					<p className="max-w-2xl text-base leading-relaxed text-on-surface-variant">
-						AI is part of my day-to-day workflow to improve velocity, clarity, and code quality — while keeping me the final decision-maker.
+						AI is part of my day-to-day workflow to improve velocity, clarity, and code quality, while keeping me the final decision-maker.
 					</p>
 				</div>
 

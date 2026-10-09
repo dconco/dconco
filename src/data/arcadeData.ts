@@ -1,4 +1,4 @@
-// Favorite anime — covers are the real art committed under src/assets/anime.
+// Favorite anime. Covers are the real art committed under src/assets/anime.
 import demonSlayer from '../assets/anime/demon-slayer.webp'
 import soloLeveling from '../assets/anime/solo-leveling.webp'
 import eminenceInShadow from '../assets/anime/eminence-in-shadow.webp'
@@ -32,7 +32,7 @@ export const favoriteAnime: Anime[] = [
 	{ title: 'Nimona', cover: nimona, genre: 'Adventure / Sci-Fi', accent: 'secondary' },
 ]
 
-// Game icons — real Play Store art committed under src/assets/games.
+// Game icons. Real Play Store art committed under src/assets/games.
 import shadowFight from '../assets/games/shadow-fight-4.webp'
 import annelids from '../assets/games/annelids.webp'
 import archery from '../assets/games/archery-battle-3d.webp'

@@ -23,7 +23,7 @@ export default function RefundPolicy(): React.JSX.Element {
             <h1 className="font-headline text-5xl font-bold text-on-surface">Refund Policy</h1>
             <p className="text-sm text-on-surface-variant">Last updated: July 2026</p>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               This policy explains how delivery and refunds work for purchases made through the dconco.tech store. Read it before you buy — it's short and straightforward.
+               This policy explains how delivery and refunds work for purchases made through the dconco.tech store. Read it before you buy. It's short and straightforward.
             </p>
          </div>
 
@@ -38,7 +38,7 @@ export default function RefundPolicy(): React.JSX.Element {
 
          <Section title="2. Didn't Receive Your Order?">
             <p>
-               If the automated delivery fails for any reason — email issues, delivery errors, or anything on our end — contact me directly. I'll verify your payment manually and send your package by hand.
+               If the automated delivery fails for any reason, whether email issues, delivery errors, or anything on our end, contact me directly. I'll verify your payment manually and send your package by hand.
             </p>
             <p>
                Reach out at <a href="mailto:me@dconco.tech" className="text-primary hover:underline">me@dconco.tech</a> or through the <a href="/contact" className="text-primary hover:underline">contact page</a> with your order details and I'll sort it out.
@@ -50,16 +50,16 @@ export default function RefundPolicy(): React.JSX.Element {
                All sales are final. Because these are digital products, I don't offer refunds once a purchase is confirmed.
             </p>
             <p>
-               The only exception is if delivery completely fails and I'm unable to get your package to you manually after you've contacted me. In that case, a refund may be issued — either automatically by the payment gateway or manually on my end after confirming the payment.
+               The only exception is if delivery completely fails and I'm unable to get your package to you manually after you've contacted me. In that case, a refund may be issued, either automatically by the payment gateway or manually on my end after confirming the payment.
             </p>
             <p>
-               If you believe you qualify, contact me and I'll review it. I'm not going to make this difficult — if you paid and genuinely didn't get what you paid for, we'll make it right.
+               If you believe you qualify, contact me and I'll review it. I'm not going to make this difficult. If you paid and genuinely didn't get what you paid for, we'll make it right.
             </p>
          </Section>
 
          <Section title="4. Chargebacks">
             <p>
-               If you initiate a chargeback before contacting me, I reserve the right to dispute it. Most delivery issues can be resolved quickly — reach out first.
+               If you initiate a chargeback before contacting me, I reserve the right to dispute it. Most delivery issues can be resolved quickly, so reach out first.
             </p>
          </Section>
 
@@ -73,7 +73,7 @@ export default function RefundPolicy(): React.JSX.Element {
 
          <Section title="5. No Refund Policy for Client Projects">
             <p>
-               All payments made for custom work are final and non-refundable once work has started. Software development is a professional service — it involves planning, architecture, engineering, and implementation that can't be undone once underway.
+               All payments made for custom work are final and non-refundable once work has started. Software development is a professional service. It involves planning, architecture, engineering, and implementation that can't be undone once underway.
             </p>
             <p>
                Payments compensate the time and expertise applied to your project, not just the final deliverable. Once I start, that time is spent.
@@ -85,7 +85,7 @@ export default function RefundPolicy(): React.JSX.Element {
                A refund may be considered only if a contracted milestone or module is not completed by the agreed delivery date.
             </p>
             <ul className="list-disc space-y-2 pl-6">
-               <li>Refunds apply only to the unfinished portion — not the whole project</li>
+               <li>Refunds apply only to the unfinished portion, not the whole project</li>
                <li>Completed and delivered work is fully billable regardless</li>
                <li>The refund amount is proportional to the value of the incomplete work</li>
                <li>Work already delivered, reviewed, or accepted is excluded from any refund calculation</li>
@@ -104,7 +104,7 @@ export default function RefundPolicy(): React.JSX.Element {
                <li>The software meeting agreed specs but not matching personal expectations</li>
             </ul>
             <p>
-               If you have concerns about a deliverable, raise them during the review period — not after deployment or acceptance.
+               If you have concerns about a deliverable, raise them during the review period, not after deployment or acceptance.
             </p>
          </Section>
 
@@ -131,7 +131,7 @@ export default function RefundPolicy(): React.JSX.Element {
 
          <Section title="9. Force Majeure">
             <p>
-               I'm not liable for delays or inability to deliver where the cause is beyond my reasonable control — including but not limited to natural disasters, power outages, internet infrastructure failures, government actions, cyberattacks, or global service outages.
+               I'm not liable for delays or inability to deliver where the cause is beyond my reasonable control, including but not limited to natural disasters, power outages, internet infrastructure failures, government actions, cyberattacks, or global service outages.
             </p>
             <p>
                No refund, credit, or compensation is owed where delays arise from such events.
@@ -143,7 +143,7 @@ export default function RefundPolicy(): React.JSX.Element {
                Before initiating any chargeback or payment reversal through your bank, card provider, or payment gateway, contact me first and give me a reasonable opportunity to resolve the issue.
             </p>
             <p>
-               Initiating a fraudulent or unjustified chargeback for completed work may constitute a breach of contract. I reserve the right to contest such disputes with supporting documentation — including contracts, invoices, project records, commit history, communication logs, and delivery confirmations.
+               Initiating a fraudulent or unjustified chargeback for completed work may constitute a breach of contract. I reserve the right to contest such disputes with supporting documentation, including contracts, invoices, project records, commit history, communication logs, and delivery confirmations.
             </p>
          </Section>
 

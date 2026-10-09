@@ -58,7 +58,7 @@ export default function ClassValidator(): React.JSX.Element {
                Class Validator
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               Attribute-based request validation for PHP. Define your rules directly on the class — no separate schema files, no verbose rule arrays. Just annotate your DTO and validate.
+               Attribute-based request validation for PHP. Define your rules directly on the class, with no separate schema files and no verbose rule arrays. Just annotate your DTO and validate.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -144,7 +144,7 @@ $password = $dto->password;`} />
             <section className="space-y-4">
                <h2 className="font-headline text-3xl text-on-surface">Payload sources</h2>
                <p className="text-sm leading-relaxed text-on-surface-variant">
-                  Works with any PHP array or object — PhpSPA, Laravel, Symfony, raw <code className="text-primary">$_POST</code>, or a plain array.
+                  Works with any PHP array or object: PhpSPA, Laravel, Symfony, raw <code className="text-primary">$_POST</code>, or a plain array.
                </p>
                <CodeBlock code={`// PhpSPA
 Validator::from($req->json(), Dto::class);
@@ -193,9 +193,9 @@ public function store(Request $request)
                {[
                   'Classes must be marked with #[Validatable] to be validated.',
                   'Optional fields are declared nullable (e.g. ?string). Fields with a default value are also treated as optional.',
-                  'Fields without a default value are required automatically — no extra attribute needed.',
+                  'Fields without a default value are required automatically, with no extra attribute needed.',
                   'Use #[Required(message: "...")] when you want a custom required-field error message.',
-                  'DTO property names map directly to request payload keys — $email validates the "email" key.',
+                  'DTO property names map directly to request payload keys, so $email validates the "email" key.',
                   'Base error message comes from #[Message] on the class itself.',
                ].map(note => (
                   <li key={note} className="flex items-start gap-3 text-sm text-on-surface-variant">
@@ -223,7 +223,7 @@ public function store(Request $request)
          <section className="rounded-2xl border border-outline-variant/20 bg-surface-container-low px-8 py-12 text-center space-y-6">
             <h2 className="font-headline text-3xl text-on-surface">Part of the PhpSPA ecosystem</h2>
             <p className="text-on-surface-variant">
-               It works with any PHP app — but it was built alongside PhpSPA. If you're already using PhpSPA, it fits right in.
+               It works with any PHP app, but it was built alongside PhpSPA. If you're already using PhpSPA, it fits right in.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                <a

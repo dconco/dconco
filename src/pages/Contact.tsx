@@ -170,7 +170,7 @@ export default function Contact({ setActive }: { setActive: (active: LinkType) =
                </form>
             </article>
 
-            {/* Sidebar — original */}
+            {/* Sidebar: original */}
             <div className="flex flex-col gap-6 md:col-span-4">
 
                <article data-aos="fade-left" data-aos-delay="120" className="rounded-xl bg-surface-container p-8">

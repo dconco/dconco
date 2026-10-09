@@ -300,14 +300,14 @@ export default function Arcade({ setActive }: { setActive: (active: LinkType) =>
 								</div>
 
 								<div className="grid grid-cols-2 gap-3">
-									<GameMetric label="Hours played" value={game.hoursPlayed != null ? `${game.hoursPlayed}h` : '—'} accent="text-primary" />
+									<GameMetric label="Hours played" value={game.hoursPlayed != null ? `${game.hoursPlayed}h` : '-'} accent="text-primary" />
 									<GameMetric
 										label="Achievements"
 										value={game.achievements.unlocked != null
 											? game.achievements.total != null
 												? `${game.achievements.unlocked}/${game.achievements.total}`
 												: String(game.achievements.unlocked)
-											: '—'}
+											: '-'}
 										accent="text-secondary"
 									/>
 								</div>
@@ -391,7 +391,7 @@ function StatCard({ label, value, accent, sub }: { label: string; value: string 
 	return (
 		<div className="rounded-xl border border-outline-variant/20 bg-surface-container px-4 py-5 sm:px-6">
 			<p className="text-[10px] uppercase tracking-widest text-on-surface-variant">{label}</p>
-			<p className={`mt-2 font-headline text-xl font-bold md:text-2xl ${accent}`}>{value ?? '—'}</p>
+			<p className={`mt-2 font-headline text-xl font-bold md:text-2xl ${accent}`}>{value ?? '-'}</p>
 			{sub && <p className="mt-1 text-[11px] text-on-surface-variant">{sub}</p>}
 		</div>
 	)

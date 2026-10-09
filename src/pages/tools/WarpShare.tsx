@@ -35,7 +35,7 @@ export default function WarpShare(): React.JSX.Element {
                WarpShare
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               Share files directly from your device. No repository setup, no collaborator invites, no publishing step — just a link.
+               Share files directly from your device. No repository setup, no collaborator invites, no publishing step. Just a link.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
                {stats && (
@@ -77,7 +77,7 @@ export default function WarpShare(): React.JSX.Element {
          <section className="space-y-6">
             <h2 className="font-headline text-3xl text-on-surface">What it does</h2>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               WarpShare lets you serve files from your own machine and hand someone a link to browse, download, and work with them immediately. It's not a cloud sync tool. It's not a fork workflow. It's direct — your device, their browser, no middleman.
+               WarpShare lets you serve files from your own machine and hand someone a link to browse, download, and work with them immediately. It's not a cloud sync tool. It's not a fork workflow. It's direct: your device, their browser, no middleman.
             </p>
             <p className="text-base leading-relaxed text-on-surface-variant">
                The person on the other end doesn't need an account, a client, or any setup. They open the link and they're in.
@@ -114,7 +114,7 @@ export default function WarpShare(): React.JSX.Element {
             </div>
 
             <div className="space-y-3">
-               <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Linux x64 — manual</h3>
+               <h3 className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">Linux x64 (manual)</h3>
                <CodeBlock code={`curl -L https://github.com/hallofcodes/WarpShare/releases/latest/download/warpshare-linux-amd64 -o warpshare
 chmod +x warpshare
 sudo mv warpshare /usr/local/bin/warpshare
@@ -161,7 +161,7 @@ Move-Item .\\warpshare.exe "$env:USERPROFILE\\bin\\warpshare.exe" -Force
             </div>
 
             <p className="text-base leading-relaxed text-on-surface-variant">
-               Once it starts, WarpShare gives you a link. Copy it, send it — the other person opens it in their browser and they're working with your files immediately.
+               Once it starts, WarpShare gives you a link. Copy it, send it, and the other person opens it in their browser and they're working with your files immediately.
             </p>
          </section>
          </div>

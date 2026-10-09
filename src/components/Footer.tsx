@@ -51,7 +51,7 @@ export const Footer = (): React.ReactElement => {
                      <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
                   </div>
                   <p className="text-sm leading-relaxed text-on-surface-variant">
-                     Building high-concurrency backends, low-latency APIs, and real-time systems — from Go to React.
+                     Building high-concurrency backends, low-latency APIs, and real-time systems, from Go to React.
                   </p>
                   <div className="flex gap-4 pt-1">
                      {[

@@ -23,7 +23,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
             <h1 className="font-headline text-5xl font-bold text-on-surface">Privacy Policy</h1>
             <p className="text-sm text-on-surface-variant">Last updated: July 2026</p>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               This policy explains what information I collect when you visit dconco.tech, use my tools, or purchase from my store — and exactly what I do with it. No fluff, no legalese traps.
+               This policy explains what information I collect when you visit dconco.tech, use my tools, or purchase from my store, and exactly what I do with it. No fluff, no legalese traps.
             </p>
          </div>
 
@@ -36,8 +36,8 @@ export default function PrivacyPolicy(): React.JSX.Element {
          <Section title="2. What I Collect">
             <p>I only collect what's necessary to operate this site and fulfill orders. That includes:</p>
             <ul className="list-disc space-y-2 pl-6">
-               <li><span className="text-on-surface font-medium">Contact information</span> — name and email address when you fill out the contact form or place an order.</li>
-               <li><span className="text-on-surface font-medium">Payment data</span> — processed entirely by third-party payment providers. I never see or store your card details.</li>
+               <li><span className="text-on-surface font-medium">Contact information</span>: name and email address when you fill out the contact form or place an order.</li>
+               <li><span className="text-on-surface font-medium">Payment data</span>: processed entirely by third-party payment providers. I never see or store your card details.</li>
             </ul>
             <p>I don't collect anything I don't need. If a form only needs your email, that's all I ask for.</p>
          </Section>
@@ -64,8 +64,8 @@ export default function PrivacyPolicy(): React.JSX.Element {
          <Section title="5. Third-Party Services">
             <p>I use a small number of trusted third-party services to run this site:</p>
             <ul className="list-disc space-y-2 pl-6">
-               <li><span className="text-on-surface font-medium">Payment processors</span> — handle all financial transactions securely under their own privacy policies.</li>
-               <li><span className="text-on-surface font-medium">Email delivery</span> — used to send transactional emails like order confirmations.</li>
+               <li><span className="text-on-surface font-medium">Payment processors</span>: handle all financial transactions securely under their own privacy policies.</li>
+               <li><span className="text-on-surface font-medium">Email delivery</span>: used to send transactional emails like order confirmations.</li>
             </ul>
             <p>Each of these services operates under their own privacy policies and data handling standards.</p>
          </Section>
@@ -91,7 +91,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
 
          <Section title="8. Security">
             <p>
-               I take reasonable technical measures to protect the data processed through this site. Connections are encrypted via HTTPS. Payment data never touches my servers. That said, no system is perfectly immune — if you ever notice something suspicious, let me know immediately.
+               I take reasonable technical measures to protect the data processed through this site. Connections are encrypted via HTTPS. Payment data never touches my servers. That said, no system is perfectly immune, so if you ever notice something suspicious, let me know immediately.
             </p>
          </Section>
 
@@ -103,7 +103,7 @@ export default function PrivacyPolicy(): React.JSX.Element {
 
          <Section title="10. Changes to This Policy">
             <p>
-               If this policy changes in a meaningful way, I'll update the date at the top of this page. I won't bury significant changes in fine print — if something important shifts, I'll make it clear.
+               If this policy changes in a meaningful way, I'll update the date at the top of this page. I won't bury significant changes in fine print. If something important shifts, I'll make it clear.
             </p>
          </Section>
 

@@ -21,9 +21,9 @@ const features = [
    { icon: 'material-symbols:terminal-rounded', title: 'Beautiful CLI', detail: 'Powered by Symfony Console with colored output and interactive commands.' },
    { icon: 'material-symbols:public-rounded', title: 'Global Install', detail: 'Install once via Composer, use it in any PHP project on your machine.' },
    { icon: 'material-symbols:layers-outline-rounded', title: 'Zero Framework', detail: 'No Laravel, no framework bloat. Just the migration tooling, standalone.' },
-   { icon: 'material-symbols:storage-rounded', title: 'Multi-Database', detail: 'MySQL, PostgreSQL, SQLite, and SQL Server — all supported out of the box.' },
+   { icon: 'material-symbols:storage-rounded', title: 'Multi-Database', detail: 'MySQL, PostgreSQL, SQLite, and SQL Server, all supported out of the box.' },
    { icon: 'material-symbols:settings-outline-rounded', title: 'Per-Project Config', detail: 'Each project keeps its own schema-migrator.yml and migration state.' },
-   { icon: 'material-symbols:check-circle-outline-rounded', title: 'Laravel-Compatible', detail: 'Uses Laravel\'s proven migration syntax — familiar if you\'ve used it before.' },
+   { icon: 'material-symbols:check-circle-outline-rounded', title: 'Laravel-Compatible', detail: 'Uses Laravel\'s proven migration syntax, familiar if you\'ve used it before.' },
 ]
 
 export default function PhpSchemaMigrator(): React.JSX.Element {
@@ -54,7 +54,7 @@ export default function PhpSchemaMigrator(): React.JSX.Element {
                PHP Schema Migrator
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
-               Laravel-style database migrations for any PHP project. No framework required — just install globally and run.
+               Laravel-style database migrations for any PHP project. No framework required, just install globally and run.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -102,7 +102,7 @@ export default function PhpSchemaMigrator(): React.JSX.Element {
          <section className="space-y-6">
             <h2 className="font-headline text-3xl text-on-surface">What it does</h2>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               I built this because I kept needing proper migration tooling in plain PHP projects — not just Laravel apps. Schema Migrator gives you the same workflow without pulling in a full framework.
+               I built this because I kept needing proper migration tooling in plain PHP projects, not just Laravel apps. Schema Migrator gives you the same workflow without pulling in a full framework.
             </p>
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
                {features.map(f => (
@@ -176,7 +176,7 @@ migrations:
          <section className="space-y-4">
             <h2 className="font-headline text-3xl text-on-surface">Works across multiple projects</h2>
             <p className="text-base leading-relaxed text-on-surface-variant">
-               Install once globally. Each project gets its own config and migration state — they don't interfere with each other.
+               Install once globally. Each project gets its own config and migration state, so they don't interfere with each other.
             </p>
             <CodeBlock lang="bash" code={`cd /project-a\nschema-migrator init\nschema-migrator migrate\n\ncd /project-b\nschema-migrator init\nschema-migrator migrate`} />
          </section>
