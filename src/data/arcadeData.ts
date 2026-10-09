@@ -12,6 +12,7 @@ import devilMayCry from '../assets/anime/devil-may-cry.webp'
 import nimona from '../assets/anime/nimona.webp'
 import mysteryOfAaravos from '../assets/anime/mystery-of-aaravos.webp'
 import lolirock from '../assets/anime/lolirock.webp'
+import sheRa from '../assets/anime/she-ra.webp'
 
 export type Anime = {
 	title: string
@@ -28,6 +29,7 @@ export const favoriteAnime: Anime[] = [
 	{ title: 'Claymore', cover: claymore, genre: 'Dark Fantasy', accent: 'tertiary' },
 	{ title: 'Nimona', cover: nimona, genre: 'Adventure / Sci-Fi', accent: 'secondary' },
 	{ title: 'LoliRock', cover: lolirock, genre: 'Magical Girl / Fantasy', accent: 'primary' },
+	{ title: 'She-Ra and the Princesses of Power', cover: sheRa, genre: 'Adventure / Fantasy', accent: 'tertiary' },
 	{ title: 'Solo Leveling', cover: soloLeveling, genre: 'Action / Fantasy', accent: 'primary' },
 	{ title: 'The Rising of the Shield Hero', cover: shieldHero, genre: 'Isekai / Adventure', accent: 'secondary' },
 	{ title: 'Sakamoto Days', cover: sakamotoDays, genre: 'Action / Comedy', accent: 'primary' },
