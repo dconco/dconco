@@ -84,10 +84,9 @@ export default function About({ setActive }: { setActive: (active: LinkType) => 
 				</div>
 
 
-				<div className="relative z-10 md:col-span-4 md:block w-full max-sm:mt-10 ml-8">
-					<div className='w-full profile2 relative max-sm:w-[80%] max-sm:ml-auto max-sm:mr-3'>
-						<div className='profile relative w-full h-full'></div>
-						<img src="/profile.webp" alt="" className='w-full relative z-10' />
+				<div className="relative z-10 md:col-span-4 md:block w-full mt-8 max-sm:mt-10 m-auto">
+					<div className='w-full max-sm:w-[80%] h-full m-auto md:-ml-20'>
+						<img src="/dconco-hero.webp" alt="" className='w-full md:scale-120' />
 					</div>
 
 					{/* <div className="flex flex-col gap-3"> */}
