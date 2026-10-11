@@ -47,12 +47,17 @@ export const Footer = (): React.ReactElement => {
             <div className="grid grid-cols-2 gap-10 md:grid-cols-6">
                {/* Brand */}
                <div className="col-span-2 space-y-4 md:col-span-2">
-                  <div className="font-headline text-xl font-bold">
-                     <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
-                  </div>
+                  <Link to="/" className="flex items-center">
+                     <img src="/dconco-white-transparent.webp" alt="" className="h-7 mr-2" />
+
+                     <div className="font-headline text-xl font-bold">
+                        <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
+                     </div>
+                  </Link>
                   <p className="text-sm leading-relaxed text-on-surface-variant">
                      Building high-concurrency backends, low-latency APIs, and real-time systems, from Go to React.
                   </p>
+
                   <div className="flex gap-4 pt-1">
                      {[
                         { icon: 'mdi:github', url: 'https://github.com/dconco' },

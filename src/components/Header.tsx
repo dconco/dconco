@@ -29,10 +29,8 @@ export const Header = ({ active }: { active: LinkType }): React.JSX.Element => {
       <HeaderShell className="relative border-b border-white/[0.06] bg-[#0b1326]/80">
          <nav className="mx-auto flex max-w-screen-2xl items-center justify-between gap-8 px-6 py-4 md:px-10 lg:px-14 lg:py-5">
             <Link to="/" className="group flex shrink-0 items-center gap-3" aria-label="Dave Conco home">
-               <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-primary/40 bg-primary/10 font-nav-link text-sm font-bold text-primary transition-colors group-hover:bg-primary/20">
-                  DC
-                  <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-[#0b1326] bg-primary" />
-               </span>
+               <img src="/dconco-white-transparent.webp" alt="" className="h-9" />
+
                <span className="leading-none">
                   <span className="block font-headline text-lg font-bold tracking-tight">
                      <span className="text-primary">dave</span><span className="text-on-surface">conco</span>
